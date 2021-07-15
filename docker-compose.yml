@@ -1,0 +1,39 @@
+version: '3'
+
+services: 
+    orion: 
+        image: fiware/orion:latest
+        ports: 
+            - "1026:1026"
+        env_file: ${PWD}/.env
+        expose: 
+            - "1027"
+        command: -logLevel DEBUG -noCache -dbhost mongo -dbuser ${DBUSER} -dbpwd ${DBPASS} -dbAuthDb admin
+        depends_on: 
+            - mongo
+        healthcheck:
+            test: ["CMD", "curl", "-f", "http://0.0.0.0:1026/version"]
+            interval: 1m
+            timeout: 10s
+            retries: 3
+
+    mongo: 
+        image: mongo:latest
+        container_name: mongo
+        hostname: mongo
+        env_file: ${PWD}/.env
+        ports: 
+            - "27017:27017"
+        volumes: 
+            - mongodata:/data/db
+        environment: 
+            - "MONGO_INITDB_ROOT_USERNAME=${DBUSER}"
+            - "MONGO_INITDB_ROOT_PASSWORD=${DBPASS}"
+
+
+
+volumes: 
+    mongodata:
+    
+networks: 
+    default:

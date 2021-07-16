@@ -25,17 +25,12 @@ const io = socketIO(httpServer, {
   },
 });
 
-io.on("connection", (socket) => {
-  console.log("eta");
-  sockets.push(socket);
-});
-
 expressApp.use(express.static("front"));
 expressApp.use(cors());
 expressApp.use(express.urlencoded({ extended: true }));
 expressApp.use(express.json());
 expressApp.post("/subscriptions", (req, res) => {
-  //console.log(req.body);
+  console.log(req.body);
   // emit io
   io.sockets.emit("data", req.body);
   res.sendStatus(201);

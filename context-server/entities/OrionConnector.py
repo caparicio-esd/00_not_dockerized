@@ -33,7 +33,7 @@ class OrionConnector:
         pass
 
     @staticmethod
-    def checkConnection(self) -> bool:
+    def checkConnection(self) -> None:
         r = requests.get(OrionRoutes.VERSION)
         
         if DEBUG:
@@ -41,34 +41,48 @@ class OrionConnector:
             else: raise Exception("connection refused from Orion")
 
     @staticmethod
-    def createEntity(entity) -> int:
+    def createEntity(entity) -> None:
         """
         Crea entidades en Orion Context Broker
         """
-        [url] = OrionRoutes.ENTITIES.value 
-        headers = {"content-type" : "application/json"}
-        payload = json.dumps(entity)
-        r = requests.request("POST", url, headers=headers, data=payload)
+        try:
+            [url] = OrionRoutes.ENTITIES.value 
+            headers = {"content-type" : "application/json"}
+            payload = json.dumps(entity)
+            r = requests.request("POST", url, headers=headers, data=payload)
+            
+            if DEBUG:
+                if r.status_code == OrionResponses.POST_OK.value: print("entity created")
+                elif r.status_code == OrionResponses.POST_ALREADY_EXISTS.value: print("entity already exists")
+                else: raise Exception("Something went wrong")
         
-        if DEBUG:
-            if r.status_code == OrionResponses.POST_OK.value: print("entity created")
-            elif r.status_code == OrionResponses.POST_ALREADY_EXISTS.value: print("entity already exists")
-            else: raise Exception("Something went wrong")
+        except Exception as e:
+            __class__._error_handler(e)
 
     @staticmethod
-    def updateEntity(entity: dict, attrs: List[str]) -> int:
+    def updateEntity(entity: dict, attrs: List[str]) -> None:
         """
         Actualiza entidades en Context Broker
         """
-        url = "{}/{}/attrs".format(OrionRoutes.ENTITIES.value[0], entity["id"])
-        headers = {"content-type" : "application/json"}
-        payload = json.dumps({key: entity[key] for key in attrs})
-        r = requests.request("PATCH", url, headers=headers, data=payload)
+        try:
+            url = "{}/{}/attrs".format(OrionRoutes.ENTITIES.value[0], entity["id"])
+            headers = {"content-type" : "application/json"}
+            payload = json.dumps({key: entity[key] for key in attrs})
+            r = requests.request("PATCH", url, headers=headers, data=payload)
         
-        if DEBUG:
-            if r.status_code == OrionResponses.PATCH_OK.value: print("entity updated")
-            else: raise Exception("Something went wrong")
+            if DEBUG:
+                if r.status_code == OrionResponses.PATCH_OK.value: print("entity updated")
+                else: raise Exception("Something went wrong")
+        except Exception as e:
+            __class__._error_handler(e)
 
     @staticmethod
     def clearEntities(entity) -> int:
         pass
+
+    @staticmethod
+    def _error_handler(e: Exception) -> None:
+        """
+        Global error handler
+        """
+        print("Something is going wrong... Check connection to Orion")

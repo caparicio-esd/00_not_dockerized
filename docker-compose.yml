@@ -6,8 +6,6 @@ services:
         ports: 
             - "1026:1026"
         env_file: ${PWD}/.env
-        expose: 
-            - "1027"
         command: -logLevel DEBUG -noCache -dbhost mongo -dbuser ${DBUSER} -dbpwd ${DBPASS} -dbAuthDb admin
         depends_on: 
             - mongo

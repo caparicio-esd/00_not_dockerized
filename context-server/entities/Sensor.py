@@ -4,11 +4,11 @@ from datetime import datetime
 from numpy import random as np_random
 from .constants import DEBUG
 from .OrionConnector import OrionConnector
+from .Device import Device
 
 
 
-
-class Sensor: 
+class Sensor(Device): 
     """
     Faking sensor from temperatures, humidity, position, 
     times, etc...
@@ -32,25 +32,40 @@ class Sensor:
     timerIsRunning: bool = False
     
     def __init__(self, name, debug=False) -> None:
+        """
+        Init Class
+        """
         self.debug = debug
         self.name = name
+        self._create_device()
+        self._run()
+
+    def _create_device(self) -> None:
+        """
+        Create device hook and Orion Context Broker connection
+        """
         self.geoLocation[0] = self.geoLocationCenter[0] + np_random.normal(0, self.geoLocationRadius)
         self.geoLocation[1] = self.geoLocationCenter[1] + np_random.normal(0, self.geoLocationRadius)
-        self._run(first_run=True)
+        OrionConnector.createEntity(self.orion_format())
 
-    def _init_timer(self) -> None:
+    def _run(self) -> None:
+        """
+        Run device updates
+        """
         if self.timerIsRunning: self.timer.cancel()
-        self.timer = threading.Timer(self.timerSeconds, self._run)
+        self.timer = threading.Timer(self.timerSeconds, self._update_device)
         self.timer.start()
         self.timerIsRunning = True
 
-    def _run(self, first_run = False) -> None:
+    def _update_device(self, first_run = False) -> None:
+        """
+        Update device hook and Orion Context Broker connection
+        """
         self.temperature = np_random.normal(self.temperatureCenter, self.temperatureRadius)
         self.humidity = np_random.normal(self.humidityCenter, self.humidityRadius)
+        OrionConnector.updateEntity(self.orion_format(), ["temperature", "humidity"])
         if (self.debug or DEBUG): print(self)
-        if (first_run): OrionConnector.createEntity(self.orion_format())
-        else: OrionConnector.updateEntity(self.orion_format(), ["temperature", "humidity"])
-        self._init_timer()
+        self._run()
 
     def orion_format(self) -> dict:
         """
@@ -82,11 +97,11 @@ class Sensor:
         Debugging representation of Sensor
         """
         return "\n\
-Sensor {}\n\
-    Geolocation: {},\n\
-    Temperature: {},\n\
-    Humidity: {},\n\
-    Time: {}\n\
+            Sensor {}\n\
+                Geolocation: {},\n\
+                Temperature: {},\n\
+                Humidity: {},\n\
+                Time: {}\n\
         ".format(
             self.name,
             "{}, {}".format(self.geoLocation[0], self.geoLocation[1]),

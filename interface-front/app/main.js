@@ -1,6 +1,6 @@
-import "./style.css";
+import "../assets/sass/style.sass";
 import { io } from "socket.io-client";
-
+ 
 
 const socket = io("http://localhost:1027", {});
 socket.on("connect", () => {

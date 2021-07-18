@@ -6,12 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
-  <body>
-    <div id="app">
-      <div class="graphics">
-        <h3>Graphic</h3>
+  <body ng-app="app">
+    <div id="app" ng-cloak>
+      <div class="graphics" ng-controller="MainController as main">
+        <div class="div">
+          <h3>Graphic {{data.length}}</h3>
+          <p ng-repeat="dItem in data">
+            Sensor: {{dItem.data[0].id}} <br >
+            temperature: {{dItem.data[0].temperature.value}}
+          </p>
+        </div>
       </div>
     </div>
-    <script type="module" src="/app/main.js"></script>
+    <script type="module" src="/app/main.ts"></script>
   </body>
 </html>

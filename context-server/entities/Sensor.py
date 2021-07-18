@@ -28,7 +28,7 @@ class Sensor(Device):
     geoLocationRadius: float = 0.4
 
     timer: threading.Timer = None
-    timerSeconds: int = 1
+    timerSeconds: int = 3
     timerIsRunning: bool = False
     
     def __init__(self, name, debug=False) -> None:

@@ -1,2 +1,2 @@
-ORION_ROOT: str = "http://localhost:1026"
-DEBUG: bool = False
+ORION_ROOT: str = "http://orion:1026"
+DEBUG: bool = True

@@ -1,0 +1,32 @@
+ INFO [2021-07-19 18:45:57,472] ({RegisterThread} RemoteInterpreterServer.java[run]:595) - Start registration
+ INFO [2021-07-19 18:45:57,472] ({RemoteInterpreterServer-Thread} RemoteInterpreterServer.java[run]:193) - Launching ThriftServer at 172.18.0.3:36747
+ INFO [2021-07-19 18:45:58,634] ({RegisterThread} RemoteInterpreterServer.java[run]:609) - Registering interpreter process
+ INFO [2021-07-19 18:45:58,654] ({RegisterThread} RemoteInterpreterServer.java[run]:611) - Registered interpreter process
+ INFO [2021-07-19 18:45:58,655] ({RegisterThread} RemoteInterpreterServer.java[run]:632) - Registration finished
+ INFO [2021-07-19 18:45:58,665] ({pool-2-thread-1} ZeppelinConfiguration.java[create]:172) - Load configuration from file:/opt/zeppelin/conf/zeppelin-site.xml
+ INFO [2021-07-19 18:45:58,725] ({pool-2-thread-1} ZeppelinConfiguration.java[create]:180) - Server Host: 0.0.0.0
+ INFO [2021-07-19 18:45:58,726] ({pool-2-thread-1} ZeppelinConfiguration.java[create]:182) - Server Port: 8080
+ INFO [2021-07-19 18:45:58,727] ({pool-2-thread-1} ZeppelinConfiguration.java[create]:186) - Context Path: /
+ INFO [2021-07-19 18:45:58,728] ({pool-2-thread-1} ZeppelinConfiguration.java[create]:187) - Zeppelin Version: 0.9.0
+ INFO [2021-07-19 18:45:58,729] ({pool-2-thread-1} RemoteInterpreterServer.java[createLifecycleManager]:286) - Creating interpreter lifecycle manager: org.apache.zeppelin.interpreter.lifecycle.NullLifecycleManager
+ INFO [2021-07-19 18:45:58,729] ({pool-2-thread-1} RemoteInterpreterServer.java[init]:229) - Creating RemoteInterpreterEventClient with connection pool size: 10
+ INFO [2021-07-19 18:45:58,837] ({pool-2-thread-1} RemoteInterpreterServer.java[createInterpreter]:383) - Instantiate interpreter org.apache.zeppelin.shell.ShellInterpreter
+ INFO [2021-07-19 18:45:58,860] ({pool-2-thread-1} RemoteInterpreterServer.java[createInterpreter]:383) - Instantiate interpreter org.apache.zeppelin.shell.TerminalInterpreter
+ INFO [2021-07-19 18:45:58,902] ({pool-2-thread-1} SchedulerFactory.java[<init>]:56) - Scheduler Thread Pool Size: 100
+ INFO [2021-07-19 18:45:58,904] ({pool-2-thread-1} SchedulerFactory.java[createOrGetParallelScheduler]:88) - Create ParallelScheduler: org.apache.zeppelin.shell.ShellInterpreter359956061 with maxConcurrency: 10
+ INFO [2021-07-19 18:45:58,909] ({pool-2-thread-2} SchedulerFactory.java[createOrGetParallelScheduler]:88) - Create ParallelScheduler: org.apache.zeppelin.shell.TerminalInterpreter882609246 with maxConcurrency: 10
+ INFO [2021-07-19 18:45:58,912] ({ParallelScheduler-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626720111904_2110737420 started by scheduler org.apache.zeppelin.shell.ShellInterpreter359956061
+ INFO [2021-07-19 18:45:58,938] ({ParallelScheduler-Worker-1} ShellInterpreter.java[open]:64) - Command timeout property: 60000
+ INFO [2021-07-19 18:45:58,972] ({ParallelScheduler-Worker-1} ShellInterpreter.java[internalInterpret]:120) - Paragraph paragraph_1626720111904_2110737420 return with exit value: 0
+ INFO [2021-07-19 18:45:58,975] ({ParallelScheduler-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626720111904_2110737420 finished by scheduler org.apache.zeppelin.shell.ShellInterpreter359956061 with status FINISHED
+ INFO [2021-07-19 18:46:11,597] ({ParallelScheduler-Worker-2} AbstractScheduler.java[runJob]:127) - Job paragraph_1626720111904_2110737420 started by scheduler org.apache.zeppelin.shell.ShellInterpreter359956061
+ INFO [2021-07-19 18:46:11,642] ({ParallelScheduler-Worker-2} ShellInterpreter.java[internalInterpret]:120) - Paragraph paragraph_1626720111904_2110737420 return with exit value: 0
+ INFO [2021-07-19 18:46:11,644] ({ParallelScheduler-Worker-2} AbstractScheduler.java[runJob]:154) - Job paragraph_1626720111904_2110737420 finished by scheduler org.apache.zeppelin.shell.ShellInterpreter359956061 with status FINISHED
+ INFO [2021-07-19 18:48:40,530] ({ParallelScheduler-Worker-3} AbstractScheduler.java[runJob]:127) - Job paragraph_1626720111904_2110737420 started by scheduler org.apache.zeppelin.shell.ShellInterpreter359956061
+ INFO [2021-07-19 18:48:40,595] ({ParallelScheduler-Worker-3} ShellInterpreter.java[internalInterpret]:120) - Paragraph paragraph_1626720111904_2110737420 return with exit value: 0
+ INFO [2021-07-19 18:48:40,597] ({ParallelScheduler-Worker-3} AbstractScheduler.java[runJob]:154) - Job paragraph_1626720111904_2110737420 finished by scheduler org.apache.zeppelin.shell.ShellInterpreter359956061 with status FINISHED
+ INFO [2021-07-19 19:18:00,672] ({pool-2-thread-2} RemoteInterpreterServer.java[shutdown]:244) - Unregister interpreter process
+ INFO [2021-07-19 19:18:00,795] ({ShutdownThread} RemoteInterpreterServer.java[run]:649) - Shutting down...
+ INFO [2021-07-19 19:18:00,804] ({ShutdownThread} RemoteInterpreterServer.java[run]:650) - Shutdown initialized by ShutdownCall
+ INFO [2021-07-19 19:18:00,834] ({ShutdownThread} SchedulerFactory.java[destroy]:61) - Destroy all executors
+ INFO [2021-07-19 19:18:00,850] ({ShutdownThread} SchedulerFactory.java[destroy]:65) - Stopping Scheduler org.apache.zeppelin.shell.ShellInterpreter359956061

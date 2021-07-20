@@ -1,0 +1,464 @@
+ INFO [2021-07-19 17:45:06,586] ({RegisterThread} RemoteInterpreterServer.java[run]:595) - Start registration
+ INFO [2021-07-19 17:45:06,587] ({RemoteInterpreterServer-Thread} RemoteInterpreterServer.java[run]:193) - Launching ThriftServer at 172.18.0.3:40211
+ INFO [2021-07-19 17:45:07,730] ({RegisterThread} RemoteInterpreterServer.java[run]:609) - Registering interpreter process
+ INFO [2021-07-19 17:45:07,754] ({RegisterThread} RemoteInterpreterServer.java[run]:611) - Registered interpreter process
+ INFO [2021-07-19 17:45:07,755] ({RegisterThread} RemoteInterpreterServer.java[run]:632) - Registration finished
+ INFO [2021-07-19 17:45:07,776] ({pool-2-thread-1} ZeppelinConfiguration.java[create]:172) - Load configuration from file:/opt/zeppelin/conf/zeppelin-site.xml
+ INFO [2021-07-19 17:45:07,838] ({pool-2-thread-1} ZeppelinConfiguration.java[create]:180) - Server Host: 0.0.0.0
+ INFO [2021-07-19 17:45:07,840] ({pool-2-thread-1} ZeppelinConfiguration.java[create]:182) - Server Port: 8080
+ INFO [2021-07-19 17:45:07,840] ({pool-2-thread-1} ZeppelinConfiguration.java[create]:186) - Context Path: /
+ INFO [2021-07-19 17:45:07,841] ({pool-2-thread-1} ZeppelinConfiguration.java[create]:187) - Zeppelin Version: 0.9.0
+ INFO [2021-07-19 17:45:07,842] ({pool-2-thread-1} RemoteInterpreterServer.java[createLifecycleManager]:286) - Creating interpreter lifecycle manager: org.apache.zeppelin.interpreter.lifecycle.NullLifecycleManager
+ INFO [2021-07-19 17:45:07,843] ({pool-2-thread-1} RemoteInterpreterServer.java[init]:229) - Creating RemoteInterpreterEventClient with connection pool size: 10
+ INFO [2021-07-19 17:45:07,938] ({pool-2-thread-1} RemoteInterpreterServer.java[createInterpreter]:383) - Instantiate interpreter org.apache.zeppelin.mongodb.MongoDbInterpreter
+ INFO [2021-07-19 17:45:08,002] ({pool-2-thread-1} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:45:08,004] ({pool-2-thread-1} SchedulerFactory.java[<init>]:56) - Scheduler Thread Pool Size: 100
+ INFO [2021-07-19 17:45:08,006] ({pool-2-thread-1} SchedulerFactory.java[createOrGetParallelScheduler]:88) - Create ParallelScheduler: org.apache.zeppelin.mongodb.MongoDbInterpreter1233091829 with maxConcurrency: 10
+ INFO [2021-07-19 17:45:08,013] ({ParallelScheduler-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626709194565_1978341831 started by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1233091829
+ INFO [2021-07-19 17:45:08,061] ({pool-2-thread-2} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ERROR [2021-07-19 17:45:08,279] ({ParallelScheduler-Worker-1} MongoDbInterpreter.java[interpret]:130) - Can not run script in paragraph paragraph_1626709194565_1978341831
+org.apache.commons.exec.ExecuteException: Process exited with an error: 253 (Exit value: 253)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:153)
+	at org.apache.zeppelin.mongodb.MongoDbInterpreter.interpret(MongoDbInterpreter.java:126)
+	at org.apache.zeppelin.interpreter.LazyOpenInterpreter.interpret(LazyOpenInterpreter.java:110)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:852)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:744)
+	at org.apache.zeppelin.scheduler.Job.run(Job.java:172)
+	at org.apache.zeppelin.scheduler.AbstractScheduler.runJob(AbstractScheduler.java:132)
+	at org.apache.zeppelin.scheduler.ParallelScheduler.lambda$runJobInScheduler$0(ParallelScheduler.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ INFO [2021-07-19 17:45:08,285] ({ParallelScheduler-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626709194565_1978341831 finished by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1233091829 with status ERROR
+ INFO [2021-07-19 17:45:22,359] ({pool-2-thread-1} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:45:22,361] ({ParallelScheduler-Worker-2} AbstractScheduler.java[runJob]:127) - Job paragraph_1626709194565_1978341831 started by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1233091829
+ INFO [2021-07-19 17:45:22,454] ({pool-2-thread-2} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ERROR [2021-07-19 17:45:22,474] ({ParallelScheduler-Worker-2} MongoDbInterpreter.java[interpret]:130) - Can not run script in paragraph paragraph_1626709194565_1978341831
+org.apache.commons.exec.ExecuteException: Process exited with an error: 253 (Exit value: 253)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:153)
+	at org.apache.zeppelin.mongodb.MongoDbInterpreter.interpret(MongoDbInterpreter.java:126)
+	at org.apache.zeppelin.interpreter.LazyOpenInterpreter.interpret(LazyOpenInterpreter.java:110)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:852)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:744)
+	at org.apache.zeppelin.scheduler.Job.run(Job.java:172)
+	at org.apache.zeppelin.scheduler.AbstractScheduler.runJob(AbstractScheduler.java:132)
+	at org.apache.zeppelin.scheduler.ParallelScheduler.lambda$runJobInScheduler$0(ParallelScheduler.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ INFO [2021-07-19 17:45:22,477] ({ParallelScheduler-Worker-2} AbstractScheduler.java[runJob]:154) - Job paragraph_1626709194565_1978341831 finished by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1233091829 with status ERROR
+ INFO [2021-07-19 17:45:30,998] ({pool-2-thread-1} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:45:31,000] ({ParallelScheduler-Worker-3} AbstractScheduler.java[runJob]:127) - Job paragraph_1626709194565_1978341831 started by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1233091829
+ERROR [2021-07-19 17:45:31,075] ({ParallelScheduler-Worker-3} MongoDbInterpreter.java[interpret]:130) - Can not run script in paragraph paragraph_1626709194565_1978341831
+org.apache.commons.exec.ExecuteException: Process exited with an error: 253 (Exit value: 253)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:153)
+	at org.apache.zeppelin.mongodb.MongoDbInterpreter.interpret(MongoDbInterpreter.java:126)
+	at org.apache.zeppelin.interpreter.LazyOpenInterpreter.interpret(LazyOpenInterpreter.java:110)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:852)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:744)
+	at org.apache.zeppelin.scheduler.Job.run(Job.java:172)
+	at org.apache.zeppelin.scheduler.AbstractScheduler.runJob(AbstractScheduler.java:132)
+	at org.apache.zeppelin.scheduler.ParallelScheduler.lambda$runJobInScheduler$0(ParallelScheduler.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ INFO [2021-07-19 17:45:31,077] ({ParallelScheduler-Worker-3} AbstractScheduler.java[runJob]:154) - Job paragraph_1626709194565_1978341831 finished by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1233091829 with status ERROR
+ INFO [2021-07-19 17:45:33,160] ({pool-2-thread-1} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:45:33,162] ({ParallelScheduler-Worker-4} AbstractScheduler.java[runJob]:127) - Job paragraph_1626709194565_1978341831 started by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1233091829
+ERROR [2021-07-19 17:45:33,241] ({ParallelScheduler-Worker-4} MongoDbInterpreter.java[interpret]:130) - Can not run script in paragraph paragraph_1626709194565_1978341831
+org.apache.commons.exec.ExecuteException: Process exited with an error: 253 (Exit value: 253)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:153)
+	at org.apache.zeppelin.mongodb.MongoDbInterpreter.interpret(MongoDbInterpreter.java:126)
+	at org.apache.zeppelin.interpreter.LazyOpenInterpreter.interpret(LazyOpenInterpreter.java:110)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:852)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:744)
+	at org.apache.zeppelin.scheduler.Job.run(Job.java:172)
+	at org.apache.zeppelin.scheduler.AbstractScheduler.runJob(AbstractScheduler.java:132)
+	at org.apache.zeppelin.scheduler.ParallelScheduler.lambda$runJobInScheduler$0(ParallelScheduler.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ INFO [2021-07-19 17:45:33,243] ({ParallelScheduler-Worker-4} AbstractScheduler.java[runJob]:154) - Job paragraph_1626709194565_1978341831 finished by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1233091829 with status ERROR
+ INFO [2021-07-19 17:45:33,256] ({pool-2-thread-2} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:45:46,580] ({pool-2-thread-2} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:45:46,582] ({ParallelScheduler-Worker-5} AbstractScheduler.java[runJob]:127) - Job paragraph_1626709194565_1978341831 started by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1233091829
+ INFO [2021-07-19 17:45:46,678] ({pool-2-thread-1} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ERROR [2021-07-19 17:45:46,686] ({ParallelScheduler-Worker-5} MongoDbInterpreter.java[interpret]:130) - Can not run script in paragraph paragraph_1626709194565_1978341831
+org.apache.commons.exec.ExecuteException: Process exited with an error: 253 (Exit value: 253)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:153)
+	at org.apache.zeppelin.mongodb.MongoDbInterpreter.interpret(MongoDbInterpreter.java:126)
+	at org.apache.zeppelin.interpreter.LazyOpenInterpreter.interpret(LazyOpenInterpreter.java:110)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:852)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:744)
+	at org.apache.zeppelin.scheduler.Job.run(Job.java:172)
+	at org.apache.zeppelin.scheduler.AbstractScheduler.runJob(AbstractScheduler.java:132)
+	at org.apache.zeppelin.scheduler.ParallelScheduler.lambda$runJobInScheduler$0(ParallelScheduler.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ INFO [2021-07-19 17:45:46,689] ({ParallelScheduler-Worker-5} AbstractScheduler.java[runJob]:154) - Job paragraph_1626709194565_1978341831 finished by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1233091829 with status ERROR
+ INFO [2021-07-19 17:46:14,615] ({pool-2-thread-2} RemoteInterpreterServer.java[shutdown]:244) - Unregister interpreter process
+ INFO [2021-07-19 17:46:14,625] ({ShutdownThread} RemoteInterpreterServer.java[run]:649) - Shutting down...
+ INFO [2021-07-19 17:46:14,626] ({ShutdownThread} RemoteInterpreterServer.java[run]:650) - Shutdown initialized by ShutdownCall
+ INFO [2021-07-19 17:46:14,627] ({ShutdownThread} SchedulerFactory.java[destroy]:61) - Destroy all executors
+ INFO [2021-07-19 17:46:14,629] ({ShutdownThread} SchedulerFactory.java[destroy]:65) - Stopping Scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1233091829
+ WARN [2021-07-19 17:46:14,629] ({SchedulerFactory1} AbstractScheduler.java[run]:91) - ParallelScheduler is interrupted
+ INFO [2021-07-19 17:46:21,571] ({RegisterThread} RemoteInterpreterServer.java[run]:595) - Start registration
+ INFO [2021-07-19 17:46:21,572] ({RemoteInterpreterServer-Thread} RemoteInterpreterServer.java[run]:193) - Launching ThriftServer at 172.18.0.3:35235
+ INFO [2021-07-19 17:46:22,704] ({RegisterThread} RemoteInterpreterServer.java[run]:609) - Registering interpreter process
+ INFO [2021-07-19 17:46:22,717] ({RegisterThread} RemoteInterpreterServer.java[run]:611) - Registered interpreter process
+ INFO [2021-07-19 17:46:22,718] ({RegisterThread} RemoteInterpreterServer.java[run]:632) - Registration finished
+ INFO [2021-07-19 17:46:22,737] ({pool-2-thread-1} ZeppelinConfiguration.java[create]:172) - Load configuration from file:/opt/zeppelin/conf/zeppelin-site.xml
+ INFO [2021-07-19 17:46:22,801] ({pool-2-thread-1} ZeppelinConfiguration.java[create]:180) - Server Host: 0.0.0.0
+ INFO [2021-07-19 17:46:22,802] ({pool-2-thread-1} ZeppelinConfiguration.java[create]:182) - Server Port: 8080
+ INFO [2021-07-19 17:46:22,803] ({pool-2-thread-1} ZeppelinConfiguration.java[create]:186) - Context Path: /
+ INFO [2021-07-19 17:46:22,804] ({pool-2-thread-1} ZeppelinConfiguration.java[create]:187) - Zeppelin Version: 0.9.0
+ INFO [2021-07-19 17:46:22,805] ({pool-2-thread-1} RemoteInterpreterServer.java[createLifecycleManager]:286) - Creating interpreter lifecycle manager: org.apache.zeppelin.interpreter.lifecycle.NullLifecycleManager
+ INFO [2021-07-19 17:46:22,806] ({pool-2-thread-1} RemoteInterpreterServer.java[init]:229) - Creating RemoteInterpreterEventClient with connection pool size: 10
+ INFO [2021-07-19 17:46:22,893] ({pool-2-thread-1} RemoteInterpreterServer.java[createInterpreter]:383) - Instantiate interpreter org.apache.zeppelin.mongodb.MongoDbInterpreter
+ INFO [2021-07-19 17:46:22,936] ({pool-2-thread-1} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:46:22,938] ({pool-2-thread-1} SchedulerFactory.java[<init>]:56) - Scheduler Thread Pool Size: 100
+ INFO [2021-07-19 17:46:22,940] ({pool-2-thread-1} SchedulerFactory.java[createOrGetParallelScheduler]:88) - Create ParallelScheduler: org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498 with maxConcurrency: 10
+ INFO [2021-07-19 17:46:22,946] ({ParallelScheduler-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626696799937_917446348 started by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498
+ INFO [2021-07-19 17:46:22,966] ({pool-2-thread-2} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ERROR [2021-07-19 17:46:23,146] ({ParallelScheduler-Worker-1} MongoDbInterpreter.java[interpret]:130) - Can not run script in paragraph paragraph_1626696799937_917446348
+org.apache.commons.exec.ExecuteException: Process exited with an error: 253 (Exit value: 253)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:153)
+	at org.apache.zeppelin.mongodb.MongoDbInterpreter.interpret(MongoDbInterpreter.java:126)
+	at org.apache.zeppelin.interpreter.LazyOpenInterpreter.interpret(LazyOpenInterpreter.java:110)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:852)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:744)
+	at org.apache.zeppelin.scheduler.Job.run(Job.java:172)
+	at org.apache.zeppelin.scheduler.AbstractScheduler.runJob(AbstractScheduler.java:132)
+	at org.apache.zeppelin.scheduler.ParallelScheduler.lambda$runJobInScheduler$0(ParallelScheduler.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ INFO [2021-07-19 17:46:23,153] ({ParallelScheduler-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626696799937_917446348 finished by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498 with status ERROR
+ INFO [2021-07-19 17:46:26,274] ({pool-2-thread-1} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:46:26,275] ({ParallelScheduler-Worker-2} AbstractScheduler.java[runJob]:127) - Job paragraph_1626696799937_917446348 started by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498
+ INFO [2021-07-19 17:46:26,370] ({pool-2-thread-2} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:46:26,373] ({ParallelScheduler-Worker-2} AbstractScheduler.java[runJob]:154) - Job paragraph_1626696799937_917446348 finished by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498 with status FINISHED
+ INFO [2021-07-19 17:46:29,026] ({pool-2-thread-1} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:46:29,028] ({ParallelScheduler-Worker-3} AbstractScheduler.java[runJob]:127) - Job paragraph_1626696799937_917446348 started by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498
+ INFO [2021-07-19 17:46:29,123] ({ParallelScheduler-Worker-3} AbstractScheduler.java[runJob]:154) - Job paragraph_1626696799937_917446348 finished by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498 with status FINISHED
+ INFO [2021-07-19 17:46:29,123] ({pool-2-thread-2} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:46:32,027] ({pool-2-thread-2} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:46:32,028] ({ParallelScheduler-Worker-4} AbstractScheduler.java[runJob]:127) - Job paragraph_1626696799937_917446348 started by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498
+ INFO [2021-07-19 17:46:32,123] ({pool-2-thread-1} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:46:32,135] ({ParallelScheduler-Worker-4} AbstractScheduler.java[runJob]:154) - Job paragraph_1626696799937_917446348 finished by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498 with status FINISHED
+ INFO [2021-07-19 17:46:36,647] ({pool-2-thread-2} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:46:36,648] ({ParallelScheduler-Worker-5} AbstractScheduler.java[runJob]:127) - Job paragraph_1626696799937_917446348 started by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498
+ERROR [2021-07-19 17:46:36,725] ({ParallelScheduler-Worker-5} MongoDbInterpreter.java[interpret]:130) - Can not run script in paragraph paragraph_1626696799937_917446348
+org.apache.commons.exec.ExecuteException: Process exited with an error: 253 (Exit value: 253)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:153)
+	at org.apache.zeppelin.mongodb.MongoDbInterpreter.interpret(MongoDbInterpreter.java:126)
+	at org.apache.zeppelin.interpreter.LazyOpenInterpreter.interpret(LazyOpenInterpreter.java:110)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:852)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:744)
+	at org.apache.zeppelin.scheduler.Job.run(Job.java:172)
+	at org.apache.zeppelin.scheduler.AbstractScheduler.runJob(AbstractScheduler.java:132)
+	at org.apache.zeppelin.scheduler.ParallelScheduler.lambda$runJobInScheduler$0(ParallelScheduler.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ INFO [2021-07-19 17:46:36,727] ({ParallelScheduler-Worker-5} AbstractScheduler.java[runJob]:154) - Job paragraph_1626696799937_917446348 finished by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498 with status ERROR
+ INFO [2021-07-19 17:46:38,638] ({pool-2-thread-2} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:46:38,640] ({ParallelScheduler-Worker-6} AbstractScheduler.java[runJob]:127) - Job paragraph_1626696799937_917446348 started by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498
+ERROR [2021-07-19 17:46:38,714] ({ParallelScheduler-Worker-6} MongoDbInterpreter.java[interpret]:130) - Can not run script in paragraph paragraph_1626696799937_917446348
+org.apache.commons.exec.ExecuteException: Process exited with an error: 253 (Exit value: 253)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:153)
+	at org.apache.zeppelin.mongodb.MongoDbInterpreter.interpret(MongoDbInterpreter.java:126)
+	at org.apache.zeppelin.interpreter.LazyOpenInterpreter.interpret(LazyOpenInterpreter.java:110)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:852)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:744)
+	at org.apache.zeppelin.scheduler.Job.run(Job.java:172)
+	at org.apache.zeppelin.scheduler.AbstractScheduler.runJob(AbstractScheduler.java:132)
+	at org.apache.zeppelin.scheduler.ParallelScheduler.lambda$runJobInScheduler$0(ParallelScheduler.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ INFO [2021-07-19 17:46:38,717] ({ParallelScheduler-Worker-6} AbstractScheduler.java[runJob]:154) - Job paragraph_1626696799937_917446348 finished by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498 with status ERROR
+ INFO [2021-07-19 17:46:54,394] ({pool-2-thread-2} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:46:54,395] ({ParallelScheduler-Worker-7} AbstractScheduler.java[runJob]:127) - Job paragraph_1626696799937_917446348 started by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498
+ INFO [2021-07-19 17:46:54,492] ({pool-2-thread-1} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ERROR [2021-07-19 17:46:54,495] ({ParallelScheduler-Worker-7} MongoDbInterpreter.java[interpret]:130) - Can not run script in paragraph paragraph_1626696799937_917446348
+org.apache.commons.exec.ExecuteException: Process exited with an error: 253 (Exit value: 253)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:153)
+	at org.apache.zeppelin.mongodb.MongoDbInterpreter.interpret(MongoDbInterpreter.java:126)
+	at org.apache.zeppelin.interpreter.LazyOpenInterpreter.interpret(LazyOpenInterpreter.java:110)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:852)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:744)
+	at org.apache.zeppelin.scheduler.Job.run(Job.java:172)
+	at org.apache.zeppelin.scheduler.AbstractScheduler.runJob(AbstractScheduler.java:132)
+	at org.apache.zeppelin.scheduler.ParallelScheduler.lambda$runJobInScheduler$0(ParallelScheduler.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ INFO [2021-07-19 17:46:54,497] ({ParallelScheduler-Worker-7} AbstractScheduler.java[runJob]:154) - Job paragraph_1626696799937_917446348 finished by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498 with status ERROR
+ INFO [2021-07-19 17:47:01,370] ({pool-2-thread-2} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:47:01,372] ({ParallelScheduler-Worker-8} AbstractScheduler.java[runJob]:127) - Job paragraph_1626696799937_917446348 started by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498
+ INFO [2021-07-19 17:47:01,466] ({pool-2-thread-1} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ERROR [2021-07-19 17:47:01,472] ({ParallelScheduler-Worker-8} MongoDbInterpreter.java[interpret]:130) - Can not run script in paragraph paragraph_1626696799937_917446348
+org.apache.commons.exec.ExecuteException: Process exited with an error: 253 (Exit value: 253)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:153)
+	at org.apache.zeppelin.mongodb.MongoDbInterpreter.interpret(MongoDbInterpreter.java:126)
+	at org.apache.zeppelin.interpreter.LazyOpenInterpreter.interpret(LazyOpenInterpreter.java:110)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:852)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:744)
+	at org.apache.zeppelin.scheduler.Job.run(Job.java:172)
+	at org.apache.zeppelin.scheduler.AbstractScheduler.runJob(AbstractScheduler.java:132)
+	at org.apache.zeppelin.scheduler.ParallelScheduler.lambda$runJobInScheduler$0(ParallelScheduler.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ INFO [2021-07-19 17:47:01,474] ({ParallelScheduler-Worker-8} AbstractScheduler.java[runJob]:154) - Job paragraph_1626696799937_917446348 finished by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498 with status ERROR
+ INFO [2021-07-19 17:47:18,965] ({pool-2-thread-2} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:47:18,967] ({ParallelScheduler-Worker-9} AbstractScheduler.java[runJob]:127) - Job paragraph_1626696799937_917446348 started by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498
+ INFO [2021-07-19 17:47:19,061] ({pool-2-thread-1} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:47:19,067] ({ParallelScheduler-Worker-9} AbstractScheduler.java[runJob]:154) - Job paragraph_1626696799937_917446348 finished by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498 with status FINISHED
+ INFO [2021-07-19 17:47:25,712] ({pool-2-thread-2} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:47:25,714] ({ParallelScheduler-Worker-10} AbstractScheduler.java[runJob]:127) - Job paragraph_1626696799937_917446348 started by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498
+ INFO [2021-07-19 17:47:25,810] ({pool-2-thread-1} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:47:25,812] ({ParallelScheduler-Worker-10} AbstractScheduler.java[runJob]:154) - Job paragraph_1626696799937_917446348 finished by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498 with status FINISHED
+ INFO [2021-07-19 17:47:55,394] ({pool-2-thread-2} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:47:55,395] ({ParallelScheduler-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626696799937_917446348 started by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498
+ INFO [2021-07-19 17:47:55,491] ({pool-2-thread-1} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:47:55,495] ({ParallelScheduler-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626696799937_917446348 finished by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498 with status FINISHED
+ INFO [2021-07-19 17:48:23,609] ({pool-2-thread-2} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:48:23,617] ({ParallelScheduler-Worker-2} AbstractScheduler.java[runJob]:127) - Job paragraph_1626696804046_1318462780 started by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498
+ INFO [2021-07-19 17:48:23,706] ({pool-2-thread-1} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:48:23,751] ({ParallelScheduler-Worker-2} AbstractScheduler.java[runJob]:154) - Job paragraph_1626696804046_1318462780 finished by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498 with status FINISHED
+ INFO [2021-07-19 17:48:29,248] ({pool-2-thread-2} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:48:29,249] ({ParallelScheduler-Worker-3} AbstractScheduler.java[runJob]:127) - Job paragraph_1626696804046_1318462780 started by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498
+ INFO [2021-07-19 17:48:29,345] ({pool-2-thread-1} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ERROR [2021-07-19 17:48:29,358] ({ParallelScheduler-Worker-3} MongoDbInterpreter.java[interpret]:130) - Can not run script in paragraph paragraph_1626696804046_1318462780
+org.apache.commons.exec.ExecuteException: Process exited with an error: 253 (Exit value: 253)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:153)
+	at org.apache.zeppelin.mongodb.MongoDbInterpreter.interpret(MongoDbInterpreter.java:126)
+	at org.apache.zeppelin.interpreter.LazyOpenInterpreter.interpret(LazyOpenInterpreter.java:110)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:852)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:744)
+	at org.apache.zeppelin.scheduler.Job.run(Job.java:172)
+	at org.apache.zeppelin.scheduler.AbstractScheduler.runJob(AbstractScheduler.java:132)
+	at org.apache.zeppelin.scheduler.ParallelScheduler.lambda$runJobInScheduler$0(ParallelScheduler.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ INFO [2021-07-19 17:48:29,361] ({ParallelScheduler-Worker-3} AbstractScheduler.java[runJob]:154) - Job paragraph_1626696804046_1318462780 finished by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498 with status ERROR
+ INFO [2021-07-19 17:48:31,761] ({pool-2-thread-2} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:48:31,762] ({ParallelScheduler-Worker-4} AbstractScheduler.java[runJob]:127) - Job paragraph_1626696804046_1318462780 started by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498
+ INFO [2021-07-19 17:48:31,858] ({pool-2-thread-1} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ERROR [2021-07-19 17:48:31,862] ({ParallelScheduler-Worker-4} MongoDbInterpreter.java[interpret]:130) - Can not run script in paragraph paragraph_1626696804046_1318462780
+org.apache.commons.exec.ExecuteException: Process exited with an error: 253 (Exit value: 253)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:153)
+	at org.apache.zeppelin.mongodb.MongoDbInterpreter.interpret(MongoDbInterpreter.java:126)
+	at org.apache.zeppelin.interpreter.LazyOpenInterpreter.interpret(LazyOpenInterpreter.java:110)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:852)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:744)
+	at org.apache.zeppelin.scheduler.Job.run(Job.java:172)
+	at org.apache.zeppelin.scheduler.AbstractScheduler.runJob(AbstractScheduler.java:132)
+	at org.apache.zeppelin.scheduler.ParallelScheduler.lambda$runJobInScheduler$0(ParallelScheduler.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ INFO [2021-07-19 17:48:31,865] ({ParallelScheduler-Worker-4} AbstractScheduler.java[runJob]:154) - Job paragraph_1626696804046_1318462780 finished by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498 with status ERROR
+ INFO [2021-07-19 17:48:35,320] ({pool-2-thread-2} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:48:35,321] ({ParallelScheduler-Worker-5} AbstractScheduler.java[runJob]:127) - Job paragraph_1626696804046_1318462780 started by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498
+ERROR [2021-07-19 17:48:35,417] ({ParallelScheduler-Worker-5} MongoDbInterpreter.java[interpret]:130) - Can not run script in paragraph paragraph_1626696804046_1318462780
+org.apache.commons.exec.ExecuteException: Process exited with an error: 253 (Exit value: 253)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:153)
+	at org.apache.zeppelin.mongodb.MongoDbInterpreter.interpret(MongoDbInterpreter.java:126)
+	at org.apache.zeppelin.interpreter.LazyOpenInterpreter.interpret(LazyOpenInterpreter.java:110)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:852)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:744)
+	at org.apache.zeppelin.scheduler.Job.run(Job.java:172)
+	at org.apache.zeppelin.scheduler.AbstractScheduler.runJob(AbstractScheduler.java:132)
+	at org.apache.zeppelin.scheduler.ParallelScheduler.lambda$runJobInScheduler$0(ParallelScheduler.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ INFO [2021-07-19 17:48:35,417] ({pool-2-thread-1} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:48:35,421] ({ParallelScheduler-Worker-5} AbstractScheduler.java[runJob]:154) - Job paragraph_1626696804046_1318462780 finished by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498 with status ERROR
+ INFO [2021-07-19 17:48:39,094] ({pool-2-thread-3} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:48:39,095] ({ParallelScheduler-Worker-6} AbstractScheduler.java[runJob]:127) - Job paragraph_1626696804046_1318462780 started by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498
+ INFO [2021-07-19 17:48:39,191] ({pool-2-thread-2} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:48:39,192] ({ParallelScheduler-Worker-6} AbstractScheduler.java[runJob]:154) - Job paragraph_1626696804046_1318462780 finished by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498 with status FINISHED
+ INFO [2021-07-19 17:48:42,884] ({pool-2-thread-2} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:48:42,885] ({ParallelScheduler-Worker-7} AbstractScheduler.java[runJob]:127) - Job paragraph_1626696804046_1318462780 started by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498
+ INFO [2021-07-19 17:48:42,982] ({pool-2-thread-3} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:48:42,982] ({ParallelScheduler-Worker-7} AbstractScheduler.java[runJob]:154) - Job paragraph_1626696804046_1318462780 finished by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498 with status FINISHED
+ INFO [2021-07-19 17:48:47,702] ({pool-2-thread-3} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:48:47,702] ({ParallelScheduler-Worker-8} AbstractScheduler.java[runJob]:127) - Job paragraph_1626696804046_1318462780 started by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498
+ INFO [2021-07-19 17:48:47,798] ({pool-2-thread-2} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ERROR [2021-07-19 17:48:47,801] ({ParallelScheduler-Worker-8} MongoDbInterpreter.java[interpret]:130) - Can not run script in paragraph paragraph_1626696804046_1318462780
+org.apache.commons.exec.ExecuteException: Process exited with an error: 253 (Exit value: 253)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:153)
+	at org.apache.zeppelin.mongodb.MongoDbInterpreter.interpret(MongoDbInterpreter.java:126)
+	at org.apache.zeppelin.interpreter.LazyOpenInterpreter.interpret(LazyOpenInterpreter.java:110)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:852)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:744)
+	at org.apache.zeppelin.scheduler.Job.run(Job.java:172)
+	at org.apache.zeppelin.scheduler.AbstractScheduler.runJob(AbstractScheduler.java:132)
+	at org.apache.zeppelin.scheduler.ParallelScheduler.lambda$runJobInScheduler$0(ParallelScheduler.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ INFO [2021-07-19 17:48:47,803] ({ParallelScheduler-Worker-8} AbstractScheduler.java[runJob]:154) - Job paragraph_1626696804046_1318462780 finished by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498 with status ERROR
+ INFO [2021-07-19 17:48:51,939] ({pool-2-thread-3} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:48:51,940] ({ParallelScheduler-Worker-9} AbstractScheduler.java[runJob]:127) - Job paragraph_1626696804046_1318462780 started by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498
+ INFO [2021-07-19 17:48:52,035] ({ParallelScheduler-Worker-9} AbstractScheduler.java[runJob]:154) - Job paragraph_1626696804046_1318462780 finished by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498 with status FINISHED
+ INFO [2021-07-19 17:48:52,036] ({pool-2-thread-2} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:48:55,348] ({pool-2-thread-2} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:48:55,349] ({ParallelScheduler-Worker-10} AbstractScheduler.java[runJob]:127) - Job paragraph_1626696804046_1318462780 started by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498
+ INFO [2021-07-19 17:48:55,445] ({pool-2-thread-3} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:48:55,448] ({ParallelScheduler-Worker-10} AbstractScheduler.java[runJob]:154) - Job paragraph_1626696804046_1318462780 finished by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498 with status FINISHED
+ INFO [2021-07-19 17:49:08,131] ({pool-2-thread-2} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:49:08,133] ({ParallelScheduler-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626696799937_917446348 started by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498
+ INFO [2021-07-19 17:49:08,228] ({pool-2-thread-3} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:49:08,231] ({ParallelScheduler-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626696799937_917446348 finished by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498 with status FINISHED
+ INFO [2021-07-19 17:49:11,000] ({pool-2-thread-2} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:49:11,001] ({ParallelScheduler-Worker-2} AbstractScheduler.java[runJob]:127) - Job paragraph_1626696799937_917446348 started by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498
+ INFO [2021-07-19 17:49:11,096] ({ParallelScheduler-Worker-2} AbstractScheduler.java[runJob]:154) - Job paragraph_1626696799937_917446348 finished by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498 with status FINISHED
+ INFO [2021-07-19 17:49:11,097] ({pool-2-thread-3} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:49:13,669] ({pool-2-thread-3} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:49:13,671] ({ParallelScheduler-Worker-3} AbstractScheduler.java[runJob]:127) - Job paragraph_1626696799937_917446348 started by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498
+ INFO [2021-07-19 17:49:13,768] ({pool-2-thread-2} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:49:13,769] ({ParallelScheduler-Worker-3} AbstractScheduler.java[runJob]:154) - Job paragraph_1626696799937_917446348 finished by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498 with status FINISHED
+ INFO [2021-07-19 17:49:19,215] ({pool-2-thread-2} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:49:19,216] ({ParallelScheduler-Worker-4} AbstractScheduler.java[runJob]:127) - Job paragraph_1626696799937_917446348 started by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498
+ INFO [2021-07-19 17:49:19,312] ({pool-2-thread-3} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:49:19,315] ({ParallelScheduler-Worker-4} AbstractScheduler.java[runJob]:154) - Job paragraph_1626696799937_917446348 finished by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498 with status FINISHED
+ INFO [2021-07-19 17:49:28,558] ({pool-2-thread-2} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:49:28,560] ({ParallelScheduler-Worker-5} AbstractScheduler.java[runJob]:127) - Job paragraph_1626696799937_917446348 started by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498
+ INFO [2021-07-19 17:49:28,654] ({pool-2-thread-1} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:49:28,675] ({ParallelScheduler-Worker-5} AbstractScheduler.java[runJob]:154) - Job paragraph_1626696799937_917446348 finished by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498 with status FINISHED
+ INFO [2021-07-19 17:49:36,997] ({pool-2-thread-2} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:49:36,998] ({ParallelScheduler-Worker-6} AbstractScheduler.java[runJob]:127) - Job paragraph_1626696799937_917446348 started by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498
+ INFO [2021-07-19 17:49:37,095] ({pool-2-thread-1} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ERROR [2021-07-19 17:49:37,098] ({ParallelScheduler-Worker-6} MongoDbInterpreter.java[interpret]:130) - Can not run script in paragraph paragraph_1626696799937_917446348
+org.apache.commons.exec.ExecuteException: Process exited with an error: 253 (Exit value: 253)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:153)
+	at org.apache.zeppelin.mongodb.MongoDbInterpreter.interpret(MongoDbInterpreter.java:126)
+	at org.apache.zeppelin.interpreter.LazyOpenInterpreter.interpret(LazyOpenInterpreter.java:110)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:852)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:744)
+	at org.apache.zeppelin.scheduler.Job.run(Job.java:172)
+	at org.apache.zeppelin.scheduler.AbstractScheduler.runJob(AbstractScheduler.java:132)
+	at org.apache.zeppelin.scheduler.ParallelScheduler.lambda$runJobInScheduler$0(ParallelScheduler.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ INFO [2021-07-19 17:49:37,099] ({ParallelScheduler-Worker-6} AbstractScheduler.java[runJob]:154) - Job paragraph_1626696799937_917446348 finished by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498 with status ERROR
+ INFO [2021-07-19 17:49:41,273] ({pool-2-thread-2} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:49:41,275] ({ParallelScheduler-Worker-7} AbstractScheduler.java[runJob]:127) - Job paragraph_1626696799937_917446348 started by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498
+ INFO [2021-07-19 17:49:41,371] ({ParallelScheduler-Worker-7} AbstractScheduler.java[runJob]:154) - Job paragraph_1626696799937_917446348 finished by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498 with status FINISHED
+ INFO [2021-07-19 17:49:41,371] ({pool-2-thread-1} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:54:34,156] ({pool-2-thread-2} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:54:34,157] ({ParallelScheduler-Worker-8} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717177976_60630008 started by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498
+ INFO [2021-07-19 17:54:34,253] ({pool-2-thread-1} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ERROR [2021-07-19 17:54:34,257] ({ParallelScheduler-Worker-8} MongoDbInterpreter.java[interpret]:130) - Can not run script in paragraph paragraph_1626717177976_60630008
+org.apache.commons.exec.ExecuteException: Process exited with an error: 253 (Exit value: 253)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:153)
+	at org.apache.zeppelin.mongodb.MongoDbInterpreter.interpret(MongoDbInterpreter.java:126)
+	at org.apache.zeppelin.interpreter.LazyOpenInterpreter.interpret(LazyOpenInterpreter.java:110)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:852)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:744)
+	at org.apache.zeppelin.scheduler.Job.run(Job.java:172)
+	at org.apache.zeppelin.scheduler.AbstractScheduler.runJob(AbstractScheduler.java:132)
+	at org.apache.zeppelin.scheduler.ParallelScheduler.lambda$runJobInScheduler$0(ParallelScheduler.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ INFO [2021-07-19 17:54:34,259] ({ParallelScheduler-Worker-8} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717177976_60630008 finished by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498 with status ERROR
+ INFO [2021-07-19 17:55:10,719] ({pool-2-thread-2} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:55:10,720] ({ParallelScheduler-Worker-9} AbstractScheduler.java[runJob]:127) - Job paragraph_1626696799937_917446348 started by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498
+ INFO [2021-07-19 17:55:10,795] ({pool-2-thread-1} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ERROR [2021-07-19 17:55:10,807] ({ParallelScheduler-Worker-9} MongoDbInterpreter.java[interpret]:130) - Can not run script in paragraph paragraph_1626696799937_917446348
+org.apache.commons.exec.ExecuteException: Process exited with an error: 253 (Exit value: 253)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:153)
+	at org.apache.zeppelin.mongodb.MongoDbInterpreter.interpret(MongoDbInterpreter.java:126)
+	at org.apache.zeppelin.interpreter.LazyOpenInterpreter.interpret(LazyOpenInterpreter.java:110)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:852)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:744)
+	at org.apache.zeppelin.scheduler.Job.run(Job.java:172)
+	at org.apache.zeppelin.scheduler.AbstractScheduler.runJob(AbstractScheduler.java:132)
+	at org.apache.zeppelin.scheduler.ParallelScheduler.lambda$runJobInScheduler$0(ParallelScheduler.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ INFO [2021-07-19 17:55:10,808] ({ParallelScheduler-Worker-9} AbstractScheduler.java[runJob]:154) - Job paragraph_1626696799937_917446348 finished by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498 with status ERROR
+ INFO [2021-07-19 17:55:15,036] ({pool-2-thread-2} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:55:15,037] ({ParallelScheduler-Worker-10} AbstractScheduler.java[runJob]:127) - Job paragraph_1626696799937_917446348 started by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498
+ INFO [2021-07-19 17:55:15,133] ({ParallelScheduler-Worker-10} AbstractScheduler.java[runJob]:154) - Job paragraph_1626696799937_917446348 finished by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498 with status FINISHED
+ INFO [2021-07-19 17:55:15,134] ({pool-2-thread-1} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:55:15,514] ({pool-2-thread-1} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:55:15,515] ({ParallelScheduler-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626696799937_917446348 started by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498
+ INFO [2021-07-19 17:55:15,609] ({ParallelScheduler-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626696799937_917446348 finished by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498 with status FINISHED
+ INFO [2021-07-19 17:55:15,612] ({pool-2-thread-1} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:55:15,961] ({pool-2-thread-1} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:55:15,962] ({ParallelScheduler-Worker-2} AbstractScheduler.java[runJob]:127) - Job paragraph_1626696799937_917446348 started by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498
+ INFO [2021-07-19 17:55:16,054] ({ParallelScheduler-Worker-2} AbstractScheduler.java[runJob]:154) - Job paragraph_1626696799937_917446348 finished by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498 with status FINISHED
+ INFO [2021-07-19 17:55:16,059] ({pool-2-thread-1} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:55:17,269] ({pool-2-thread-1} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:55:17,270] ({ParallelScheduler-Worker-3} AbstractScheduler.java[runJob]:127) - Job paragraph_1626696804046_1318462780 started by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498
+ INFO [2021-07-19 17:55:17,366] ({pool-2-thread-2} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 17:55:17,370] ({ParallelScheduler-Worker-3} AbstractScheduler.java[runJob]:154) - Job paragraph_1626696804046_1318462780 finished by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498 with status FINISHED
+ INFO [2021-07-19 18:03:07,065] ({pool-2-thread-1} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-19 18:03:07,067] ({ParallelScheduler-Worker-4} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498
+ERROR [2021-07-19 18:03:07,140] ({ParallelScheduler-Worker-4} MongoDbInterpreter.java[interpret]:130) - Can not run script in paragraph paragraph_1626717034247_1155985560
+org.apache.commons.exec.ExecuteException: Process exited with an error: 253 (Exit value: 253)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:153)
+	at org.apache.zeppelin.mongodb.MongoDbInterpreter.interpret(MongoDbInterpreter.java:126)
+	at org.apache.zeppelin.interpreter.LazyOpenInterpreter.interpret(LazyOpenInterpreter.java:110)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:852)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:744)
+	at org.apache.zeppelin.scheduler.Job.run(Job.java:172)
+	at org.apache.zeppelin.scheduler.AbstractScheduler.runJob(AbstractScheduler.java:132)
+	at org.apache.zeppelin.scheduler.ParallelScheduler.lambda$runJobInScheduler$0(ParallelScheduler.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ INFO [2021-07-19 18:03:07,142] ({ParallelScheduler-Worker-4} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498 with status ERROR
+ INFO [2021-07-19 18:09:37,680] ({pool-2-thread-1} RemoteInterpreterServer.java[shutdown]:244) - Unregister interpreter process
+ INFO [2021-07-19 18:09:37,693] ({ShutdownThread} RemoteInterpreterServer.java[run]:649) - Shutting down...
+ INFO [2021-07-19 18:09:37,696] ({ShutdownThread} RemoteInterpreterServer.java[run]:650) - Shutdown initialized by ShutdownCall
+ INFO [2021-07-19 18:09:37,697] ({ShutdownThread} SchedulerFactory.java[destroy]:61) - Destroy all executors
+ INFO [2021-07-19 18:09:37,697] ({ShutdownThread} SchedulerFactory.java[destroy]:65) - Stopping Scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter1067394498
+ WARN [2021-07-19 18:09:37,699] ({SchedulerFactory1} AbstractScheduler.java[run]:91) - ParallelScheduler is interrupted

@@ -1,0 +1,334 @@
+ INFO [2021-07-19 18:16:44,045] ({RegisterThread} RemoteInterpreterServer.java[run]:595) - Start registration
+ INFO [2021-07-19 18:16:44,046] ({RemoteInterpreterServer-Thread} RemoteInterpreterServer.java[run]:193) - Launching ThriftServer at 172.18.0.3:40883
+ INFO [2021-07-19 18:16:45,199] ({RegisterThread} RemoteInterpreterServer.java[run]:609) - Registering interpreter process
+ INFO [2021-07-19 18:16:45,216] ({RegisterThread} RemoteInterpreterServer.java[run]:611) - Registered interpreter process
+ INFO [2021-07-19 18:16:45,217] ({RegisterThread} RemoteInterpreterServer.java[run]:632) - Registration finished
+ INFO [2021-07-19 18:16:45,236] ({pool-2-thread-1} ZeppelinConfiguration.java[create]:172) - Load configuration from file:/opt/zeppelin/conf/zeppelin-site.xml
+ INFO [2021-07-19 18:16:45,306] ({pool-2-thread-1} ZeppelinConfiguration.java[create]:180) - Server Host: 0.0.0.0
+ INFO [2021-07-19 18:16:45,307] ({pool-2-thread-1} ZeppelinConfiguration.java[create]:182) - Server Port: 8080
+ INFO [2021-07-19 18:16:45,308] ({pool-2-thread-1} ZeppelinConfiguration.java[create]:186) - Context Path: /
+ INFO [2021-07-19 18:16:45,309] ({pool-2-thread-1} ZeppelinConfiguration.java[create]:187) - Zeppelin Version: 0.9.0
+ INFO [2021-07-19 18:16:45,310] ({pool-2-thread-1} RemoteInterpreterServer.java[createLifecycleManager]:286) - Creating interpreter lifecycle manager: org.apache.zeppelin.interpreter.lifecycle.NullLifecycleManager
+ INFO [2021-07-19 18:16:45,311] ({pool-2-thread-1} RemoteInterpreterServer.java[init]:229) - Creating RemoteInterpreterEventClient with connection pool size: 10
+ INFO [2021-07-19 18:16:45,404] ({pool-2-thread-1} RemoteInterpreterServer.java[createInterpreter]:383) - Instantiate interpreter org.apache.zeppelin.python.PythonInterpreter
+ INFO [2021-07-19 18:16:45,409] ({pool-2-thread-1} RemoteInterpreterServer.java[createInterpreter]:383) - Instantiate interpreter org.apache.zeppelin.python.IPythonInterpreter
+ INFO [2021-07-19 18:16:45,412] ({pool-2-thread-1} RemoteInterpreterServer.java[createInterpreter]:383) - Instantiate interpreter org.apache.zeppelin.python.PythonInterpreterPandasSql
+ INFO [2021-07-19 18:16:45,415] ({pool-2-thread-1} RemoteInterpreterServer.java[createInterpreter]:383) - Instantiate interpreter org.apache.zeppelin.python.PythonCondaInterpreter
+ INFO [2021-07-19 18:16:45,419] ({pool-2-thread-1} RemoteInterpreterServer.java[createInterpreter]:383) - Instantiate interpreter org.apache.zeppelin.python.PythonDockerInterpreter
+ INFO [2021-07-19 18:16:45,438] ({pool-2-thread-2} SchedulerFactory.java[<init>]:56) - Scheduler Thread Pool Size: 100
+ INFO [2021-07-19 18:16:45,440] ({pool-2-thread-2} SchedulerFactory.java[createOrGetFIFOScheduler]:76) - Create FIFOScheduler: interpreter_503593313
+ INFO [2021-07-19 18:16:45,443] ({pool-2-thread-2} SchedulerFactory.java[createOrGetFIFOScheduler]:76) - Create FIFOScheduler: interpreter_756814520
+ INFO [2021-07-19 18:16:45,444] ({pool-2-thread-2} SchedulerFactory.java[createOrGetFIFOScheduler]:76) - Create FIFOScheduler: interpreter_1390262491
+ INFO [2021-07-19 18:16:45,466] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:16:45,952] ({FIFOScheduler-interpreter_503593313-Worker-1} JupyterKernelInterpreter.java[checkKernelPrerequisite]:174) - Prerequisite for kernel python is met
+ INFO [2021-07-19 18:16:45,963] ({FIFOScheduler-interpreter_503593313-Worker-1} JupyterKernelInterpreter.java[open]:114) - Python Exec: python
+ INFO [2021-07-19 18:16:46,342] ({FIFOScheduler-interpreter_503593313-Worker-1} JupyterKernelInterpreter.java[checkKernelPrerequisite]:174) - Prerequisite for kernel python is met
+ INFO [2021-07-19 18:16:46,509] ({FIFOScheduler-interpreter_503593313-Worker-1} JupyterKernelInterpreter.java[launchJupyterKernel]:188) - Launching Jupyter Kernel at port: 43963
+ INFO [2021-07-19 18:16:46,523] ({FIFOScheduler-interpreter_503593313-Worker-1} IPythonInterpreter.java[setupKernelEnv]:200) - PYTHONPATH: /tmp/zeppelin_jupyter_kernel_python2515408899921512667/py4j-src-0.10.7.zip
+ INFO [2021-07-19 18:16:46,530] ({FIFOScheduler-interpreter_503593313-Worker-1} ProcessLauncher.java[transition]:109) - Process state is transitioned to LAUNCHED
+ INFO [2021-07-19 18:16:46,531] ({FIFOScheduler-interpreter_503593313-Worker-1} ProcessLauncher.java[launch]:96) - Process is launched: [python, /tmp/zeppelin_jupyter_kernel_python2515408899921512667/kernel_server.py, python, 43963]
+ INFO [2021-07-19 18:16:46,962] ({FIFOScheduler-interpreter_503593313-Worker-1} JupyterKernelInterpreter.java[waitForReady]:348) - Wait for Jupyter Kernel to be started
+ INFO [2021-07-19 18:16:47,068] ({FIFOScheduler-interpreter_503593313-Worker-1} JupyterKernelInterpreter.java[waitForReady]:348) - Wait for Jupyter Kernel to be started
+ INFO [2021-07-19 18:16:47,172] ({FIFOScheduler-interpreter_503593313-Worker-1} JupyterKernelInterpreter.java[waitForReady]:348) - Wait for Jupyter Kernel to be started
+ INFO [2021-07-19 18:16:47,277] ({FIFOScheduler-interpreter_503593313-Worker-1} JupyterKernelInterpreter.java[waitForReady]:348) - Wait for Jupyter Kernel to be started
+ INFO [2021-07-19 18:16:47,383] ({FIFOScheduler-interpreter_503593313-Worker-1} JupyterKernelInterpreter.java[waitForReady]:348) - Wait for Jupyter Kernel to be started
+ INFO [2021-07-19 18:16:47,489] ({FIFOScheduler-interpreter_503593313-Worker-1} JupyterKernelInterpreter.java[waitForReady]:348) - Wait for Jupyter Kernel to be started
+ INFO [2021-07-19 18:16:47,594] ({FIFOScheduler-interpreter_503593313-Worker-1} JupyterKernelInterpreter.java[waitForReady]:348) - Wait for Jupyter Kernel to be started
+ INFO [2021-07-19 18:16:47,700] ({FIFOScheduler-interpreter_503593313-Worker-1} JupyterKernelInterpreter.java[waitForReady]:348) - Wait for Jupyter Kernel to be started
+ INFO [2021-07-19 18:16:47,809] ({FIFOScheduler-interpreter_503593313-Worker-1} JupyterKernelInterpreter.java[waitForReady]:344) - Jupyter Kernel is Running
+ INFO [2021-07-19 18:16:47,810] ({FIFOScheduler-interpreter_503593313-Worker-1} ProcessLauncher.java[transition]:109) - Process state is transitioned to RUNNING
+ INFO [2021-07-19 18:16:47,811] ({FIFOScheduler-interpreter_503593313-Worker-1} PythonUtils.java[createGatewayServer]:42) - Launching GatewayServer at 172.18.0.3:45231, useAuth: true
+ INFO [2021-07-19 18:16:48,247] ({FIFOScheduler-interpreter_503593313-Worker-1} PythonInterpreter.java[open]:88) - IPython is available, Use IPythonInterpreter to replace PythonInterpreter
+ INFO [2021-07-19 18:16:48,308] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:17:19,629] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:17:19,687] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:17:46,593] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:17:46,673] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status ERROR
+ INFO [2021-07-19 18:17:54,730] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:17:54,848] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status ERROR
+ INFO [2021-07-19 18:18:04,383] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:18:04,443] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:20:45,185] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:20:45,242] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:21:06,180] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:21:06,237] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:21:23,260] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:21:23,323] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:21:42,970] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:21:43,033] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:21:59,976] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:22:00,037] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:22:17,805] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:22:17,864] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:22:40,007] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:22:40,069] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status ERROR
+ INFO [2021-07-19 18:22:43,002] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:22:43,062] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:22:46,307] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:22:46,367] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:22:47,941] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:22:48,002] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:22:48,829] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:22:48,889] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:22:49,610] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:22:49,671] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:22:50,334] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:22:50,395] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:22:51,106] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:22:51,168] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:22:51,849] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:22:51,911] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:22:52,772] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:22:52,831] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:22:53,361] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:22:53,422] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:22:53,849] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:22:53,909] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:22:54,313] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:22:54,373] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:22:54,725] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:22:54,783] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:22:54,954] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:22:55,019] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:22:55,130] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:22:55,190] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:22:55,323] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:22:55,382] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:22:55,498] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:22:55,558] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:22:55,670] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:22:55,730] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:22:55,938] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:22:55,998] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:22:56,301] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:22:56,360] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:22:56,682] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:22:56,740] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:22:56,987] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:22:57,046] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:22:57,276] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:22:57,337] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:22:57,653] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:22:57,714] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:22:58,029] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:22:58,090] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:22:58,317] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:22:58,377] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:22:58,550] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:22:58,609] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:22:58,851] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:22:58,911] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:22:59,052] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:22:59,110] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:22:59,281] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:22:59,340] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:22:59,477] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:22:59,535] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:22:59,734] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:22:59,804] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:22:59,966] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:23:00,026] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:23:00,198] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:23:00,261] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:23:00,398] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:23:00,465] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:23:00,618] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:23:00,677] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:23:00,838] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:23:00,899] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:23:01,080] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:23:01,139] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:23:01,371] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:23:01,433] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:23:01,679] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:23:01,748] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:23:56,889] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:23:56,998] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:24:13,447] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:24:13,507] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:24:14,128] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:24:14,190] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:24:15,215] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:24:15,273] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:26:36,975] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:26:37,244] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:26:38,831] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:26:38,889] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:26:39,555] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:26:39,614] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:26:40,411] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:26:40,469] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:26:41,308] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:26:41,367] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:26:42,020] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:26:42,082] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:26:51,476] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:26:51,535] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:26:52,415] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:26:52,475] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:26:53,067] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:26:53,127] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:26:53,963] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:26:54,022] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:26:54,844] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:26:54,902] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:26:56,054] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:26:56,112] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:26:56,950] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:26:57,009] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:26:57,751] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:26:57,810] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:26:58,392] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:26:58,449] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:26:59,017] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:26:59,075] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:26:59,575] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:26:59,633] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:27:00,001] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:27:00,061] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:27:22,894] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:27:22,951] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:27:26,447] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:27:26,509] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status ERROR
+ INFO [2021-07-19 18:27:28,407] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:27:28,469] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status ERROR
+ INFO [2021-07-19 18:27:33,982] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:27:34,044] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:27:40,635] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:27:40,696] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status ERROR
+ INFO [2021-07-19 18:27:45,108] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:27:45,168] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status ERROR
+ INFO [2021-07-19 18:27:47,419] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:27:47,476] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:27:58,546] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:27:58,606] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status ERROR
+ INFO [2021-07-19 18:28:07,793] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:28:07,853] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:28:09,483] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:28:09,522] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:28:11,677] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:28:11,736] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:28:12,442] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:28:12,501] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:28:13,385] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:28:13,443] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:28:20,965] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:28:21,027] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:28:22,461] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:28:22,520] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:28:23,038] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:28:23,097] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:28:23,575] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:28:23,634] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:28:24,799] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:28:24,857] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:28:25,784] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:28:25,842] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:28:26,506] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:28:26,565] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:28:27,345] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:28:27,404] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:29:15,327] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:29:15,439] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status ERROR
+ INFO [2021-07-19 18:29:24,026] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:29:24,088] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:29:26,678] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:29:26,739] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:29:27,743] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:29:27,801] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:29:28,594] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:29:28,652] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:29:33,971] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:29:34,029] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:33:38,192] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:33:38,556] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:35:19,543] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:35:19,785] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:56:57,917] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:56:59,576] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:57:06,555] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:57:06,615] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:57:12,692] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:57:12,751] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:57:22,556] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:57:22,614] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:57:27,631] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:57:27,688] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:57:51,141] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:57:51,205] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status ERROR
+ INFO [2021-07-19 18:57:56,660] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:57:56,721] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:57:58,619] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:57:58,679] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:58:00,471] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:58:00,536] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:58:01,701] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:58:01,760] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:58:04,639] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:58:04,697] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:58:06,273] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:58:06,335] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:58:12,731] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:58:12,789] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:58:18,917] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:58:18,975] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:58:28,116] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717034247_1155985560 started by scheduler interpreter_503593313
+ INFO [2021-07-19 18:58:28,178] ({FIFOScheduler-interpreter_503593313-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717034247_1155985560 finished by scheduler interpreter_503593313 with status FINISHED
+ INFO [2021-07-19 18:59:06,861] ({FIFOScheduler-interpreter_1390262491-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717778466_897556445 started by scheduler interpreter_1390262491
+ INFO [2021-07-19 18:59:06,862] ({FIFOScheduler-interpreter_1390262491-Worker-1} PythonInterpreterPandasSql.java[open]:48) - Open Python SQL interpreter instance: org.apache.zeppelin.python.PythonInterpreterPandasSql@52ddb8db
+ INFO [2021-07-19 18:59:06,863] ({FIFOScheduler-interpreter_1390262491-Worker-1} PythonInterpreterPandasSql.java[open]:51) - Bootstrap org.apache.zeppelin.python.PythonInterpreterPandasSql@52ddb8db interpreter with python/bootstrap_sql.py
+ INFO [2021-07-19 18:59:06,864] ({FIFOScheduler-interpreter_1390262491-Worker-1} PythonInterpreter.java[bootstrapInterpreter]:551) - Bootstrap interpreter via python/bootstrap_sql.py
+ INFO [2021-07-19 18:59:08,085] ({FIFOScheduler-interpreter_1390262491-Worker-1} PythonInterpreterPandasSql.java[interpret]:70) - Running SQL query: '
+
+' over Pandas DataFrame
+ INFO [2021-07-19 18:59:08,147] ({FIFOScheduler-interpreter_1390262491-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717778466_897556445 finished by scheduler interpreter_1390262491 with status ERROR
+ INFO [2021-07-19 18:59:15,999] ({FIFOScheduler-interpreter_1390262491-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717778466_897556445 started by scheduler interpreter_1390262491
+ INFO [2021-07-19 18:59:16,002] ({FIFOScheduler-interpreter_1390262491-Worker-1} PythonInterpreterPandasSql.java[interpret]:70) - Running SQL query: '
+
+' over Pandas DataFrame
+ INFO [2021-07-19 18:59:16,060] ({FIFOScheduler-interpreter_1390262491-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717778466_897556445 finished by scheduler interpreter_1390262491 with status ERROR
+ INFO [2021-07-19 18:59:17,633] ({FIFOScheduler-interpreter_1390262491-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717778466_897556445 started by scheduler interpreter_1390262491
+ INFO [2021-07-19 18:59:17,635] ({FIFOScheduler-interpreter_1390262491-Worker-1} PythonInterpreterPandasSql.java[interpret]:70) - Running SQL query: '
+
+' over Pandas DataFrame
+ INFO [2021-07-19 18:59:17,695] ({FIFOScheduler-interpreter_1390262491-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717778466_897556445 finished by scheduler interpreter_1390262491 with status ERROR
+ INFO [2021-07-19 18:59:18,402] ({FIFOScheduler-interpreter_1390262491-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717778466_897556445 started by scheduler interpreter_1390262491
+ INFO [2021-07-19 18:59:18,404] ({FIFOScheduler-interpreter_1390262491-Worker-1} PythonInterpreterPandasSql.java[interpret]:70) - Running SQL query: '
+
+' over Pandas DataFrame
+ INFO [2021-07-19 18:59:18,464] ({FIFOScheduler-interpreter_1390262491-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717778466_897556445 finished by scheduler interpreter_1390262491 with status ERROR
+ INFO [2021-07-19 18:59:34,708] ({FIFOScheduler-interpreter_1390262491-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717778466_897556445 started by scheduler interpreter_1390262491
+ INFO [2021-07-19 18:59:34,711] ({FIFOScheduler-interpreter_1390262491-Worker-1} PythonInterpreterPandasSql.java[interpret]:70) - Running SQL query: '
+
+select * from "times"' over Pandas DataFrame
+ INFO [2021-07-19 18:59:34,770] ({FIFOScheduler-interpreter_1390262491-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717778466_897556445 finished by scheduler interpreter_1390262491 with status ERROR
+ INFO [2021-07-19 18:59:35,794] ({FIFOScheduler-interpreter_1390262491-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717778466_897556445 started by scheduler interpreter_1390262491
+ INFO [2021-07-19 18:59:35,795] ({FIFOScheduler-interpreter_1390262491-Worker-1} PythonInterpreterPandasSql.java[interpret]:70) - Running SQL query: '
+
+select * from "times"' over Pandas DataFrame
+ INFO [2021-07-19 18:59:35,851] ({FIFOScheduler-interpreter_1390262491-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717778466_897556445 finished by scheduler interpreter_1390262491 with status ERROR
+ INFO [2021-07-19 18:59:37,239] ({FIFOScheduler-interpreter_1390262491-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717778466_897556445 started by scheduler interpreter_1390262491
+ INFO [2021-07-19 18:59:37,241] ({FIFOScheduler-interpreter_1390262491-Worker-1} PythonInterpreterPandasSql.java[interpret]:70) - Running SQL query: '
+
+select * from "times"' over Pandas DataFrame
+ INFO [2021-07-19 18:59:37,298] ({FIFOScheduler-interpreter_1390262491-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717778466_897556445 finished by scheduler interpreter_1390262491 with status ERROR
+ INFO [2021-07-19 19:00:05,038] ({FIFOScheduler-interpreter_1390262491-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626720357089_1678518344 started by scheduler interpreter_1390262491
+ INFO [2021-07-19 19:00:05,046] ({FIFOScheduler-interpreter_1390262491-Worker-1} PythonInterpreterPandasSql.java[interpret]:70) - Running SQL query: '
+' over Pandas DataFrame
+ INFO [2021-07-19 19:00:05,182] ({FIFOScheduler-interpreter_1390262491-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626720357089_1678518344 finished by scheduler interpreter_1390262491 with status ERROR
+ INFO [2021-07-19 19:00:09,623] ({FIFOScheduler-interpreter_1390262491-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626720357089_1678518344 started by scheduler interpreter_1390262491
+ INFO [2021-07-19 19:00:09,627] ({FIFOScheduler-interpreter_1390262491-Worker-1} PythonInterpreterPandasSql.java[interpret]:70) - Running SQL query: '
+' over Pandas DataFrame
+ INFO [2021-07-19 19:00:09,703] ({FIFOScheduler-interpreter_1390262491-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626720357089_1678518344 finished by scheduler interpreter_1390262491 with status ERROR
+ INFO [2021-07-19 19:00:10,816] ({FIFOScheduler-interpreter_1390262491-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626720357089_1678518344 started by scheduler interpreter_1390262491
+ INFO [2021-07-19 19:00:10,821] ({FIFOScheduler-interpreter_1390262491-Worker-1} PythonInterpreterPandasSql.java[interpret]:70) - Running SQL query: '
+' over Pandas DataFrame
+ INFO [2021-07-19 19:00:10,917] ({FIFOScheduler-interpreter_1390262491-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626720357089_1678518344 finished by scheduler interpreter_1390262491 with status ERROR
+ INFO [2021-07-19 19:00:11,652] ({FIFOScheduler-interpreter_1390262491-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626720357089_1678518344 started by scheduler interpreter_1390262491
+ INFO [2021-07-19 19:00:11,661] ({FIFOScheduler-interpreter_1390262491-Worker-1} PythonInterpreterPandasSql.java[interpret]:70) - Running SQL query: '
+' over Pandas DataFrame
+ INFO [2021-07-19 19:00:11,742] ({FIFOScheduler-interpreter_1390262491-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626720357089_1678518344 finished by scheduler interpreter_1390262491 with status ERROR
+ INFO [2021-07-19 19:18:00,522] ({pool-2-thread-1} JupyterKernelInterpreter.java[close]:230) - Shutdown Jupyter Kernel Process
+ INFO [2021-07-19 19:18:05,674] ({pool-2-thread-1} JupyterKernelInterpreter.java[close]:241) - Jupyter Kernel is killed
+ INFO [2021-07-19 19:18:05,712] ({pool-2-thread-1} IPythonInterpreter.java[close]:208) - Shutdown Py4j GatewayServer
+ INFO [2021-07-19 19:18:05,739] ({pool-2-thread-2} PythonInterpreterPandasSql.java[close]:61) - Close Python SQL interpreter instance: org.apache.zeppelin.python.PythonInterpreterPandasSql@52ddb8db

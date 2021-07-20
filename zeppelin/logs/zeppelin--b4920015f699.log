@@ -1,0 +1,503 @@
+ INFO [2021-07-19 17:28:34,094] ({main} ZeppelinConfiguration.java[create]:172) - Load configuration from file:/opt/zeppelin/conf/zeppelin-site.xml
+ INFO [2021-07-19 17:28:34,163] ({main} ZeppelinConfiguration.java[create]:180) - Server Host: 0.0.0.0
+ INFO [2021-07-19 17:28:34,164] ({main} ZeppelinConfiguration.java[create]:182) - Server Port: 8080
+ INFO [2021-07-19 17:28:34,165] ({main} ZeppelinConfiguration.java[create]:186) - Context Path: /
+ INFO [2021-07-19 17:28:34,166] ({main} ZeppelinConfiguration.java[create]:187) - Zeppelin Version: 0.9.0
+ INFO [2021-07-19 17:28:34,187] ({main} Log.java[initialized]:169) - Logging initialized @452ms to org.eclipse.jetty.util.log.Slf4jLog
+ WARN [2021-07-19 17:28:34,526] ({main} ZeppelinConfiguration.java[getConfigFSDir]:694) - zeppelin.config.fs.dir is not specified, fall back to local conf directory zeppelin.conf.dir
+ WARN [2021-07-19 17:28:34,527] ({main} ZeppelinConfiguration.java[getConfigFSDir]:694) - zeppelin.config.fs.dir is not specified, fall back to local conf directory zeppelin.conf.dir
+ WARN [2021-07-19 17:28:34,528] ({main} ZeppelinConfiguration.java[getConfigFSDir]:694) - zeppelin.config.fs.dir is not specified, fall back to local conf directory zeppelin.conf.dir
+ WARN [2021-07-19 17:28:34,564] ({main} LocalConfigStorage.java[loadCredentials]:88) - Credential file /opt/zeppelin/conf/credentials.json is not existed
+ INFO [2021-07-19 17:28:34,602] ({ImmediateThread-1626715714521} PluginManager.java[loadNotebookRepo]:78) - Loading NotebookRepo Plugin: org.apache.zeppelin.notebook.repo.MongoNotebookRepo
+ INFO [2021-07-19 17:28:34,640] ({main} ZeppelinServer.java[setupWebAppContext]:575) - warPath is: /opt/zeppelin/zeppelin-web-0.9.0.war
+ INFO [2021-07-19 17:28:34,641] ({main} ZeppelinServer.java[setupWebAppContext]:588) - ZeppelinServer Webapp path: /opt/zeppelin/webapps
+ INFO [2021-07-19 17:28:34,680] ({main} ZeppelinServer.java[setupWebAppContext]:575) - warPath is: /opt/zeppelin/zeppelin-web-angular-0.9.0.war
+ INFO [2021-07-19 17:28:34,682] ({main} ZeppelinServer.java[setupWebAppContext]:588) - ZeppelinServer Webapp path: /opt/zeppelin/webapps/next
+ INFO [2021-07-19 17:28:34,727] ({main} NotebookServer.java[<init>]:157) - NotebookServer instantiated: org.apache.zeppelin.socket.NotebookServer@209da20d
+ INFO [2021-07-19 17:28:34,730] ({main} NotebookServer.java[setNotebook]:168) - Injected NotebookProvider
+ INFO [2021-07-19 17:28:34,731] ({main} NotebookServer.java[setServiceLocator]:162) - Injected ServiceLocator: ServiceLocatorImpl(shared-locator,0,1279309678)
+ INFO [2021-07-19 17:28:34,732] ({main} NotebookServer.java[setNotebookService]:175) - Injected NotebookServiceProvider
+ INFO [2021-07-19 17:28:34,734] ({main} NotebookServer.java[setAuthorizationServiceProvider]:182) - Injected NotebookAuthorizationServiceProvider
+ INFO [2021-07-19 17:28:34,735] ({main} NotebookServer.java[setConnectionManagerProvider]:188) - Injected ConnectionManagerProvider
+ INFO [2021-07-19 17:28:34,739] ({main} ZeppelinServer.java[setupClusterManagerServer]:465) - Cluster mode is disabled
+ INFO [2021-07-19 17:28:34,740] ({main} ZeppelinServer.java[main]:249) - Starting zeppelin server
+ INFO [2021-07-19 17:28:34,742] ({main} Server.java[doStart]:360) - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_282-8u282-b08-0ubuntu1~20.04-b08
+ INFO [2021-07-19 17:28:34,858] ({main} StandardDescriptorProcessor.java[visitServlet]:276) - NO JSP Support for /, did not find org.eclipse.jetty.jsp.JettyJspServlet
+ INFO [2021-07-19 17:28:34,869] ({main} DefaultSessionIdManager.java[doStart]:334) - DefaultSessionIdManager workerName=node0
+ INFO [2021-07-19 17:28:34,870] ({main} DefaultSessionIdManager.java[doStart]:339) - No SessionScavenger set, using defaults
+ INFO [2021-07-19 17:28:34,873] ({main} HouseKeeper.java[startScavenging]:140) - node0 Scavenging every 660000ms
+ INFO [2021-07-19 17:28:35,118] ({ImmediateThread-1626715714521} SLF4JLogger.java[info]:71) - Cluster created with settings {hosts=[mongo:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+ INFO [2021-07-19 17:28:35,366] ({ImmediateThread-1626715714521} VFSNotebookRepo.java[setNotebookDirectory]:69) - Using notebookDir: /opt/zeppelin/notebook
+ INFO [2021-07-19 17:28:35,506] ({cluster-ClusterId{value='60f5b643a7b11b00087ee583', description='null'}-mongo:27017} SLF4JLogger.java[info]:71) - Opened connection [connectionId{localValue:1, serverValue:80}] to mongo:27017
+ INFO [2021-07-19 17:28:35,512] ({cluster-ClusterId{value='60f5b643a7b11b00087ee583', description='null'}-mongo:27017} SLF4JLogger.java[info]:71) - Monitor thread successfully connected to server with description ServerDescription{address=mongo:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 0]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, roundTripTimeNanos=1295409}
+ INFO [2021-07-19 17:28:35,646] ({ImmediateThread-1626715714521} SLF4JLogger.java[info]:71) - Opened connection [connectionId{localValue:2, serverValue:81}] to mongo:27017
+ WARN [2021-07-19 17:28:35,810] ({ImmediateThread-1626715714521} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/Flink Tutorial/6. Batch ETL': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2EW19CSPA" }', details={ }}]. 
+ WARN [2021-07-19 17:28:35,856] ({ImmediateThread-1626715714521} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/Flink Tutorial/1. Flink Basics': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2F2YS7PCE" }', details={ }}]. 
+ WARN [2021-07-19 17:28:35,913] ({ImmediateThread-1626715714521} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/Miscellaneous Tutorial/Using Mahout': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2BYEZ5EVK" }', details={ }}]. 
+ WARN [2021-07-19 17:28:35,946] ({ImmediateThread-1626715714521} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/Python Tutorial/1. IPython Basic': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2EYDJKFFY" }', details={ }}]. 
+ WARN [2021-07-19 17:28:35,980] ({ImmediateThread-1626715714521} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/Flink Tutorial/2. Three Essential Steps for Building Flink Job': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2F7SKEHPA" }', details={ }}]. 
+ WARN [2021-07-19 17:28:35,990] ({ImmediateThread-1626715714521} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/R Tutorial/2. Shiny App': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2EZ66TM57" }', details={ }}]. 
+ WARN [2021-07-19 17:28:36,020] ({ImmediateThread-1626715714521} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/Spark Tutorial/1. Spark Interpreter Introduction': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2F8KN6TKK" }', details={ }}]. 
+ WARN [2021-07-19 17:28:36,033] ({ImmediateThread-1626715714521} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/Flink Tutorial/5. Streaming Data Analytics': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2EYT7Q6R8" }', details={ }}]. 
+ WARN [2021-07-19 17:28:36,047] ({ImmediateThread-1626715714521} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/Miscellaneous Tutorial/Using Pig for querying data': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2C57UKYWR" }', details={ }}]. 
+ WARN [2021-07-19 17:28:36,071] ({ImmediateThread-1626715714521} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/Flink Tutorial/8. Logistic Regression (Alink)': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2F4HJNWVN" }', details={ }}]. 
+ WARN [2021-07-19 17:28:36,086] ({ImmediateThread-1626715714521} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/Flink Tutorial/4. Streaming ETL': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2EYD56B9B" }', details={ }}]. 
+ WARN [2021-07-19 17:28:36,100] ({ImmediateThread-1626715714521} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/Flink Tutorial/3. Flink Job Control Tutorial': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2F5RKHCDV" }', details={ }}]. 
+ WARN [2021-07-19 17:28:36,113] ({ImmediateThread-1626715714521} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/Spark Tutorial/7. Spark Delta Lake Tutorial': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2F8VDBMMT" }', details={ }}]. 
+ WARN [2021-07-19 17:28:36,141] ({ImmediateThread-1626715714521} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/Spark Tutorial/3. Spark SQL (PySpark)': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2EWM84JXA" }', details={ }}]. 
+ WARN [2021-07-19 17:28:36,164] ({ImmediateThread-1626715714521} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/Spark Tutorial/4. Spark MlLib': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2EZFM3GJA" }', details={ }}]. 
+ WARN [2021-07-19 17:28:36,192] ({ImmediateThread-1626715714521} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/Python Tutorial/3. Keras Binary Classification (IMDB)': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2F2AVWJ77" }', details={ }}]. 
+ WARN [2021-07-19 17:28:36,209] ({ImmediateThread-1626715714521} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/Flink Tutorial/7. Batch Data Analytics': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2EZ9G3JJU" }', details={ }}]. 
+ WARN [2021-07-19 17:28:36,372] ({ImmediateThread-1626715714521} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/Python Tutorial/2. IPython Visualization Tutorial': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2F1S9ZY8Z" }', details={ }}]. 
+ INFO [2021-07-19 17:28:36,402] ({main} ContextHandler.java[doStart]:860) - Started o.e.j.w.WebAppContext@3972a855{zeppelin-web,/,jar:file:///opt/zeppelin/zeppelin-web-0.9.0.war!/,AVAILABLE}{/opt/zeppelin/zeppelin-web-0.9.0.war}
+ WARN [2021-07-19 17:28:36,415] ({ImmediateThread-1626715714521} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/R Tutorial/1. R Basics': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2BWJFTXKJ" }', details={ }}]. 
+ INFO [2021-07-19 17:28:36,434] ({main} StandardDescriptorProcessor.java[visitServlet]:276) - NO JSP Support for /next, did not find org.eclipse.jetty.jsp.JettyJspServlet
+ WARN [2021-07-19 17:28:36,438] ({ImmediateThread-1626715714521} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/Spark Tutorial/6. SparkR Shiny App': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2F1CHQ4TT" }', details={ }}]. 
+ WARN [2021-07-19 17:28:36,485] ({ImmediateThread-1626715714521} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/Spark Tutorial/5. SparkR Basics': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2BWJFTXKM" }', details={ }}]. 
+ WARN [2021-07-19 17:28:36,504] ({ImmediateThread-1626715714521} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/Python Tutorial/4. Matplotlib (Python, PySpark)': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2C2AUG798" }', details={ }}]. 
+ WARN [2021-07-19 17:28:36,514] ({ImmediateThread-1626715714521} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/Spark Tutorial/2. Spark Basic Features': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2A94M5J1Z" }', details={ }}]. 
+ WARN [2021-07-19 17:28:36,532] ({ImmediateThread-1626715714521} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/Spark Tutorial/3. Spark SQL (Scala)': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2EYUV26VR" }', details={ }}]. 
+ INFO [2021-07-19 17:28:36,729] ({main} ContextHandler.java[doStart]:860) - Started o.e.j.w.WebAppContext@2e222612{zeppelin-web-angular,/next,jar:file:///opt/zeppelin/zeppelin-web-angular-0.9.0.war!/,AVAILABLE}{/opt/zeppelin/zeppelin-web-angular-0.9.0.war}
+ INFO [2021-07-19 17:28:36,746] ({main} AbstractConnector.java[doStart]:331) - Started ServerConnector@44c8afef{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+ INFO [2021-07-19 17:28:36,747] ({main} Server.java[doStart]:400) - Started @3013ms
+ INFO [2021-07-19 17:28:38,064] ({qtp1864350231-15} NotebookServer.java[onOpen]:247) - New connection from 172.18.0.1:63140
+ INFO [2021-07-19 17:28:38,088] ({qtp1864350231-15} LocalConfigStorage.java[loadNotebookAuthorization]:80) - Load notebook authorization from file: /opt/zeppelin/conf/notebook-authorization.json
+ INFO [2021-07-19 17:28:38,257] ({qtp1864350231-12} NotebookServer.java[onOpen]:247) - New connection from 172.18.0.1:63148
+ INFO [2021-07-19 17:28:38,337] ({Thread-11} RemoteInterpreterEventServer.java[run]:105) - InterpreterEventServer is starting at 172.18.0.3:41311
+ INFO [2021-07-19 17:28:38,789] ({qtp1864350231-13} NoAuthenticationService.java[<init>]:38) - NoAuthenticationService is initialized
+ WARN [2021-07-19 17:28:38,810] ({qtp1864350231-13} SecurityRestApi.java[ticket]:89) - {"status":"OK","message":"","body":{"principal":"anonymous","ticket":"anonymous","roles":"[]"}}
+ INFO [2021-07-19 17:28:38,833] ({qtp1864350231-17} RemoteInterpreterEventServer.java[start]:133) - RemoteInterpreterEventServer is started
+ INFO [2021-07-19 17:28:38,842] ({qtp1864350231-17} InterpreterSettingManager.java[<init>]:197) - Using RecoveryStorage: org.apache.zeppelin.interpreter.recovery.NullRecoveryStorage
+ INFO [2021-07-19 17:28:38,862] ({qtp1864350231-17} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: file
+ INFO [2021-07-19 17:28:38,866] ({qtp1864350231-17} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: alluxio
+ INFO [2021-07-19 17:28:38,868] ({qtp1864350231-17} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: lens
+ INFO [2021-07-19 17:28:38,870] ({qtp1864350231-17} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: jdbc
+ INFO [2021-07-19 17:28:38,873] ({qtp1864350231-17} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: bigquery
+ INFO [2021-07-19 17:28:38,876] ({qtp1864350231-17} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: scalding
+ INFO [2021-07-19 17:28:38,880] ({qtp1864350231-17} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: cassandra
+ INFO [2021-07-19 17:28:38,884] ({qtp1864350231-13} NotebookServer.java[onOpen]:247) - New connection from 172.18.0.1:63152
+ INFO [2021-07-19 17:28:38,887] ({qtp1864350231-17} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: mongodb
+ INFO [2021-07-19 17:28:38,889] ({qtp1864350231-17} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: kylin
+ INFO [2021-07-19 17:28:38,891] ({qtp1864350231-17} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: jupyter
+ INFO [2021-07-19 17:28:38,894] ({qtp1864350231-17} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: sh
+ INFO [2021-07-19 17:28:38,900] ({qtp1864350231-17} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: angular
+ INFO [2021-07-19 17:28:38,903] ({qtp1864350231-17} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: ksql
+ INFO [2021-07-19 17:28:38,906] ({qtp1864350231-17} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: ignite
+ INFO [2021-07-19 17:28:38,914] ({qtp1864350231-17} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: hazelcastjet
+ INFO [2021-07-19 17:28:38,925] ({qtp1864350231-17} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: influxdb
+ INFO [2021-07-19 17:28:38,928] ({qtp1864350231-17} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: neo4j
+ INFO [2021-07-19 17:28:38,932] ({qtp1864350231-17} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: kotlin
+ INFO [2021-07-19 17:28:38,938] ({qtp1864350231-17} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: java
+ INFO [2021-07-19 17:28:38,941] ({qtp1864350231-17} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: spark
+ INFO [2021-07-19 17:28:38,943] ({qtp1864350231-17} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: python
+ INFO [2021-07-19 17:28:38,949] ({qtp1864350231-17} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: sparql
+ INFO [2021-07-19 17:28:38,962] ({qtp1864350231-17} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: groovy
+ INFO [2021-07-19 17:28:38,971] ({qtp1864350231-17} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: submarine
+ INFO [2021-07-19 17:28:38,973] ({qtp1864350231-17} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: hbase
+ WARN [2021-07-19 17:28:38,977] ({qtp1864350231-15} ClusterRestApi.java[<init>]:61) - Cluster mode is disabled, ClusterRestApi won't work
+ INFO [2021-07-19 17:28:38,979] ({qtp1864350231-17} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: elasticsearch
+ INFO [2021-07-19 17:28:38,983] ({qtp1864350231-17} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: livy
+ WARN [2021-07-19 17:28:39,020] ({qtp1864350231-17} InterpreterSettingManager.java[loadInterpreterSettingFromDefaultDir]:437) - No interpreter-setting.json found in /opt/zeppelin/interpreter/scio
+ INFO [2021-07-19 17:28:39,023] ({qtp1864350231-17} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: flink
+ INFO [2021-07-19 17:28:39,025] ({qtp1864350231-17} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: beam
+ INFO [2021-07-19 17:28:39,027] ({qtp1864350231-17} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: md
+ INFO [2021-07-19 17:28:39,030] ({qtp1864350231-17} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: sap
+ INFO [2021-07-19 17:28:39,033] ({qtp1864350231-17} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: r
+ INFO [2021-07-19 17:28:39,037] ({qtp1864350231-17} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: geode
+ INFO [2021-07-19 17:28:39,040] ({qtp1864350231-17} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: pig
+ INFO [2021-07-19 17:28:39,044] ({qtp1864350231-17} LocalConfigStorage.java[loadInterpreterSettings]:63) - Load Interpreter Setting from file: /opt/zeppelin/conf/interpreter.json
+ INFO [2021-07-19 17:28:39,071] ({qtp1864350231-17} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting ignite from interpreter.json
+ INFO [2021-07-19 17:28:39,073] ({qtp1864350231-17} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting beam from interpreter.json
+ INFO [2021-07-19 17:28:39,074] ({qtp1864350231-17} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting geode from interpreter.json
+ INFO [2021-07-19 17:28:39,075] ({qtp1864350231-17} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting jdbc from interpreter.json
+ INFO [2021-07-19 17:28:39,076] ({qtp1864350231-17} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting lens from interpreter.json
+ INFO [2021-07-19 17:28:39,077] ({qtp1864350231-17} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting influxdb from interpreter.json
+ INFO [2021-07-19 17:28:39,086] ({qtp1864350231-17} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting pig from interpreter.json
+ INFO [2021-07-19 17:28:39,088] ({qtp1864350231-17} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting java from interpreter.json
+ INFO [2021-07-19 17:28:39,088] ({qtp1864350231-17} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting jupyter from interpreter.json
+ INFO [2021-07-19 17:28:39,090] ({qtp1864350231-17} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting file from interpreter.json
+ INFO [2021-07-19 17:28:39,091] ({qtp1864350231-17} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting submarine from interpreter.json
+ INFO [2021-07-19 17:28:39,094] ({qtp1864350231-17} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting elasticsearch from interpreter.json
+ INFO [2021-07-19 17:28:39,095] ({qtp1864350231-17} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting sh from interpreter.json
+ INFO [2021-07-19 17:28:39,097] ({qtp1864350231-17} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting spark from interpreter.json
+ INFO [2021-07-19 17:28:39,098] ({qtp1864350231-17} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting md from interpreter.json
+ INFO [2021-07-19 17:28:39,099] ({qtp1864350231-17} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting hazelcastjet from interpreter.json
+ INFO [2021-07-19 17:28:39,101] ({qtp1864350231-17} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting alluxio from interpreter.json
+ INFO [2021-07-19 17:28:39,102] ({qtp1864350231-17} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting bigquery from interpreter.json
+ INFO [2021-07-19 17:28:39,103] ({qtp1864350231-17} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting mongodb from interpreter.json
+ INFO [2021-07-19 17:28:39,104] ({qtp1864350231-17} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting hbase from interpreter.json
+ INFO [2021-07-19 17:28:39,105] ({qtp1864350231-17} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting python from interpreter.json
+ INFO [2021-07-19 17:28:39,106] ({qtp1864350231-17} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting sap from interpreter.json
+ INFO [2021-07-19 17:28:39,107] ({qtp1864350231-17} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting kotlin from interpreter.json
+ INFO [2021-07-19 17:28:39,108] ({qtp1864350231-17} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting scalding from interpreter.json
+ INFO [2021-07-19 17:28:39,109] ({qtp1864350231-17} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting flink from interpreter.json
+ INFO [2021-07-19 17:28:39,110] ({qtp1864350231-17} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting angular from interpreter.json
+ INFO [2021-07-19 17:28:39,111] ({qtp1864350231-17} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting ksql from interpreter.json
+ INFO [2021-07-19 17:28:39,112] ({qtp1864350231-17} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting livy from interpreter.json
+ INFO [2021-07-19 17:28:39,113] ({qtp1864350231-17} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting r from interpreter.json
+ INFO [2021-07-19 17:28:39,113] ({qtp1864350231-17} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting neo4j from interpreter.json
+ INFO [2021-07-19 17:28:39,114] ({qtp1864350231-17} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting groovy from interpreter.json
+ INFO [2021-07-19 17:28:39,115] ({qtp1864350231-17} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting cassandra from interpreter.json
+ INFO [2021-07-19 17:28:39,117] ({qtp1864350231-17} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting sparql from interpreter.json
+ INFO [2021-07-19 17:28:39,117] ({qtp1864350231-17} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting kylin from interpreter.json
+ INFO [2021-07-19 17:28:39,121] ({qtp1864350231-17} InterpreterSetting.java[setStatus]:734) - Set interpreter mongodb status to DOWNLOADING_DEPENDENCIES
+ INFO [2021-07-19 17:28:39,123] ({qtp1864350231-17} LocalConfigStorage.java[save]:53) - Save Interpreter Setting to /opt/zeppelin/conf/interpreter.json
+ INFO [2021-07-19 17:28:39,124] ({Thread-15} InterpreterSetting.java[run]:964) - Start to download dependencies for interpreter: mongodb
+ INFO [2021-07-19 17:28:39,293] ({LuceneSearch-RebuildIndex-Thread} LuceneSearch.java[lambda$startRebuildIndex$1]:399) - Starting rebuild index
+ INFO [2021-07-19 17:28:40,777] ({LuceneSearch-RebuildIndex-Thread} LuceneSearch.java[lambda$startRebuildIndex$1]:404) - Finish rebuild index
+ INFO [2021-07-19 17:28:40,784] ({qtp1864350231-11} Helium.java[loadConf]:139) - Add helium local registry /opt/zeppelin/helium
+ INFO [2021-07-19 17:28:40,788] ({qtp1864350231-11} Helium.java[loadConf]:136) - Add helium online registry https://s3.amazonaws.com/helium-package/helium.json
+ WARN [2021-07-19 17:28:40,795] ({qtp1864350231-11} Helium.java[loadConf]:147) - /opt/zeppelin/conf/helium.json does not exists
+ INFO [2021-07-19 17:28:40,840] ({qtp1864350231-17} InterpreterSetting.java[getOrCreateInterpreterGroup]:453) - Create InterpreterGroup with groupId: mongodb-shared_process for ExecutionContext{user='anonymous', noteId='2G9U36QSR', interpreterGroupId='null', defaultInterpreterGroup='python', inIsolatedMode=false, startTime=}
+ INFO [2021-07-19 17:28:40,857] ({qtp1864350231-17} InterpreterSetting.java[createInterpreters]:823) - Interpreter org.apache.zeppelin.mongodb.MongoDbInterpreter created for user: anonymous, sessionId: shared_session
+ INFO [2021-07-19 17:28:40,860] ({qtp1864350231-17} ManagedInterpreterGroup.java[getOrCreateSession]:180) - Create Session: shared_session in InterpreterGroup: mongodb-shared_process for user: anonymous
+ INFO [2021-07-19 17:28:40,862] ({qtp1864350231-17} InterpreterSetting.java[getOrCreateInterpreterGroup]:453) - Create InterpreterGroup with groupId: python-shared_process for ExecutionContext{user='anonymous', noteId='2G9U36QSR', interpreterGroupId='null', defaultInterpreterGroup='python', inIsolatedMode=false, startTime=}
+ INFO [2021-07-19 17:28:40,863] ({qtp1864350231-17} InterpreterSetting.java[createInterpreters]:823) - Interpreter org.apache.zeppelin.python.PythonInterpreter created for user: anonymous, sessionId: shared_session
+ INFO [2021-07-19 17:28:40,864] ({qtp1864350231-17} InterpreterSetting.java[createInterpreters]:823) - Interpreter org.apache.zeppelin.python.IPythonInterpreter created for user: anonymous, sessionId: shared_session
+ INFO [2021-07-19 17:28:40,865] ({qtp1864350231-17} InterpreterSetting.java[createInterpreters]:823) - Interpreter org.apache.zeppelin.python.PythonInterpreterPandasSql created for user: anonymous, sessionId: shared_session
+ INFO [2021-07-19 17:28:40,866] ({qtp1864350231-17} InterpreterSetting.java[createInterpreters]:823) - Interpreter org.apache.zeppelin.python.PythonCondaInterpreter created for user: anonymous, sessionId: shared_session
+ INFO [2021-07-19 17:28:40,867] ({qtp1864350231-17} InterpreterSetting.java[createInterpreters]:823) - Interpreter org.apache.zeppelin.python.PythonDockerInterpreter created for user: anonymous, sessionId: shared_session
+ INFO [2021-07-19 17:28:40,868] ({qtp1864350231-17} ManagedInterpreterGroup.java[getOrCreateSession]:180) - Create Session: shared_session in InterpreterGroup: python-shared_process for user: anonymous
+ INFO [2021-07-19 17:28:40,872] ({qtp1864350231-17} NotebookServer.java[onClose]:474) - Closed connection to 172.18.0.1:63140 (1001) null
+ INFO [2021-07-19 17:28:41,749] ({main} ZeppelinServer.java[main]:263) - Done, zeppelin server started
+ INFO [2021-07-19 17:28:42,463] ({Thread-15} InterpreterSetting.java[run]:977) - Finish downloading dependencies for interpreter: mongodb
+ INFO [2021-07-19 17:28:42,464] ({Thread-15} InterpreterSetting.java[setStatus]:734) - Set interpreter mongodb status to READY
+ INFO [2021-07-19 17:28:42,465] ({Thread-15} LocalConfigStorage.java[save]:53) - Save Interpreter Setting to /opt/zeppelin/conf/interpreter.json
+ INFO [2021-07-19 17:28:43,325] ({qtp1864350231-14} NotebookService.java[runParagraph]:324) - Start to run paragraph: paragraph_1626367581533_402771751 of note: 2G9U36QSR
+ INFO [2021-07-19 17:28:43,354] ({qtp1864350231-14} SchedulerFactory.java[<init>]:56) - Scheduler Thread Pool Size: 100
+ INFO [2021-07-19 17:28:43,359] ({SchedulerFactory2} AbstractScheduler.java[runJob]:127) - Job paragraph_1626367581533_402771751 started by scheduler RemoteInterpreter-mongodb-shared_process-shared_session
+ INFO [2021-07-19 17:28:43,361] ({SchedulerFactory2} Paragraph.java[jobRun]:420) - Run paragraph [paragraph_id: paragraph_1626367581533_402771751, interpreter: org.apache.zeppelin.mongodb.MongoDbInterpreter, note_id: 2G9U36QSR, user: anonymous]
+ INFO [2021-07-19 17:28:43,362] ({SchedulerFactory2} ManagedInterpreterGroup.java[getOrCreateInterpreterProcess]:65) - Create InterpreterProcess for InterpreterGroup: mongodb-shared_process
+ INFO [2021-07-19 17:28:43,363] ({SchedulerFactory2} PluginManager.java[loadInterpreterLauncher]:154) - Loading Interpreter Launcher Plugin: org.apache.zeppelin.interpreter.launcher.StandardInterpreterLauncher
+ INFO [2021-07-19 17:28:43,367] ({SchedulerFactory2} StandardInterpreterLauncher.java[launchDirectly]:49) - Launching new interpreter process of mongodb
+ INFO [2021-07-19 17:28:43,405] ({SchedulerFactory2} ProcessLauncher.java[transition]:109) - Process state is transitioned to LAUNCHED
+ INFO [2021-07-19 17:28:43,407] ({SchedulerFactory2} ProcessLauncher.java[launch]:96) - Process is launched: [/opt/zeppelin/bin/interpreter.sh, -d, /opt/zeppelin/interpreter/mongodb, -c, 172.18.0.3, -p, 41311, -r, :, -i, mongodb-shared_process, -l, /opt/zeppelin/local-repo/mongodb, -g, mongodb]
+ INFO [2021-07-19 17:28:44,891] ({pool-7-thread-1} RemoteInterpreterEventServer.java[registerInterpreterProcess]:176) - Register interpreter process: 172.18.0.3:42907, interpreterGroup: mongodb-shared_process
+ INFO [2021-07-19 17:28:44,892] ({pool-7-thread-1} ProcessLauncher.java[transition]:109) - Process state is transitioned to RUNNING
+ INFO [2021-07-19 17:28:44,990] ({SchedulerFactory2} RemoteInterpreter.java[lambda$internal_create$1]:160) - Create RemoteInterpreter org.apache.zeppelin.mongodb.MongoDbInterpreter
+ INFO [2021-07-19 17:28:45,084] ({SchedulerFactory2} RemoteInterpreter.java[lambda$open$0]:134) - Open RemoteInterpreter org.apache.zeppelin.mongodb.MongoDbInterpreter
+ INFO [2021-07-19 17:28:45,085] ({SchedulerFactory2} RemoteInterpreter.java[pushAngularObjectRegistryToRemote]:393) - Push local angular object registry from ZeppelinServer to remote interpreter group mongodb-shared_process
+ INFO [2021-07-19 17:28:45,188] ({JobStatusPoller-paragraph_1626367581533_402771751} NotebookServer.java[onStatusChange]:1931) - Job paragraph_1626367581533_402771751 starts to RUNNING
+ WARN [2021-07-19 17:28:46,236] ({SchedulerFactory2} NotebookServer.java[onStatusChange]:1928) - Job paragraph_1626367581533_402771751 is finished, status: ERROR, exception: null, result: %text SyntaxError: Unexpected token, expected ";" (124:5)
+
+  122 | 
+  123 | 
+> 124 | show databases
+      |      ^
+  125 | 
+ExitValue: 1
+ INFO [2021-07-19 17:28:46,241] ({SchedulerFactory2} AbstractScheduler.java[runJob]:154) - Job paragraph_1626367581533_402771751 finished by scheduler RemoteInterpreter-mongodb-shared_process-shared_session with status ERROR
+ INFO [2021-07-19 17:31:56,237] ({qtp1864350231-14} NotebookService.java[runParagraph]:324) - Start to run paragraph: paragraph_1626367581533_402771751 of note: 2G9U36QSR
+ INFO [2021-07-19 17:31:56,243] ({SchedulerFactory2} AbstractScheduler.java[runJob]:127) - Job paragraph_1626367581533_402771751 started by scheduler RemoteInterpreter-mongodb-shared_process-shared_session
+ INFO [2021-07-19 17:31:56,245] ({SchedulerFactory2} Paragraph.java[jobRun]:420) - Run paragraph [paragraph_id: paragraph_1626367581533_402771751, interpreter: org.apache.zeppelin.mongodb.MongoDbInterpreter, note_id: 2G9U36QSR, user: anonymous]
+ INFO [2021-07-19 17:31:56,346] ({JobStatusPoller-paragraph_1626367581533_402771751} NotebookServer.java[onStatusChange]:1931) - Job paragraph_1626367581533_402771751 starts to RUNNING
+ WARN [2021-07-19 17:31:57,187] ({SchedulerFactory2} NotebookServer.java[onStatusChange]:1928) - Job paragraph_1626367581533_402771751 is finished, status: ERROR, exception: null, result: %text SyntaxError: Unexpected token, expected ";" (124:5)
+
+  122 | 
+  123 | 
+> 124 | show databases
+      |      ^
+  125 | 
+ExitValue: 1
+ INFO [2021-07-19 17:31:57,192] ({SchedulerFactory2} AbstractScheduler.java[runJob]:154) - Job paragraph_1626367581533_402771751 finished by scheduler RemoteInterpreter-mongodb-shared_process-shared_session with status ERROR
+ INFO [2021-07-19 17:31:58,739] ({qtp1864350231-13} NotebookService.java[runParagraph]:324) - Start to run paragraph: paragraph_1626693567713_103520546 of note: 2G9U36QSR
+ INFO [2021-07-19 17:31:58,746] ({SchedulerFactory2} AbstractScheduler.java[runJob]:127) - Job paragraph_1626693567713_103520546 started by scheduler RemoteInterpreter-python-shared_process-shared_session
+ INFO [2021-07-19 17:31:58,747] ({SchedulerFactory2} Paragraph.java[jobRun]:420) - Run paragraph [paragraph_id: paragraph_1626693567713_103520546, interpreter: org.apache.zeppelin.python.PythonInterpreter, note_id: 2G9U36QSR, user: anonymous]
+ INFO [2021-07-19 17:31:58,748] ({SchedulerFactory2} ManagedInterpreterGroup.java[getOrCreateInterpreterProcess]:65) - Create InterpreterProcess for InterpreterGroup: python-shared_process
+ INFO [2021-07-19 17:31:58,749] ({SchedulerFactory2} PluginManager.java[loadInterpreterLauncher]:154) - Loading Interpreter Launcher Plugin: org.apache.zeppelin.interpreter.launcher.StandardInterpreterLauncher
+ INFO [2021-07-19 17:31:58,751] ({SchedulerFactory2} StandardInterpreterLauncher.java[launchDirectly]:49) - Launching new interpreter process of python
+ INFO [2021-07-19 17:31:58,753] ({SchedulerFactory2} ProcessLauncher.java[transition]:109) - Process state is transitioned to LAUNCHED
+ INFO [2021-07-19 17:31:58,753] ({SchedulerFactory2} ProcessLauncher.java[launch]:96) - Process is launched: [/opt/zeppelin/bin/interpreter.sh, -d, /opt/zeppelin/interpreter/python, -c, 172.18.0.3, -p, 41311, -r, :, -i, python-shared_process, -l, /opt/zeppelin/local-repo/python, -g, python]
+ INFO [2021-07-19 17:32:00,229] ({pool-7-thread-3} RemoteInterpreterEventServer.java[registerInterpreterProcess]:176) - Register interpreter process: 172.18.0.3:40237, interpreterGroup: python-shared_process
+ INFO [2021-07-19 17:32:00,230] ({pool-7-thread-3} ProcessLauncher.java[transition]:109) - Process state is transitioned to RUNNING
+ INFO [2021-07-19 17:32:00,327] ({SchedulerFactory2} RemoteInterpreter.java[lambda$internal_create$1]:160) - Create RemoteInterpreter org.apache.zeppelin.python.PythonInterpreter
+ INFO [2021-07-19 17:32:00,420] ({SchedulerFactory2} RemoteInterpreter.java[lambda$internal_create$1]:160) - Create RemoteInterpreter org.apache.zeppelin.python.IPythonInterpreter
+ INFO [2021-07-19 17:32:00,426] ({SchedulerFactory2} RemoteInterpreter.java[lambda$internal_create$1]:160) - Create RemoteInterpreter org.apache.zeppelin.python.PythonInterpreterPandasSql
+ INFO [2021-07-19 17:32:00,429] ({SchedulerFactory2} RemoteInterpreter.java[lambda$internal_create$1]:160) - Create RemoteInterpreter org.apache.zeppelin.python.PythonCondaInterpreter
+ INFO [2021-07-19 17:32:00,435] ({SchedulerFactory2} RemoteInterpreter.java[lambda$internal_create$1]:160) - Create RemoteInterpreter org.apache.zeppelin.python.PythonDockerInterpreter
+ INFO [2021-07-19 17:32:00,438] ({SchedulerFactory2} RemoteInterpreter.java[lambda$open$0]:134) - Open RemoteInterpreter org.apache.zeppelin.python.PythonInterpreter
+ INFO [2021-07-19 17:32:00,439] ({SchedulerFactory2} RemoteInterpreter.java[pushAngularObjectRegistryToRemote]:393) - Push local angular object registry from ZeppelinServer to remote interpreter group python-shared_process
+ INFO [2021-07-19 17:32:00,568] ({JobStatusPoller-paragraph_1626693567713_103520546} NotebookServer.java[onStatusChange]:1931) - Job paragraph_1626693567713_103520546 starts to RUNNING
+ INFO [2021-07-19 17:32:04,163] ({SchedulerFactory2} NotebookServer.java[onStatusChange]:1926) - Job paragraph_1626693567713_103520546 is finished successfully, status: FINISHED
+ INFO [2021-07-19 17:32:04,175] ({SchedulerFactory2} AbstractScheduler.java[runJob]:154) - Job paragraph_1626693567713_103520546 finished by scheduler RemoteInterpreter-python-shared_process-shared_session with status FINISHED
+ INFO [2021-07-19 17:35:32,590] ({qtp1864350231-12} NotebookService.java[runParagraph]:324) - Start to run paragraph: paragraph_1626367581533_402771751 of note: 2G9U36QSR
+ INFO [2021-07-19 17:35:32,602] ({SchedulerFactory4} AbstractScheduler.java[runJob]:127) - Job paragraph_1626367581533_402771751 started by scheduler RemoteInterpreter-mongodb-shared_process-shared_session
+ INFO [2021-07-19 17:35:32,604] ({SchedulerFactory4} Paragraph.java[jobRun]:420) - Run paragraph [paragraph_id: paragraph_1626367581533_402771751, interpreter: org.apache.zeppelin.mongodb.MongoDbInterpreter, note_id: 2G9U36QSR, user: anonymous]
+ INFO [2021-07-19 17:35:32,706] ({JobStatusPoller-paragraph_1626367581533_402771751} NotebookServer.java[onStatusChange]:1931) - Job paragraph_1626367581533_402771751 starts to RUNNING
+ WARN [2021-07-19 17:35:33,543] ({SchedulerFactory4} NotebookServer.java[onStatusChange]:1928) - Job paragraph_1626367581533_402771751 is finished, status: ERROR, exception: null, result: %text SyntaxError: Unexpected token, expected ";" (124:5)
+
+  122 | 
+  123 | 
+> 124 | show databases
+      |      ^
+  125 | 
+ExitValue: 1
+ INFO [2021-07-19 17:35:33,548] ({SchedulerFactory4} AbstractScheduler.java[runJob]:154) - Job paragraph_1626367581533_402771751 finished by scheduler RemoteInterpreter-mongodb-shared_process-shared_session with status ERROR
+ INFO [2021-07-19 17:37:34,119] ({qtp1864350231-11} InterpreterRestApi.java[updateSetting]:157) - Update interpreterSetting mongodb
+ INFO [2021-07-19 17:37:34,123] ({qtp1864350231-11} InterpreterSetting.java[close]:529) - Close InterpreterSetting: mongodb
+ INFO [2021-07-19 17:37:34,126] ({mongodb-close} ManagedInterpreterGroup.java[close]:91) - Close InterpreterGroup: mongodb-shared_process
+ INFO [2021-07-19 17:37:34,127] ({mongodb-close} ManagedInterpreterGroup.java[close]:102) - Close Session: shared_session for interpreter setting: mongodb
+ INFO [2021-07-19 17:37:34,129] ({ConfInterpreter-close} SchedulerFactory.java[createOrGetFIFOScheduler]:76) - Create FIFOScheduler: interpreter_886169567
+ INFO [2021-07-19 17:37:34,130] ({RemoteInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.mongodb.MongoDbInterpreter
+ INFO [2021-07-19 17:37:34,131] ({ConfInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.interpreter.ConfInterpreter
+ INFO [2021-07-19 17:37:34,132] ({ConfInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: interpreter_886169567
+ WARN [2021-07-19 17:37:34,134] ({SchedulerFactory5} AbstractScheduler.java[run]:91) - FIFOScheduler is interrupted
+ INFO [2021-07-19 17:37:34,140] ({RemoteInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: RemoteInterpreter-mongodb-shared_process-shared_session
+ WARN [2021-07-19 17:37:34,141] ({SchedulerFactory1} AbstractScheduler.java[run]:91) - RemoteScheduler is interrupted
+ INFO [2021-07-19 17:37:34,141] ({mongodb-close} ManagedInterpreterGroup.java[close]:106) - Remove this InterpreterGroup: mongodb-shared_process as all the sessions are closed
+ INFO [2021-07-19 17:37:34,142] ({mongodb-close} ManagedInterpreterGroup.java[close]:109) - Kill RemoteInterpreterProcess
+ INFO [2021-07-19 17:37:34,143] ({mongodb-close} RemoteInterpreterManagedProcess.java[stop]:141) - Kill interpreter process for interpreter group: mongodb-shared_process
+ INFO [2021-07-19 17:37:34,155] ({pool-7-thread-2} RemoteInterpreterEventServer.java[unRegisterInterpreterProcess]:183) - Unregister interpreter process: mongodb-shared_process
+ WARN [2021-07-19 17:37:34,156] ({pool-7-thread-2} RemoteInterpreterEventServer.java[unRegisterInterpreterProcess]:187) - Unable to unregister interpreter process because no such interpreterGroup: mongodb-shared_process
+ INFO [2021-07-19 17:37:34,163] ({mongodb-close} RemoteInterpreterManagedProcess.java[stop]:155) - Remote process of interpreter group: mongodb-shared_process is terminated
+ INFO [2021-07-19 17:37:34,164] ({qtp1864350231-11} InterpreterSetting.java[setStatus]:734) - Set interpreter mongodb status to DOWNLOADING_DEPENDENCIES
+ INFO [2021-07-19 17:37:34,164] ({qtp1864350231-11} LocalConfigStorage.java[save]:53) - Save Interpreter Setting to /opt/zeppelin/conf/interpreter.json
+ INFO [2021-07-19 17:37:34,165] ({Thread-77} InterpreterSetting.java[run]:964) - Start to download dependencies for interpreter: mongodb
+ INFO [2021-07-19 17:37:34,258] ({Thread-77} InterpreterSetting.java[run]:977) - Finish downloading dependencies for interpreter: mongodb
+ INFO [2021-07-19 17:37:34,259] ({Thread-77} InterpreterSetting.java[setStatus]:734) - Set interpreter mongodb status to READY
+ INFO [2021-07-19 17:37:34,260] ({Thread-77} LocalConfigStorage.java[save]:53) - Save Interpreter Setting to /opt/zeppelin/conf/interpreter.json
+ WARN [2021-07-19 17:37:34,517] ({Exec Default Executor} ProcessLauncher.java[onProcessFailed]:134) - Process with cmd [/opt/zeppelin/bin/interpreter.sh, -d, /opt/zeppelin/interpreter/mongodb, -c, 172.18.0.3, -p, 41311, -r, :, -i, mongodb-shared_process, -l, /opt/zeppelin/local-repo/mongodb, -g, mongodb] is failed due to
+org.apache.commons.exec.ExecuteException: Process exited with an error: 143 (Exit value: 143)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.access$200(DefaultExecutor.java:48)
+	at org.apache.commons.exec.DefaultExecutor$1.run(DefaultExecutor.java:200)
+	at java.lang.Thread.run(Thread.java:748)
+ INFO [2021-07-19 17:37:34,521] ({Exec Default Executor} ProcessLauncher.java[transition]:109) - Process state is transitioned to TERMINATED
+ INFO [2021-07-19 17:37:38,385] ({qtp1864350231-113} InterpreterSetting.java[getOrCreateInterpreterGroup]:453) - Create InterpreterGroup with groupId: mongodb-shared_process for ExecutionContext{user='anonymous', noteId='2GA478RAU', interpreterGroupId='null', defaultInterpreterGroup='spark', inIsolatedMode=false, startTime=}
+ INFO [2021-07-19 17:37:38,387] ({qtp1864350231-113} InterpreterSetting.java[createInterpreters]:823) - Interpreter org.apache.zeppelin.mongodb.MongoDbInterpreter created for user: anonymous, sessionId: shared_session
+ INFO [2021-07-19 17:37:38,389] ({qtp1864350231-113} ManagedInterpreterGroup.java[getOrCreateSession]:180) - Create Session: shared_session in InterpreterGroup: mongodb-shared_process for user: anonymous
+ INFO [2021-07-19 17:37:38,391] ({qtp1864350231-113} InterpreterSetting.java[getOrCreateInterpreterGroup]:453) - Create InterpreterGroup with groupId: sh-shared_process for ExecutionContext{user='anonymous', noteId='2GA478RAU', interpreterGroupId='null', defaultInterpreterGroup='spark', inIsolatedMode=false, startTime=}
+ INFO [2021-07-19 17:37:38,392] ({qtp1864350231-113} InterpreterSetting.java[createInterpreters]:823) - Interpreter org.apache.zeppelin.shell.ShellInterpreter created for user: anonymous, sessionId: shared_session
+ INFO [2021-07-19 17:37:38,393] ({qtp1864350231-113} InterpreterSetting.java[createInterpreters]:823) - Interpreter org.apache.zeppelin.shell.TerminalInterpreter created for user: anonymous, sessionId: shared_session
+ INFO [2021-07-19 17:37:38,394] ({qtp1864350231-113} ManagedInterpreterGroup.java[getOrCreateSession]:180) - Create Session: shared_session in InterpreterGroup: sh-shared_process for user: anonymous
+ INFO [2021-07-19 17:37:38,395] ({qtp1864350231-113} InterpreterSetting.java[getOrCreateInterpreterGroup]:453) - Create InterpreterGroup with groupId: spark-shared_process for ExecutionContext{user='anonymous', noteId='2GA478RAU', interpreterGroupId='null', defaultInterpreterGroup='spark', inIsolatedMode=false, startTime=}
+ INFO [2021-07-19 17:37:38,396] ({qtp1864350231-113} InterpreterSetting.java[createInterpreters]:823) - Interpreter org.apache.zeppelin.spark.SparkInterpreter created for user: anonymous, sessionId: shared_session
+ INFO [2021-07-19 17:37:38,397] ({qtp1864350231-113} InterpreterSetting.java[createInterpreters]:823) - Interpreter org.apache.zeppelin.spark.SparkSqlInterpreter created for user: anonymous, sessionId: shared_session
+ INFO [2021-07-19 17:37:38,398] ({qtp1864350231-113} InterpreterSetting.java[createInterpreters]:823) - Interpreter org.apache.zeppelin.spark.PySparkInterpreter created for user: anonymous, sessionId: shared_session
+ INFO [2021-07-19 17:37:38,398] ({qtp1864350231-113} InterpreterSetting.java[createInterpreters]:823) - Interpreter org.apache.zeppelin.spark.IPySparkInterpreter created for user: anonymous, sessionId: shared_session
+ INFO [2021-07-19 17:37:38,399] ({qtp1864350231-113} InterpreterSetting.java[createInterpreters]:823) - Interpreter org.apache.zeppelin.spark.SparkRInterpreter created for user: anonymous, sessionId: shared_session
+ INFO [2021-07-19 17:37:38,400] ({qtp1864350231-113} InterpreterSetting.java[createInterpreters]:823) - Interpreter org.apache.zeppelin.spark.SparkIRInterpreter created for user: anonymous, sessionId: shared_session
+ INFO [2021-07-19 17:37:38,401] ({qtp1864350231-113} InterpreterSetting.java[createInterpreters]:823) - Interpreter org.apache.zeppelin.spark.SparkShinyInterpreter created for user: anonymous, sessionId: shared_session
+ INFO [2021-07-19 17:37:38,402] ({qtp1864350231-113} InterpreterSetting.java[createInterpreters]:823) - Interpreter org.apache.zeppelin.spark.KotlinSparkInterpreter created for user: anonymous, sessionId: shared_session
+ INFO [2021-07-19 17:37:38,402] ({qtp1864350231-113} ManagedInterpreterGroup.java[getOrCreateSession]:180) - Create Session: shared_session in InterpreterGroup: spark-shared_process for user: anonymous
+ INFO [2021-07-19 17:37:39,848] ({qtp1864350231-27} NotebookService.java[runParagraph]:324) - Start to run paragraph: paragraph_1626709194565_1978341831 of note: 2GA478RAU
+ INFO [2021-07-19 17:37:39,854] ({SchedulerFactory6} AbstractScheduler.java[runJob]:127) - Job paragraph_1626709194565_1978341831 started by scheduler RemoteInterpreter-mongodb-shared_process-shared_session
+ INFO [2021-07-19 17:37:39,856] ({SchedulerFactory6} Paragraph.java[jobRun]:420) - Run paragraph [paragraph_id: paragraph_1626709194565_1978341831, interpreter: org.apache.zeppelin.mongodb.MongoDbInterpreter, note_id: 2GA478RAU, user: anonymous]
+ INFO [2021-07-19 17:37:39,857] ({SchedulerFactory6} ManagedInterpreterGroup.java[getOrCreateInterpreterProcess]:65) - Create InterpreterProcess for InterpreterGroup: mongodb-shared_process
+ INFO [2021-07-19 17:37:39,859] ({SchedulerFactory6} PluginManager.java[loadInterpreterLauncher]:154) - Loading Interpreter Launcher Plugin: org.apache.zeppelin.interpreter.launcher.StandardInterpreterLauncher
+ INFO [2021-07-19 17:37:39,860] ({SchedulerFactory6} StandardInterpreterLauncher.java[launchDirectly]:49) - Launching new interpreter process of mongodb
+ INFO [2021-07-19 17:37:39,861] ({SchedulerFactory6} ProcessLauncher.java[transition]:109) - Process state is transitioned to LAUNCHED
+ INFO [2021-07-19 17:37:39,862] ({SchedulerFactory6} ProcessLauncher.java[launch]:96) - Process is launched: [/opt/zeppelin/bin/interpreter.sh, -d, /opt/zeppelin/interpreter/mongodb, -c, 172.18.0.3, -p, 41311, -r, :, -i, mongodb-shared_process, -l, /opt/zeppelin/local-repo/mongodb, -g, mongodb]
+ INFO [2021-07-19 17:37:41,336] ({pool-7-thread-5} RemoteInterpreterEventServer.java[registerInterpreterProcess]:176) - Register interpreter process: 172.18.0.3:45453, interpreterGroup: mongodb-shared_process
+ INFO [2021-07-19 17:37:41,337] ({pool-7-thread-5} ProcessLauncher.java[transition]:109) - Process state is transitioned to RUNNING
+ INFO [2021-07-19 17:37:41,409] ({SchedulerFactory6} RemoteInterpreter.java[lambda$internal_create$1]:160) - Create RemoteInterpreter org.apache.zeppelin.mongodb.MongoDbInterpreter
+ INFO [2021-07-19 17:37:41,499] ({SchedulerFactory6} RemoteInterpreter.java[lambda$open$0]:134) - Open RemoteInterpreter org.apache.zeppelin.mongodb.MongoDbInterpreter
+ INFO [2021-07-19 17:37:41,500] ({SchedulerFactory6} RemoteInterpreter.java[pushAngularObjectRegistryToRemote]:393) - Push local angular object registry from ZeppelinServer to remote interpreter group mongodb-shared_process
+ INFO [2021-07-19 17:37:41,659] ({JobStatusPoller-paragraph_1626709194565_1978341831} NotebookServer.java[onStatusChange]:1931) - Job paragraph_1626709194565_1978341831 starts to RUNNING
+ WARN [2021-07-19 17:37:41,688] ({SchedulerFactory6} NotebookServer.java[onStatusChange]:1928) - Job paragraph_1626709194565_1978341831 is finished, status: ERROR, exception: null, result: %text /mongo/bin/mongo: error while loading shared libraries: libcurl.so.4: cannot open shared object file: No such file or directory
+ExitValue: 127
+ INFO [2021-07-19 17:37:41,694] ({SchedulerFactory6} AbstractScheduler.java[runJob]:154) - Job paragraph_1626709194565_1978341831 finished by scheduler RemoteInterpreter-mongodb-shared_process-shared_session with status ERROR
+ INFO [2021-07-19 17:44:34,307] ({Thread-54} ZeppelinServer.java[lambda$shutdown$0]:314) - Shutting down Zeppelin Server ... 
+ INFO [2021-07-19 17:44:34,316] ({qtp1864350231-131} NotebookServer.java[onClose]:474) - Closed connection to 172.18.0.1:63152 (1006) Disconnected
+ INFO [2021-07-19 17:44:34,317] ({qtp1864350231-110} NotebookServer.java[onClose]:474) - Closed connection to 172.18.0.1:63148 (1006) Disconnected
+ INFO [2021-07-19 17:44:34,318] ({Thread-54} AbstractConnector.java[doStop]:381) - Stopped ServerConnector@44c8afef{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+ERROR [2021-07-19 17:44:34,317] ({qtp1864350231-131} ConnectionManager.java[broadcast]:249) - socket error
+org.eclipse.jetty.websocket.api.WebSocketException: Session closed
+	at org.eclipse.jetty.websocket.common.WebSocketSession.outgoingFrame(WebSocketSession.java:350)
+	at org.eclipse.jetty.websocket.common.WebSocketRemoteEndpoint.uncheckedSendFrame(WebSocketRemoteEndpoint.java:306)
+	at org.eclipse.jetty.websocket.common.WebSocketRemoteEndpoint.blockingWrite(WebSocketRemoteEndpoint.java:106)
+	at org.eclipse.jetty.websocket.common.WebSocketRemoteEndpoint.sendString(WebSocketRemoteEndpoint.java:384)
+	at org.apache.zeppelin.socket.NotebookSocket.send(NotebookSocket.java:70)
+	at org.apache.zeppelin.socket.ConnectionManager.broadcast(ConnectionManager.java:247)
+	at org.apache.zeppelin.socket.ConnectionManager.checkCollaborativeStatus(ConnectionManager.java:214)
+	at org.apache.zeppelin.socket.ConnectionManager.removeConnectionFromNote(ConnectionManager.java:190)
+	at org.apache.zeppelin.socket.ConnectionManager.removeConnectionFromAllNote(ConnectionManager.java:178)
+	at org.apache.zeppelin.socket.NotebookServer.onClose(NotebookServer.java:476)
+	at org.apache.zeppelin.socket.NotebookSocket.onWebSocketClose(NotebookSocket.java:47)
+	at org.eclipse.jetty.websocket.common.events.JettyListenerEventDriver.onClose(JettyListenerEventDriver.java:119)
+	at org.eclipse.jetty.websocket.common.WebSocketSession.callApplicationOnClose(WebSocketSession.java:393)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.disconnect(AbstractWebSocketConnection.java:316)
+	at org.eclipse.jetty.websocket.common.WebSocketSession.onClosed(WebSocketSession.java:436)
+	at org.eclipse.jetty.io.AbstractConnection.onClosed(AbstractConnection.java:237)
+	at org.eclipse.jetty.io.AbstractConnection.onClose(AbstractConnection.java:229)
+	at org.eclipse.jetty.io.SelectorManager.connectionClosed(SelectorManager.java:345)
+	at org.eclipse.jetty.io.ManagedSelector$DestroyEndPoint.run(ManagedSelector.java:1062)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.lang.Thread.run(Thread.java:748)
+ INFO [2021-07-19 17:44:34,322] ({Thread-54} HouseKeeper.java[stopScavenging]:158) - node0 Stopped scavenging
+ INFO [2021-07-19 17:44:34,335] ({Thread-54} ContextHandler.java[doStop]:1099) - Stopped o.e.j.w.WebAppContext@2e222612{zeppelin-web-angular,/next,null,UNAVAILABLE}{/opt/zeppelin/zeppelin-web-angular-0.9.0.war}
+ INFO [2021-07-19 17:44:34,340] ({Thread-54} ContextHandler.java[doStop]:1099) - Stopped o.e.j.w.WebAppContext@3972a855{zeppelin-web,/,null,UNAVAILABLE}{/opt/zeppelin/zeppelin-web-0.9.0.war}
+ INFO [2021-07-19 17:44:34,345] ({ignite-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: ignite
+ INFO [2021-07-19 17:44:34,346] ({beam-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: beam
+ INFO [2021-07-19 17:44:34,345] ({ignite-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: ignite
+ INFO [2021-07-19 17:44:34,348] ({pig-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: pig
+ INFO [2021-07-19 17:44:34,348] ({lens-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: lens
+ INFO [2021-07-19 17:44:34,348] ({influxdb-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: influxdb
+ INFO [2021-07-19 17:44:34,348] ({beam-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: beam
+ INFO [2021-07-19 17:44:34,347] ({geode-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: geode
+ INFO [2021-07-19 17:44:34,347] ({jdbc-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: jdbc
+ INFO [2021-07-19 17:44:34,347] ({geode-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: geode
+ INFO [2021-07-19 17:44:34,370] ({livy-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: livy
+ INFO [2021-07-19 17:44:34,370] ({influxdb-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: influxdb
+ INFO [2021-07-19 17:44:34,370] ({kylin-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: kylin
+ INFO [2021-07-19 17:44:34,370] ({pig-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: pig
+ INFO [2021-07-19 17:44:34,369] ({sparql-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: sparql
+ INFO [2021-07-19 17:44:34,369] ({cassandra-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: cassandra
+ INFO [2021-07-19 17:44:34,369] ({groovy-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: groovy
+ INFO [2021-07-19 17:44:34,369] ({neo4j-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: neo4j
+ INFO [2021-07-19 17:44:34,369] ({r-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: r
+ INFO [2021-07-19 17:44:34,368] ({ksql-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: ksql
+ INFO [2021-07-19 17:44:34,368] ({angular-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: angular
+ INFO [2021-07-19 17:44:34,368] ({flink-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: flink
+ INFO [2021-07-19 17:44:34,367] ({scalding-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: scalding
+ INFO [2021-07-19 17:44:34,367] ({kotlin-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: kotlin
+ INFO [2021-07-19 17:44:34,367] ({sap-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: sap
+ INFO [2021-07-19 17:44:34,367] ({python-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: python
+ INFO [2021-07-19 17:44:34,366] ({hbase-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: hbase
+ INFO [2021-07-19 17:44:34,366] ({mongodb-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: mongodb
+ INFO [2021-07-19 17:44:34,366] ({bigquery-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: bigquery
+ INFO [2021-07-19 17:44:34,366] ({alluxio-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: alluxio
+ INFO [2021-07-19 17:44:34,366] ({hazelcastjet-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: hazelcastjet
+ INFO [2021-07-19 17:44:34,365] ({md-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: md
+ INFO [2021-07-19 17:44:34,365] ({spark-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: spark
+ INFO [2021-07-19 17:44:34,365] ({sh-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: sh
+ INFO [2021-07-19 17:44:34,365] ({elasticsearch-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: elasticsearch
+ INFO [2021-07-19 17:44:34,364] ({submarine-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: submarine
+ INFO [2021-07-19 17:44:34,364] ({file-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: file
+ INFO [2021-07-19 17:44:34,364] ({jupyter-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: jupyter
+ INFO [2021-07-19 17:44:34,364] ({java-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: java
+ INFO [2021-07-19 17:44:34,358] ({lens-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: lens
+ INFO [2021-07-19 17:44:34,358] ({jdbc-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: jdbc
+ INFO [2021-07-19 17:44:34,357] ({kylin-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: kylin
+ INFO [2021-07-19 17:44:34,357] ({sparql-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: sparql
+ INFO [2021-07-19 17:44:34,357] ({cassandra-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: cassandra
+ INFO [2021-07-19 17:44:34,357] ({groovy-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: groovy
+ INFO [2021-07-19 17:44:34,356] ({neo4j-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: neo4j
+ INFO [2021-07-19 17:44:34,356] ({r-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: r
+ INFO [2021-07-19 17:44:34,356] ({livy-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: livy
+ INFO [2021-07-19 17:44:34,356] ({ksql-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: ksql
+ INFO [2021-07-19 17:44:34,356] ({angular-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: angular
+ INFO [2021-07-19 17:44:34,355] ({flink-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: flink
+ INFO [2021-07-19 17:44:34,355] ({scalding-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: scalding
+ INFO [2021-07-19 17:44:34,355] ({kotlin-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: kotlin
+ INFO [2021-07-19 17:44:34,355] ({sap-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: sap
+ INFO [2021-07-19 17:44:34,355] ({python-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: python
+ INFO [2021-07-19 17:44:34,354] ({hbase-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: hbase
+ INFO [2021-07-19 17:44:34,354] ({mongodb-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: mongodb
+ INFO [2021-07-19 17:44:34,354] ({bigquery-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: bigquery
+ INFO [2021-07-19 17:44:34,354] ({alluxio-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: alluxio
+ INFO [2021-07-19 17:44:34,353] ({hazelcastjet-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: hazelcastjet
+ INFO [2021-07-19 17:44:34,353] ({md-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: md
+ INFO [2021-07-19 17:44:34,353] ({spark-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: spark
+ INFO [2021-07-19 17:44:34,353] ({sh-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: sh
+ INFO [2021-07-19 17:44:34,353] ({elasticsearch-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: elasticsearch
+ INFO [2021-07-19 17:44:34,352] ({submarine-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: submarine
+ INFO [2021-07-19 17:44:34,352] ({file-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: file
+ INFO [2021-07-19 17:44:34,352] ({jupyter-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: jupyter
+ INFO [2021-07-19 17:44:34,352] ({java-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: java
+ INFO [2021-07-19 17:44:34,393] ({sh-close} ManagedInterpreterGroup.java[close]:91) - Close InterpreterGroup: sh-shared_process
+ INFO [2021-07-19 17:44:34,392] ({spark-close} ManagedInterpreterGroup.java[close]:91) - Close InterpreterGroup: spark-shared_process
+ INFO [2021-07-19 17:44:34,389] ({mongodb-close} ManagedInterpreterGroup.java[close]:91) - Close InterpreterGroup: mongodb-shared_process
+ INFO [2021-07-19 17:44:34,416] ({mongodb-close} ManagedInterpreterGroup.java[close]:102) - Close Session: shared_session for interpreter setting: mongodb
+ INFO [2021-07-19 17:44:34,388] ({python-close} ManagedInterpreterGroup.java[close]:91) - Close InterpreterGroup: python-shared_process
+ INFO [2021-07-19 17:44:34,417] ({python-close} ManagedInterpreterGroup.java[close]:102) - Close Session: shared_session for interpreter setting: python
+ INFO [2021-07-19 17:44:34,417] ({RemoteInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.mongodb.MongoDbInterpreter
+ INFO [2021-07-19 17:44:34,415] ({spark-close} ManagedInterpreterGroup.java[close]:102) - Close Session: shared_session for interpreter setting: spark
+ INFO [2021-07-19 17:44:34,414] ({sh-close} ManagedInterpreterGroup.java[close]:102) - Close Session: shared_session for interpreter setting: sh
+ INFO [2021-07-19 17:44:34,417] ({ConfInterpreter-close} SchedulerFactory.java[createOrGetFIFOScheduler]:76) - Create FIFOScheduler: interpreter_1020761284
+ INFO [2021-07-19 17:44:34,424] ({ConfInterpreter-close} SchedulerFactory.java[createOrGetFIFOScheduler]:76) - Create FIFOScheduler: interpreter_644766975
+ INFO [2021-07-19 17:44:34,424] ({ConfInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.interpreter.ConfInterpreter
+ INFO [2021-07-19 17:44:34,426] ({ConfInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.interpreter.ConfInterpreter
+ INFO [2021-07-19 17:44:34,426] ({RemoteInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.spark.KotlinSparkInterpreter
+ INFO [2021-07-19 17:44:34,426] ({ConfInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: interpreter_1020761284
+ WARN [2021-07-19 17:44:34,428] ({RemoteInterpreter-close} RemoteInterpreter.java[close]:186) - close is called when RemoterInterpreter is not opened for org.apache.zeppelin.spark.KotlinSparkInterpreter
+ WARN [2021-07-19 17:44:34,429] ({SchedulerFactory4} AbstractScheduler.java[run]:91) - FIFOScheduler is interrupted
+ INFO [2021-07-19 17:44:34,431] ({RemoteInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.spark.SparkRInterpreter
+ WARN [2021-07-19 17:44:34,431] ({RemoteInterpreter-close} RemoteInterpreter.java[close]:186) - close is called when RemoterInterpreter is not opened for org.apache.zeppelin.spark.SparkRInterpreter
+ INFO [2021-07-19 17:44:34,430] ({RemoteInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.spark.SparkIRInterpreter
+ WARN [2021-07-19 17:44:34,432] ({RemoteInterpreter-close} RemoteInterpreter.java[close]:186) - close is called when RemoterInterpreter is not opened for org.apache.zeppelin.spark.SparkIRInterpreter
+ INFO [2021-07-19 17:44:34,430] ({RemoteInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.python.PythonCondaInterpreter
+ WARN [2021-07-19 17:44:34,434] ({RemoteInterpreter-close} RemoteInterpreter.java[close]:186) - close is called when RemoterInterpreter is not opened for org.apache.zeppelin.python.PythonCondaInterpreter
+ INFO [2021-07-19 17:44:34,430] ({RemoteInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.shell.ShellInterpreter
+ INFO [2021-07-19 17:44:34,431] ({RemoteInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.spark.SparkSqlInterpreter
+ WARN [2021-07-19 17:44:34,436] ({RemoteInterpreter-close} RemoteInterpreter.java[close]:186) - close is called when RemoterInterpreter is not opened for org.apache.zeppelin.spark.SparkSqlInterpreter
+ INFO [2021-07-19 17:44:34,431] ({ConfInterpreter-close} SchedulerFactory.java[createOrGetFIFOScheduler]:76) - Create FIFOScheduler: interpreter_1194774187
+ INFO [2021-07-19 17:44:34,431] ({RemoteInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.spark.SparkInterpreter
+ WARN [2021-07-19 17:44:34,438] ({RemoteInterpreter-close} RemoteInterpreter.java[close]:186) - close is called when RemoterInterpreter is not opened for org.apache.zeppelin.spark.SparkInterpreter
+ INFO [2021-07-19 17:44:34,431] ({RemoteInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.spark.SparkShinyInterpreter
+ WARN [2021-07-19 17:44:34,439] ({RemoteInterpreter-close} RemoteInterpreter.java[close]:186) - close is called when RemoterInterpreter is not opened for org.apache.zeppelin.spark.SparkShinyInterpreter
+ INFO [2021-07-19 17:44:34,431] ({RemoteInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.spark.PySparkInterpreter
+ WARN [2021-07-19 17:44:34,440] ({RemoteInterpreter-close} RemoteInterpreter.java[close]:186) - close is called when RemoterInterpreter is not opened for org.apache.zeppelin.spark.PySparkInterpreter
+ INFO [2021-07-19 17:44:34,431] ({RemoteInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.spark.IPySparkInterpreter
+ WARN [2021-07-19 17:44:34,441] ({RemoteInterpreter-close} RemoteInterpreter.java[close]:186) - close is called when RemoterInterpreter is not opened for org.apache.zeppelin.spark.IPySparkInterpreter
+ INFO [2021-07-19 17:44:34,438] ({RemoteInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.python.IPythonInterpreter
+ WARN [2021-07-19 17:44:34,443] ({RemoteInterpreter-close} RemoteInterpreter.java[close]:186) - close is called when RemoterInterpreter is not opened for org.apache.zeppelin.python.IPythonInterpreter
+ INFO [2021-07-19 17:44:34,438] ({RemoteInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: RemoteInterpreter-spark-shared_process-shared_session
+ INFO [2021-07-19 17:44:34,438] ({RemoteInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.python.PythonInterpreter
+ INFO [2021-07-19 17:44:34,445] ({RemoteInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: RemoteInterpreter-python-shared_process-shared_session
+ INFO [2021-07-19 17:44:34,438] ({RemoteInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.python.PythonInterpreterPandasSql
+ WARN [2021-07-19 17:44:34,449] ({RemoteInterpreter-close} RemoteInterpreter.java[close]:186) - close is called when RemoterInterpreter is not opened for org.apache.zeppelin.python.PythonInterpreterPandasSql
+ INFO [2021-07-19 17:44:34,438] ({RemoteInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.python.PythonDockerInterpreter
+ INFO [2021-07-19 17:44:34,438] ({ConfInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.interpreter.ConfInterpreter
+ WARN [2021-07-19 17:44:34,436] ({RemoteInterpreter-close} RemoteInterpreter.java[close]:186) - close is called when RemoterInterpreter is not opened for org.apache.zeppelin.shell.ShellInterpreter
+ WARN [2021-07-19 17:44:34,451] ({RemoteInterpreter-close} RemoteInterpreter.java[close]:186) - close is called when RemoterInterpreter is not opened for org.apache.zeppelin.python.PythonDockerInterpreter
+ WARN [2021-07-19 17:44:34,449] ({SchedulerFactory3} AbstractScheduler.java[run]:91) - RemoteScheduler is interrupted
+ INFO [2021-07-19 17:44:34,446] ({RemoteInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: RemoteInterpreter-spark-shared_process-shared_session
+ WARN [2021-07-19 17:44:34,444] ({SchedulerFactory11} AbstractScheduler.java[run]:91) - RemoteScheduler is interrupted
+ INFO [2021-07-19 17:44:34,454] ({RemoteInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: RemoteInterpreter-spark-shared_process-shared_session
+ INFO [2021-07-19 17:44:34,456] ({RemoteInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: RemoteInterpreter-spark-shared_process-shared_session
+ INFO [2021-07-19 17:44:34,457] ({RemoteInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: RemoteInterpreter-mongodb-shared_process-shared_session
+ WARN [2021-07-19 17:44:34,458] ({SchedulerFactory2} AbstractScheduler.java[run]:91) - RemoteScheduler is interrupted
+ INFO [2021-07-19 17:44:34,458] ({mongodb-close} ManagedInterpreterGroup.java[close]:106) - Remove this InterpreterGroup: mongodb-shared_process as all the sessions are closed
+ INFO [2021-07-19 17:44:34,459] ({mongodb-close} ManagedInterpreterGroup.java[close]:109) - Kill RemoteInterpreterProcess
+ INFO [2021-07-19 17:44:34,460] ({RemoteInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.shell.TerminalInterpreter
+ INFO [2021-07-19 17:44:34,464] ({ConfInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: interpreter_644766975
+ INFO [2021-07-19 17:44:34,460] ({mongodb-close} RemoteInterpreterManagedProcess.java[stop]:141) - Kill interpreter process for interpreter group: mongodb-shared_process
+ WARN [2021-07-19 17:44:34,467] ({SchedulerFactory7} AbstractScheduler.java[run]:91) - FIFOScheduler is interrupted
+ WARN [2021-07-19 17:44:34,465] ({RemoteInterpreter-close} RemoteInterpreter.java[close]:186) - close is called when RemoterInterpreter is not opened for org.apache.zeppelin.shell.TerminalInterpreter
+ INFO [2021-07-19 17:44:34,467] ({ConfInterpreter-close} SchedulerFactory.java[createOrGetFIFOScheduler]:76) - Create FIFOScheduler: interpreter_201270181
+ INFO [2021-07-19 17:44:34,470] ({ConfInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.interpreter.ConfInterpreter
+ INFO [2021-07-19 17:44:34,470] ({RemoteInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: RemoteInterpreter-sh-shared_process-shared_session
+ WARN [2021-07-19 17:44:34,471] ({SchedulerFactory1} AbstractScheduler.java[run]:91) - RemoteScheduler is interrupted
+ INFO [2021-07-19 17:44:34,471] ({RemoteInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: RemoteInterpreter-python-shared_process-shared_session
+ INFO [2021-07-19 17:44:34,473] ({RemoteInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: RemoteInterpreter-sh-shared_process-shared_session
+ INFO [2021-07-19 17:44:34,474] ({ConfInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: interpreter_1194774187
+ WARN [2021-07-19 17:44:34,474] ({SchedulerFactory8} AbstractScheduler.java[run]:91) - FIFOScheduler is interrupted
+ INFO [2021-07-19 17:44:34,475] ({RemoteInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: RemoteInterpreter-python-shared_process-shared_session
+ INFO [2021-07-19 17:44:34,476] ({RemoteInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: RemoteInterpreter-python-shared_process-shared_session
+ INFO [2021-07-19 17:44:34,477] ({RemoteInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: RemoteInterpreter-spark-shared_process-shared_session
+ INFO [2021-07-19 17:44:34,478] ({RemoteInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: RemoteInterpreter-spark-shared_process-shared_session
+ INFO [2021-07-19 17:44:34,479] ({RemoteInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: RemoteInterpreter-spark-shared_process-shared_session
+ INFO [2021-07-19 17:44:34,480] ({RemoteInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: RemoteInterpreter-spark-shared_process-shared_session
+ INFO [2021-07-19 17:44:34,479] ({pool-7-thread-2} RemoteInterpreterEventServer.java[unRegisterInterpreterProcess]:183) - Unregister interpreter process: mongodb-shared_process
+ INFO [2021-07-19 17:44:34,481] ({spark-close} ManagedInterpreterGroup.java[close]:106) - Remove this InterpreterGroup: spark-shared_process as all the sessions are closed
+ INFO [2021-07-19 17:44:34,480] ({ConfInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: interpreter_201270181
+ WARN [2021-07-19 17:44:34,481] ({pool-7-thread-2} RemoteInterpreterEventServer.java[unRegisterInterpreterProcess]:187) - Unable to unregister interpreter process because no such interpreterGroup: mongodb-shared_process
+ WARN [2021-07-19 17:44:34,483] ({SchedulerFactory15} AbstractScheduler.java[run]:91) - FIFOScheduler is interrupted
+ INFO [2021-07-19 17:44:34,483] ({sh-close} ManagedInterpreterGroup.java[close]:106) - Remove this InterpreterGroup: sh-shared_process as all the sessions are closed
+ INFO [2021-07-19 17:44:34,488] ({mongodb-close} RemoteInterpreterManagedProcess.java[stop]:155) - Remote process of interpreter group: mongodb-shared_process is terminated
+ INFO [2021-07-19 17:44:34,779] ({RemoteInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: RemoteInterpreter-python-shared_process-shared_session
+ INFO [2021-07-19 17:44:34,780] ({python-close} ManagedInterpreterGroup.java[close]:106) - Remove this InterpreterGroup: python-shared_process as all the sessions are closed
+ INFO [2021-07-19 17:44:34,780] ({python-close} ManagedInterpreterGroup.java[close]:109) - Kill RemoteInterpreterProcess
+ INFO [2021-07-19 17:44:34,781] ({python-close} RemoteInterpreterManagedProcess.java[stop]:141) - Kill interpreter process for interpreter group: python-shared_process
+ INFO [2021-07-19 17:44:34,790] ({pool-7-thread-4} RemoteInterpreterEventServer.java[unRegisterInterpreterProcess]:183) - Unregister interpreter process: python-shared_process
+ WARN [2021-07-19 17:44:34,791] ({pool-7-thread-4} RemoteInterpreterEventServer.java[unRegisterInterpreterProcess]:187) - Unable to unregister interpreter process because no such interpreterGroup: python-shared_process
+ INFO [2021-07-19 17:44:34,796] ({python-close} RemoteInterpreterManagedProcess.java[stop]:155) - Remote process of interpreter group: python-shared_process is terminated
+ INFO [2021-07-19 17:44:34,797] ({Thread-54} NotebookRepoSync.java[close]:460) - Closing all notebook storages
+ INFO [2021-07-19 17:44:34,801] ({Thread-54} SLF4JLogger.java[info]:71) - Closed connection [connectionId{localValue:2, serverValue:81}] to mongo:27017 because the pool has been closed.
+ WARN [2021-07-19 17:44:34,833] ({Exec Default Executor} ProcessLauncher.java[onProcessFailed]:134) - Process with cmd [/opt/zeppelin/bin/interpreter.sh, -d, /opt/zeppelin/interpreter/mongodb, -c, 172.18.0.3, -p, 41311, -r, :, -i, mongodb-shared_process, -l, /opt/zeppelin/local-repo/mongodb, -g, mongodb] is failed due to
+org.apache.commons.exec.ExecuteException: Process exited with an error: 143 (Exit value: 143)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.access$200(DefaultExecutor.java:48)
+	at org.apache.commons.exec.DefaultExecutor$1.run(DefaultExecutor.java:200)
+	at java.lang.Thread.run(Thread.java:748)
+ INFO [2021-07-19 17:44:34,834] ({Exec Default Executor} ProcessLauncher.java[transition]:109) - Process state is transitioned to TERMINATED
+ WARN [2021-07-19 17:44:35,186] ({Exec Default Executor} ProcessLauncher.java[onProcessFailed]:134) - Process with cmd [/opt/zeppelin/bin/interpreter.sh, -d, /opt/zeppelin/interpreter/python, -c, 172.18.0.3, -p, 41311, -r, :, -i, python-shared_process, -l, /opt/zeppelin/local-repo/python, -g, python] is failed due to
+org.apache.commons.exec.ExecuteException: Process exited with an error: 143 (Exit value: 143)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.access$200(DefaultExecutor.java:48)
+	at org.apache.commons.exec.DefaultExecutor$1.run(DefaultExecutor.java:200)
+	at java.lang.Thread.run(Thread.java:748)
+ INFO [2021-07-19 17:44:35,187] ({Exec Default Executor} ProcessLauncher.java[transition]:109) - Process state is transitioned to TERMINATED
+ INFO [2021-07-19 17:44:37,811] ({Thread-54} ZeppelinServer.java[lambda$shutdown$0]:329) - Bye

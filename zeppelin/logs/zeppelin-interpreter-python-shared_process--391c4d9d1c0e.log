@@ -1,0 +1,61 @@
+ INFO [2021-07-19 17:54:42,470] ({RegisterThread} RemoteInterpreterServer.java[run]:595) - Start registration
+ INFO [2021-07-19 17:54:42,471] ({RemoteInterpreterServer-Thread} RemoteInterpreterServer.java[run]:193) - Launching ThriftServer at 172.18.0.3:37075
+ INFO [2021-07-19 17:54:43,609] ({RegisterThread} RemoteInterpreterServer.java[run]:609) - Registering interpreter process
+ INFO [2021-07-19 17:54:43,624] ({RegisterThread} RemoteInterpreterServer.java[run]:611) - Registered interpreter process
+ INFO [2021-07-19 17:54:43,625] ({RegisterThread} RemoteInterpreterServer.java[run]:632) - Registration finished
+ INFO [2021-07-19 17:54:43,640] ({pool-2-thread-1} ZeppelinConfiguration.java[create]:172) - Load configuration from file:/opt/zeppelin/conf/zeppelin-site.xml
+ INFO [2021-07-19 17:54:43,702] ({pool-2-thread-1} ZeppelinConfiguration.java[create]:180) - Server Host: 0.0.0.0
+ INFO [2021-07-19 17:54:43,703] ({pool-2-thread-1} ZeppelinConfiguration.java[create]:182) - Server Port: 8080
+ INFO [2021-07-19 17:54:43,704] ({pool-2-thread-1} ZeppelinConfiguration.java[create]:186) - Context Path: /
+ INFO [2021-07-19 17:54:43,705] ({pool-2-thread-1} ZeppelinConfiguration.java[create]:187) - Zeppelin Version: 0.9.0
+ INFO [2021-07-19 17:54:43,705] ({pool-2-thread-1} RemoteInterpreterServer.java[createLifecycleManager]:286) - Creating interpreter lifecycle manager: org.apache.zeppelin.interpreter.lifecycle.NullLifecycleManager
+ INFO [2021-07-19 17:54:43,706] ({pool-2-thread-1} RemoteInterpreterServer.java[init]:229) - Creating RemoteInterpreterEventClient with connection pool size: 10
+ INFO [2021-07-19 17:54:43,795] ({pool-2-thread-1} RemoteInterpreterServer.java[createInterpreter]:383) - Instantiate interpreter org.apache.zeppelin.python.PythonInterpreter
+ INFO [2021-07-19 17:54:43,801] ({pool-2-thread-1} RemoteInterpreterServer.java[createInterpreter]:383) - Instantiate interpreter org.apache.zeppelin.python.IPythonInterpreter
+ INFO [2021-07-19 17:54:43,804] ({pool-2-thread-1} RemoteInterpreterServer.java[createInterpreter]:383) - Instantiate interpreter org.apache.zeppelin.python.PythonInterpreterPandasSql
+ INFO [2021-07-19 17:54:43,807] ({pool-2-thread-1} RemoteInterpreterServer.java[createInterpreter]:383) - Instantiate interpreter org.apache.zeppelin.python.PythonCondaInterpreter
+ INFO [2021-07-19 17:54:43,812] ({pool-2-thread-1} RemoteInterpreterServer.java[createInterpreter]:383) - Instantiate interpreter org.apache.zeppelin.python.PythonDockerInterpreter
+ INFO [2021-07-19 17:54:43,852] ({pool-2-thread-1} SchedulerFactory.java[<init>]:56) - Scheduler Thread Pool Size: 100
+ INFO [2021-07-19 17:54:43,853] ({pool-2-thread-1} SchedulerFactory.java[createOrGetFIFOScheduler]:76) - Create FIFOScheduler: interpreter_197884683
+ INFO [2021-07-19 17:54:43,857] ({pool-2-thread-2} SchedulerFactory.java[createOrGetFIFOScheduler]:76) - Create FIFOScheduler: interpreter_56407343
+ INFO [2021-07-19 17:54:43,858] ({pool-2-thread-2} SchedulerFactory.java[createOrGetFIFOScheduler]:76) - Create FIFOScheduler: interpreter_1883505800
+ INFO [2021-07-19 17:54:43,861] ({FIFOScheduler-interpreter_197884683-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717177976_60630008 started by scheduler interpreter_197884683
+ INFO [2021-07-19 17:54:44,278] ({FIFOScheduler-interpreter_197884683-Worker-1} JupyterKernelInterpreter.java[checkKernelPrerequisite]:174) - Prerequisite for kernel python is met
+ INFO [2021-07-19 17:54:44,290] ({FIFOScheduler-interpreter_197884683-Worker-1} JupyterKernelInterpreter.java[open]:114) - Python Exec: python
+ INFO [2021-07-19 17:54:44,661] ({FIFOScheduler-interpreter_197884683-Worker-1} JupyterKernelInterpreter.java[checkKernelPrerequisite]:174) - Prerequisite for kernel python is met
+ INFO [2021-07-19 17:54:44,823] ({FIFOScheduler-interpreter_197884683-Worker-1} JupyterKernelInterpreter.java[launchJupyterKernel]:188) - Launching Jupyter Kernel at port: 45439
+ INFO [2021-07-19 17:54:44,835] ({FIFOScheduler-interpreter_197884683-Worker-1} IPythonInterpreter.java[setupKernelEnv]:200) - PYTHONPATH: /tmp/zeppelin_jupyter_kernel_python7858275876621996521/py4j-src-0.10.7.zip
+ INFO [2021-07-19 17:54:44,841] ({FIFOScheduler-interpreter_197884683-Worker-1} ProcessLauncher.java[transition]:109) - Process state is transitioned to LAUNCHED
+ INFO [2021-07-19 17:54:44,842] ({FIFOScheduler-interpreter_197884683-Worker-1} ProcessLauncher.java[launch]:96) - Process is launched: [python, /tmp/zeppelin_jupyter_kernel_python7858275876621996521/kernel_server.py, python, 45439]
+ INFO [2021-07-19 17:54:45,230] ({FIFOScheduler-interpreter_197884683-Worker-1} JupyterKernelInterpreter.java[waitForReady]:348) - Wait for Jupyter Kernel to be started
+ INFO [2021-07-19 17:54:45,337] ({FIFOScheduler-interpreter_197884683-Worker-1} JupyterKernelInterpreter.java[waitForReady]:348) - Wait for Jupyter Kernel to be started
+ INFO [2021-07-19 17:54:45,442] ({FIFOScheduler-interpreter_197884683-Worker-1} JupyterKernelInterpreter.java[waitForReady]:348) - Wait for Jupyter Kernel to be started
+ INFO [2021-07-19 17:54:45,547] ({FIFOScheduler-interpreter_197884683-Worker-1} JupyterKernelInterpreter.java[waitForReady]:348) - Wait for Jupyter Kernel to be started
+ INFO [2021-07-19 17:54:45,653] ({FIFOScheduler-interpreter_197884683-Worker-1} JupyterKernelInterpreter.java[waitForReady]:348) - Wait for Jupyter Kernel to be started
+ INFO [2021-07-19 17:54:45,758] ({FIFOScheduler-interpreter_197884683-Worker-1} JupyterKernelInterpreter.java[waitForReady]:348) - Wait for Jupyter Kernel to be started
+ INFO [2021-07-19 17:54:45,865] ({FIFOScheduler-interpreter_197884683-Worker-1} JupyterKernelInterpreter.java[waitForReady]:348) - Wait for Jupyter Kernel to be started
+ INFO [2021-07-19 17:54:45,975] ({FIFOScheduler-interpreter_197884683-Worker-1} JupyterKernelInterpreter.java[waitForReady]:348) - Wait for Jupyter Kernel to be started
+ INFO [2021-07-19 17:54:46,090] ({FIFOScheduler-interpreter_197884683-Worker-1} JupyterKernelInterpreter.java[waitForReady]:344) - Jupyter Kernel is Running
+ INFO [2021-07-19 17:54:46,091] ({FIFOScheduler-interpreter_197884683-Worker-1} ProcessLauncher.java[transition]:109) - Process state is transitioned to RUNNING
+ INFO [2021-07-19 17:54:46,092] ({FIFOScheduler-interpreter_197884683-Worker-1} PythonUtils.java[createGatewayServer]:42) - Launching GatewayServer at 172.18.0.3:36955, useAuth: true
+ INFO [2021-07-19 17:54:46,530] ({FIFOScheduler-interpreter_197884683-Worker-1} PythonInterpreter.java[open]:88) - IPython is available, Use IPythonInterpreter to replace PythonInterpreter
+ INFO [2021-07-19 17:54:46,793] ({FIFOScheduler-interpreter_197884683-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717177976_60630008 finished by scheduler interpreter_197884683 with status FINISHED
+ INFO [2021-07-19 17:54:55,092] ({FIFOScheduler-interpreter_197884683-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717177976_60630008 started by scheduler interpreter_197884683
+ INFO [2021-07-19 17:54:55,151] ({FIFOScheduler-interpreter_197884683-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717177976_60630008 finished by scheduler interpreter_197884683 with status FINISHED
+ INFO [2021-07-19 17:55:18,829] ({FIFOScheduler-interpreter_197884683-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626717177976_60630008 started by scheduler interpreter_197884683
+ INFO [2021-07-19 17:55:18,887] ({FIFOScheduler-interpreter_197884683-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626717177976_60630008 finished by scheduler interpreter_197884683 with status FINISHED
+ INFO [2021-07-19 18:09:37,625] ({pool-2-thread-1} JupyterKernelInterpreter.java[close]:230) - Shutdown Jupyter Kernel Process
+ INFO [2021-07-19 18:09:37,942] ({pool-2-thread-1} JupyterKernelInterpreter.java[close]:241) - Jupyter Kernel is killed
+ INFO [2021-07-19 18:09:37,943] ({pool-2-thread-1} IPythonInterpreter.java[close]:208) - Shutdown Py4j GatewayServer
+ WARN [2021-07-19 18:09:37,951] ({Exec Default Executor} ProcessLauncher.java[onProcessFailed]:134) - Process with cmd [python, /tmp/zeppelin_jupyter_kernel_python7858275876621996521/kernel_server.py, python, 45439] is failed due to
+org.apache.commons.exec.ExecuteException: Process exited with an error: 143 (Exit value: 143)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.access$200(DefaultExecutor.java:48)
+	at org.apache.commons.exec.DefaultExecutor$1.run(DefaultExecutor.java:200)
+	at java.lang.Thread.run(Thread.java:748)
+ INFO [2021-07-19 18:09:37,954] ({Exec Default Executor} ProcessLauncher.java[transition]:109) - Process state is transitioned to TERMINATED
+ INFO [2021-07-19 18:09:37,954] ({pool-2-thread-1} RemoteInterpreterServer.java[shutdown]:244) - Unregister interpreter process
+ INFO [2021-07-19 18:09:37,961] ({ShutdownThread} RemoteInterpreterServer.java[run]:649) - Shutting down...
+ INFO [2021-07-19 18:09:37,962] ({ShutdownThread} RemoteInterpreterServer.java[run]:650) - Shutdown initialized by ShutdownCall
+ INFO [2021-07-19 18:09:37,963] ({ShutdownThread} SchedulerFactory.java[destroy]:61) - Destroy all executors
+ INFO [2021-07-19 18:09:37,964] ({ShutdownThread} SchedulerFactory.java[destroy]:65) - Stopping Scheduler interpreter_197884683

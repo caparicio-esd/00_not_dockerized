@@ -1,0 +1,31 @@
+ INFO [2021-07-19 22:35:12,646] ({RegisterThread} RemoteInterpreterServer.java[run]:595) - Start registration
+ INFO [2021-07-19 22:35:12,649] ({RemoteInterpreterServer-Thread} RemoteInterpreterServer.java[run]:193) - Launching ThriftServer at 172.18.0.3:35425
+ INFO [2021-07-19 22:35:13,496] ({RegisterThread} RemoteInterpreterServer.java[run]:609) - Registering interpreter process
+ INFO [2021-07-19 22:35:13,640] ({RegisterThread} RemoteInterpreterServer.java[run]:611) - Registered interpreter process
+ INFO [2021-07-19 22:35:13,641] ({RegisterThread} RemoteInterpreterServer.java[run]:632) - Registration finished
+ INFO [2021-07-19 22:35:13,789] ({pool-2-thread-1} ZeppelinConfiguration.java[create]:172) - Load configuration from file:/opt/zeppelin/conf/zeppelin-site.xml
+ INFO [2021-07-19 22:35:14,075] ({pool-2-thread-1} ZeppelinConfiguration.java[create]:180) - Server Host: 0.0.0.0
+ INFO [2021-07-19 22:35:14,080] ({pool-2-thread-1} ZeppelinConfiguration.java[create]:182) - Server Port: 8080
+ INFO [2021-07-19 22:35:14,084] ({pool-2-thread-1} ZeppelinConfiguration.java[create]:186) - Context Path: /
+ INFO [2021-07-19 22:35:14,089] ({pool-2-thread-1} ZeppelinConfiguration.java[create]:187) - Zeppelin Version: 0.9.0
+ INFO [2021-07-19 22:35:14,094] ({pool-2-thread-1} RemoteInterpreterServer.java[createLifecycleManager]:286) - Creating interpreter lifecycle manager: org.apache.zeppelin.interpreter.lifecycle.NullLifecycleManager
+ INFO [2021-07-19 22:35:14,097] ({pool-2-thread-1} RemoteInterpreterServer.java[init]:229) - Creating RemoteInterpreterEventClient with connection pool size: 10
+ INFO [2021-07-19 22:35:14,518] ({pool-2-thread-1} RemoteInterpreterServer.java[createInterpreter]:383) - Instantiate interpreter org.apache.zeppelin.java.JavaInterpreter
+ INFO [2021-07-19 22:35:14,731] ({pool-2-thread-2} SchedulerFactory.java[<init>]:56) - Scheduler Thread Pool Size: 100
+ INFO [2021-07-19 22:35:14,749] ({pool-2-thread-2} SchedulerFactory.java[createOrGetFIFOScheduler]:76) - Create FIFOScheduler: interpreter_1534282594
+ INFO [2021-07-19 22:35:14,851] ({FIFOScheduler-interpreter_1534282594-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1623581393826_198047180 started by scheduler interpreter_1534282594
+ERROR [2021-07-19 22:35:15,210] ({FIFOScheduler-interpreter_1534282594-Worker-1} JavaInterpreter.java[interpret]:68) - Exception in Interpreter while interpret
+java.lang.NullPointerException
+	at org.apache.zeppelin.java.StaticRepl.execute(StaticRepl.java:107)
+	at org.apache.zeppelin.java.JavaInterpreter.interpret(JavaInterpreter.java:65)
+	at org.apache.zeppelin.interpreter.LazyOpenInterpreter.interpret(LazyOpenInterpreter.java:110)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:852)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:744)
+	at org.apache.zeppelin.scheduler.Job.run(Job.java:172)
+	at org.apache.zeppelin.scheduler.AbstractScheduler.runJob(AbstractScheduler.java:132)
+	at org.apache.zeppelin.scheduler.FIFOScheduler.lambda$runJobInScheduler$0(FIFOScheduler.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+ INFO [2021-07-19 22:35:15,242] ({FIFOScheduler-interpreter_1534282594-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1623581393826_198047180 finished by scheduler interpreter_1534282594 with status ERROR
+ INFO [2021-07-19 23:03:45,394] ({ShutdownThread} RemoteInterpreterServer.java[run]:649) - Shutting down...

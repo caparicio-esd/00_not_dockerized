@@ -1,0 +1,96 @@
+ INFO [2021-07-19 22:35:25,804] ({RegisterThread} RemoteInterpreterServer.java[run]:595) - Start registration
+ INFO [2021-07-19 22:35:25,806] ({RemoteInterpreterServer-Thread} RemoteInterpreterServer.java[run]:193) - Launching ThriftServer at 172.18.0.3:46773
+ INFO [2021-07-19 22:35:27,693] ({RegisterThread} RemoteInterpreterServer.java[run]:609) - Registering interpreter process
+ INFO [2021-07-19 22:35:27,775] ({RegisterThread} RemoteInterpreterServer.java[run]:611) - Registered interpreter process
+ INFO [2021-07-19 22:35:27,776] ({RegisterThread} RemoteInterpreterServer.java[run]:632) - Registration finished
+ INFO [2021-07-19 22:35:27,847] ({pool-2-thread-1} ZeppelinConfiguration.java[create]:172) - Load configuration from file:/opt/zeppelin/conf/zeppelin-site.xml
+ INFO [2021-07-19 22:35:28,225] ({pool-2-thread-1} ZeppelinConfiguration.java[create]:180) - Server Host: 0.0.0.0
+ INFO [2021-07-19 22:35:28,227] ({pool-2-thread-1} ZeppelinConfiguration.java[create]:182) - Server Port: 8080
+ INFO [2021-07-19 22:35:28,229] ({pool-2-thread-1} ZeppelinConfiguration.java[create]:186) - Context Path: /
+ INFO [2021-07-19 22:35:28,231] ({pool-2-thread-1} ZeppelinConfiguration.java[create]:187) - Zeppelin Version: 0.9.0
+ INFO [2021-07-19 22:35:28,234] ({pool-2-thread-1} RemoteInterpreterServer.java[createLifecycleManager]:286) - Creating interpreter lifecycle manager: org.apache.zeppelin.interpreter.lifecycle.NullLifecycleManager
+ INFO [2021-07-19 22:35:28,236] ({pool-2-thread-1} RemoteInterpreterServer.java[init]:229) - Creating RemoteInterpreterEventClient with connection pool size: 10
+ INFO [2021-07-19 22:35:28,730] ({pool-2-thread-1} RemoteInterpreterServer.java[createInterpreter]:383) - Instantiate interpreter org.apache.zeppelin.spark.SparkInterpreter
+ INFO [2021-07-19 22:35:28,757] ({pool-2-thread-1} RemoteInterpreterServer.java[createInterpreter]:383) - Instantiate interpreter org.apache.zeppelin.spark.SparkSqlInterpreter
+ INFO [2021-07-19 22:35:28,783] ({pool-2-thread-1} RemoteInterpreterServer.java[createInterpreter]:383) - Instantiate interpreter org.apache.zeppelin.spark.PySparkInterpreter
+ INFO [2021-07-19 22:35:28,826] ({pool-2-thread-1} RemoteInterpreterServer.java[createInterpreter]:383) - Instantiate interpreter org.apache.zeppelin.spark.IPySparkInterpreter
+ INFO [2021-07-19 22:35:28,861] ({pool-2-thread-1} RemoteInterpreterServer.java[createInterpreter]:383) - Instantiate interpreter org.apache.zeppelin.spark.SparkRInterpreter
+ INFO [2021-07-19 22:35:28,890] ({pool-2-thread-1} RemoteInterpreterServer.java[createInterpreter]:383) - Instantiate interpreter org.apache.zeppelin.spark.SparkIRInterpreter
+ INFO [2021-07-19 22:35:28,903] ({pool-2-thread-1} RemoteInterpreterServer.java[createInterpreter]:383) - Instantiate interpreter org.apache.zeppelin.spark.SparkShinyInterpreter
+ INFO [2021-07-19 22:35:29,254] ({pool-2-thread-1} RemoteInterpreterServer.java[createInterpreter]:383) - Instantiate interpreter org.apache.zeppelin.spark.KotlinSparkInterpreter
+ INFO [2021-07-19 22:35:29,442] ({pool-2-thread-2} SchedulerFactory.java[<init>]:56) - Scheduler Thread Pool Size: 100
+ INFO [2021-07-19 22:35:29,449] ({pool-2-thread-2} SchedulerFactory.java[createOrGetFIFOScheduler]:76) - Create FIFOScheduler: interpreter_288115441
+ INFO [2021-07-19 22:35:29,481] ({pool-2-thread-2} SchedulerFactory.java[createOrGetParallelScheduler]:88) - Create ParallelScheduler: org.apache.zeppelin.spark.SparkSqlInterpreter67687292 with maxConcurrency: 10
+ INFO [2021-07-19 22:35:29,506] ({pool-2-thread-2} SchedulerFactory.java[createOrGetFIFOScheduler]:76) - Create FIFOScheduler: interpreter_2102427526
+ INFO [2021-07-19 22:35:29,517] ({pool-2-thread-2} SchedulerFactory.java[createOrGetFIFOScheduler]:76) - Create FIFOScheduler: interpreter_1451077904
+ INFO [2021-07-19 22:35:29,538] ({pool-2-thread-2} SchedulerFactory.java[createOrGetFIFOScheduler]:76) - Create FIFOScheduler: org.apache.zeppelin.spark.SparkRInterpreter425592030
+ INFO [2021-07-19 22:35:29,543] ({pool-2-thread-2} SchedulerFactory.java[createOrGetFIFOScheduler]:76) - Create FIFOScheduler: interpreter_10943260
+ INFO [2021-07-19 22:35:29,545] ({pool-2-thread-2} SchedulerFactory.java[createOrGetFIFOScheduler]:76) - Create FIFOScheduler: interpreter_1768226689
+ INFO [2021-07-19 22:35:29,549] ({pool-2-thread-2} SchedulerFactory.java[createOrGetFIFOScheduler]:76) - Create FIFOScheduler: interpreter_612173604
+ INFO [2021-07-19 22:35:29,646] ({FIFOScheduler-interpreter_288115441-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1623582037887_328448283 started by scheduler interpreter_288115441
+ INFO [2021-07-19 22:35:31,105] ({FIFOScheduler-interpreter_288115441-Worker-1} SparkInterpreter.java[extractScalaVersion]:244) - Using Scala: version 2.11.12
+ INFO [2021-07-19 22:35:31,319] ({FIFOScheduler-interpreter_288115441-Worker-1} SparkScala211Interpreter.scala[open]:62) - Scala shell repl output dir: /tmp/spark4536312648784062217
+ INFO [2021-07-19 22:35:32,298] ({FIFOScheduler-interpreter_288115441-Worker-1} SparkScala211Interpreter.scala[open]:79) - UserJars: /opt/zeppelin/interpreter/spark/scala-2.11/spark-scala-2.11-0.9.0.jar
+ WARN [2021-07-19 22:36:02,105] ({FIFOScheduler-interpreter_288115441-Worker-1} BaseSparkScalaInterpreter.scala[spark2CreateContext]:299) - Hive support can not be enabled because no hive-site.xml found
+ INFO [2021-07-19 22:36:02,256] ({FIFOScheduler-interpreter_288115441-Worker-1} Logging.scala[logInfo]:54) - Running Spark version 2.4.5
+ WARN [2021-07-19 22:36:03,547] ({FIFOScheduler-interpreter_288115441-Worker-1} NativeCodeLoader.java[<clinit>]:62) - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+ INFO [2021-07-19 22:36:04,245] ({FIFOScheduler-interpreter_288115441-Worker-1} Logging.scala[logInfo]:54) - Submitted application: 50807de0-2b3a-496c-83b8-1df3222240a4
+ INFO [2021-07-19 22:36:04,694] ({FIFOScheduler-interpreter_288115441-Worker-1} Logging.scala[logInfo]:54) - Changing view acls to: root
+ INFO [2021-07-19 22:36:04,701] ({FIFOScheduler-interpreter_288115441-Worker-1} Logging.scala[logInfo]:54) - Changing modify acls to: root
+ INFO [2021-07-19 22:36:04,708] ({FIFOScheduler-interpreter_288115441-Worker-1} Logging.scala[logInfo]:54) - Changing view acls groups to: 
+ INFO [2021-07-19 22:36:04,713] ({FIFOScheduler-interpreter_288115441-Worker-1} Logging.scala[logInfo]:54) - Changing modify acls groups to: 
+ INFO [2021-07-19 22:36:04,719] ({FIFOScheduler-interpreter_288115441-Worker-1} Logging.scala[logInfo]:54) - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(root); groups with view permissions: Set(); users  with modify permissions: Set(root); groups with modify permissions: Set()
+ INFO [2021-07-19 22:36:06,611] ({FIFOScheduler-interpreter_288115441-Worker-1} Logging.scala[logInfo]:54) - Successfully started service 'sparkDriver' on port 34215.
+ INFO [2021-07-19 22:36:06,714] ({FIFOScheduler-interpreter_288115441-Worker-1} Logging.scala[logInfo]:54) - Registering MapOutputTracker
+ INFO [2021-07-19 22:36:06,784] ({FIFOScheduler-interpreter_288115441-Worker-1} Logging.scala[logInfo]:54) - Registering BlockManagerMaster
+ INFO [2021-07-19 22:36:06,804] ({FIFOScheduler-interpreter_288115441-Worker-1} Logging.scala[logInfo]:54) - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+ INFO [2021-07-19 22:36:06,818] ({FIFOScheduler-interpreter_288115441-Worker-1} Logging.scala[logInfo]:54) - BlockManagerMasterEndpoint up
+ INFO [2021-07-19 22:36:06,860] ({FIFOScheduler-interpreter_288115441-Worker-1} Logging.scala[logInfo]:54) - Created local directory at /tmp/blockmgr-ba9c2500-f4b5-45c6-bbee-8402f7a8a9a3
+ INFO [2021-07-19 22:36:06,930] ({FIFOScheduler-interpreter_288115441-Worker-1} Logging.scala[logInfo]:54) - MemoryStore started with capacity 912.3 MB
+ INFO [2021-07-19 22:36:07,000] ({FIFOScheduler-interpreter_288115441-Worker-1} Logging.scala[logInfo]:54) - Registering OutputCommitCoordinator
+ INFO [2021-07-19 22:36:07,326] ({FIFOScheduler-interpreter_288115441-Worker-1} Log.java[initialized]:192) - Logging initialized @43623ms
+ INFO [2021-07-19 22:36:07,725] ({FIFOScheduler-interpreter_288115441-Worker-1} Server.java[doStart]:351) - jetty-9.3.z-SNAPSHOT, build timestamp: unknown, git hash: unknown
+ INFO [2021-07-19 22:36:07,902] ({FIFOScheduler-interpreter_288115441-Worker-1} Server.java[doStart]:419) - Started @44199ms
+ INFO [2021-07-19 22:36:08,056] ({FIFOScheduler-interpreter_288115441-Worker-1} AbstractConnector.java[doStart]:278) - Started ServerConnector@c47a317{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+ INFO [2021-07-19 22:36:08,061] ({FIFOScheduler-interpreter_288115441-Worker-1} Logging.scala[logInfo]:54) - Successfully started service 'SparkUI' on port 4040.
+ INFO [2021-07-19 22:36:08,177] ({FIFOScheduler-interpreter_288115441-Worker-1} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@7e05f5b9{/jobs,null,AVAILABLE,@Spark}
+ INFO [2021-07-19 22:36:08,181] ({FIFOScheduler-interpreter_288115441-Worker-1} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@501392f9{/jobs/json,null,AVAILABLE,@Spark}
+ INFO [2021-07-19 22:36:08,185] ({FIFOScheduler-interpreter_288115441-Worker-1} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@2ec5de63{/jobs/job,null,AVAILABLE,@Spark}
+ INFO [2021-07-19 22:36:08,190] ({FIFOScheduler-interpreter_288115441-Worker-1} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@551db662{/jobs/job/json,null,AVAILABLE,@Spark}
+ INFO [2021-07-19 22:36:08,194] ({FIFOScheduler-interpreter_288115441-Worker-1} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@19556262{/stages,null,AVAILABLE,@Spark}
+ INFO [2021-07-19 22:36:08,198] ({FIFOScheduler-interpreter_288115441-Worker-1} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@196381ed{/stages/json,null,AVAILABLE,@Spark}
+ INFO [2021-07-19 22:36:08,201] ({FIFOScheduler-interpreter_288115441-Worker-1} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@18fb72d{/stages/stage,null,AVAILABLE,@Spark}
+ INFO [2021-07-19 22:36:08,208] ({FIFOScheduler-interpreter_288115441-Worker-1} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@e041882{/stages/stage/json,null,AVAILABLE,@Spark}
+ INFO [2021-07-19 22:36:08,219] ({FIFOScheduler-interpreter_288115441-Worker-1} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@72cee0b0{/stages/pool,null,AVAILABLE,@Spark}
+ INFO [2021-07-19 22:36:08,241] ({FIFOScheduler-interpreter_288115441-Worker-1} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@6dd665e{/stages/pool/json,null,AVAILABLE,@Spark}
+ INFO [2021-07-19 22:36:08,260] ({FIFOScheduler-interpreter_288115441-Worker-1} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@61b0383a{/storage,null,AVAILABLE,@Spark}
+ INFO [2021-07-19 22:36:08,270] ({FIFOScheduler-interpreter_288115441-Worker-1} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@4fdeec86{/storage/json,null,AVAILABLE,@Spark}
+ INFO [2021-07-19 22:36:08,281] ({FIFOScheduler-interpreter_288115441-Worker-1} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@4a104ead{/storage/rdd,null,AVAILABLE,@Spark}
+ INFO [2021-07-19 22:36:08,292] ({FIFOScheduler-interpreter_288115441-Worker-1} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@27923e27{/storage/rdd/json,null,AVAILABLE,@Spark}
+ INFO [2021-07-19 22:36:08,304] ({FIFOScheduler-interpreter_288115441-Worker-1} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@4783a307{/environment,null,AVAILABLE,@Spark}
+ INFO [2021-07-19 22:36:08,312] ({FIFOScheduler-interpreter_288115441-Worker-1} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@7f81cdad{/environment/json,null,AVAILABLE,@Spark}
+ INFO [2021-07-19 22:36:08,324] ({FIFOScheduler-interpreter_288115441-Worker-1} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@372c91d6{/executors,null,AVAILABLE,@Spark}
+ INFO [2021-07-19 22:36:08,330] ({FIFOScheduler-interpreter_288115441-Worker-1} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@1f9f212{/executors/json,null,AVAILABLE,@Spark}
+ INFO [2021-07-19 22:36:08,337] ({FIFOScheduler-interpreter_288115441-Worker-1} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@5b38e2b1{/executors/threadDump,null,AVAILABLE,@Spark}
+ INFO [2021-07-19 22:36:08,343] ({FIFOScheduler-interpreter_288115441-Worker-1} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@2a25b0de{/executors/threadDump/json,null,AVAILABLE,@Spark}
+ INFO [2021-07-19 22:36:08,385] ({FIFOScheduler-interpreter_288115441-Worker-1} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@79d4366d{/static,null,AVAILABLE,@Spark}
+ INFO [2021-07-19 22:36:08,404] ({FIFOScheduler-interpreter_288115441-Worker-1} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@684a626b{/,null,AVAILABLE,@Spark}
+ INFO [2021-07-19 22:36:08,419] ({FIFOScheduler-interpreter_288115441-Worker-1} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@17ae98d9{/api,null,AVAILABLE,@Spark}
+ INFO [2021-07-19 22:36:08,427] ({FIFOScheduler-interpreter_288115441-Worker-1} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@6c8e7573{/jobs/job/kill,null,AVAILABLE,@Spark}
+ INFO [2021-07-19 22:36:08,435] ({FIFOScheduler-interpreter_288115441-Worker-1} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@7e9a8db2{/stages/stage/kill,null,AVAILABLE,@Spark}
+ INFO [2021-07-19 22:36:08,453] ({FIFOScheduler-interpreter_288115441-Worker-1} Logging.scala[logInfo]:54) - Bound SparkUI to 0.0.0.0, and started at http://76b5d6b21508:4040
+ WARN [2021-07-19 22:36:08,658] ({FIFOScheduler-interpreter_288115441-Worker-1} Logging.scala[logWarning]:66) - Fair Scheduler configuration file not found so jobs will be scheduled in FIFO order. To use fair scheduling, configure pools in fairscheduler.xml or set spark.scheduler.allocation.file to a file that contains the configuration.
+ INFO [2021-07-19 22:36:08,685] ({FIFOScheduler-interpreter_288115441-Worker-1} Logging.scala[logInfo]:54) - Created default pool: default, schedulingMode: FIFO, minShare: 0, weight: 1
+ INFO [2021-07-19 22:36:08,802] ({FIFOScheduler-interpreter_288115441-Worker-1} Logging.scala[logInfo]:54) - Starting executor ID driver on host localhost
+ INFO [2021-07-19 22:36:08,866] ({FIFOScheduler-interpreter_288115441-Worker-1} Logging.scala[logInfo]:54) - Using REPL class URI: spark://76b5d6b21508:34215/classes
+ INFO [2021-07-19 22:36:09,000] ({FIFOScheduler-interpreter_288115441-Worker-1} Logging.scala[logInfo]:54) - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 46311.
+ INFO [2021-07-19 22:36:09,021] ({FIFOScheduler-interpreter_288115441-Worker-1} Logging.scala[logInfo]:54) - Server created on 76b5d6b21508:46311
+ INFO [2021-07-19 22:36:09,040] ({FIFOScheduler-interpreter_288115441-Worker-1} Logging.scala[logInfo]:54) - Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+ INFO [2021-07-19 22:36:09,211] ({FIFOScheduler-interpreter_288115441-Worker-1} Logging.scala[logInfo]:54) - Registering BlockManager BlockManagerId(driver, 76b5d6b21508, 46311, None)
+ INFO [2021-07-19 22:36:09,243] ({dispatcher-event-loop-4} Logging.scala[logInfo]:54) - Registering block manager 76b5d6b21508:46311 with 912.3 MB RAM, BlockManagerId(driver, 76b5d6b21508, 46311, None)
+ INFO [2021-07-19 22:36:09,275] ({FIFOScheduler-interpreter_288115441-Worker-1} Logging.scala[logInfo]:54) - Registered BlockManager BlockManagerId(driver, 76b5d6b21508, 46311, None)
+ INFO [2021-07-19 22:36:09,293] ({FIFOScheduler-interpreter_288115441-Worker-1} Logging.scala[logInfo]:54) - Initialized BlockManager: BlockManagerId(driver, 76b5d6b21508, 46311, None)
+ INFO [2021-07-19 22:36:10,799] ({FIFOScheduler-interpreter_288115441-Worker-1} ContextHandler.java[doStart]:781) - Started o.s.j.s.ServletContextHandler@4847e3ca{/metrics/json,null,AVAILABLE,@Spark}
+ INFO [2021-07-19 22:36:11,103] ({FIFOScheduler-interpreter_288115441-Worker-1} BaseSparkScalaInterpreter.scala[spark2CreateContext]:302) - Created Spark session (without Hive support)
+ INFO [2021-07-19 22:36:21,038] ({FIFOScheduler-interpreter_288115441-Worker-1} SparkShims.java[loadShims]:64) - Initializing shims for Spark 2.x
+ INFO [2021-07-19 22:36:22,725] ({FIFOScheduler-interpreter_288115441-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1623582037887_328448283 finished by scheduler interpreter_288115441 with status FINISHED

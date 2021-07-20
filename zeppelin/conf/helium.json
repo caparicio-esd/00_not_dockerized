@@ -1,0 +1,13 @@
+{
+  "enabled": {
+    "zeppelin-highcharts-bubble": "zeppelin-highcharts-bubble@0.0.2",
+    "zeppelin-bubblechart": "zeppelin-bubblechart@0.0.4",
+    "zeppelin-highcharts-scatterplot": "zeppelin-highcharts-scatterplot@0.0.2"
+  },
+  "packageConfig": {},
+  "bundleDisplayOrder": [
+    "zeppelin-highcharts-bubble",
+    "zeppelin-bubblechart",
+    "zeppelin-highcharts-scatterplot"
+  ]
+}

@@ -1614,3 +1614,79 @@
  INFO [2021-07-20 13:31:57,821] ({Thread-13} InterpreterSetting.java[setStatus]:734) - Set interpreter mongodb status to READY
  INFO [2021-07-20 13:31:57,822] ({Thread-13} LocalConfigStorage.java[save]:53) - Save Interpreter Setting to /opt/zeppelin/conf/interpreter.json
  INFO [2021-07-20 13:31:59,429] ({LuceneSearch-RebuildIndex-Thread} LuceneSearch.java[lambda$startRebuildIndex$1]:404) - Finish rebuild index
+ INFO [2021-07-20 13:49:31,234] ({Thread-11} ZeppelinServer.java[lambda$shutdown$0]:314) - Shutting down Zeppelin Server ... 
+ INFO [2021-07-20 13:49:31,247] ({Thread-11} AbstractConnector.java[doStop]:381) - Stopped ServerConnector@44c8afef{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+ INFO [2021-07-20 13:49:31,249] ({Thread-11} HouseKeeper.java[stopScavenging]:158) - node0 Stopped scavenging
+ INFO [2021-07-20 13:49:31,264] ({Thread-11} ContextHandler.java[doStop]:1099) - Stopped o.e.j.w.WebAppContext@2e222612{zeppelin-web-angular,/next,null,UNAVAILABLE}{/opt/zeppelin/zeppelin-web-angular-0.9.0.war}
+ INFO [2021-07-20 13:49:31,273] ({Thread-11} ContextHandler.java[doStop]:1099) - Stopped o.e.j.w.WebAppContext@3972a855{zeppelin-web,/,null,UNAVAILABLE}{/opt/zeppelin/zeppelin-web-0.9.0.war}
+ INFO [2021-07-20 13:49:31,279] ({ignite-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: ignite
+ INFO [2021-07-20 13:49:31,280] ({ignite-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: ignite
+ INFO [2021-07-20 13:49:31,283] ({lens-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: lens
+ INFO [2021-07-20 13:49:31,283] ({jdbc-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: jdbc
+ INFO [2021-07-20 13:49:31,283] ({geode-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: geode
+ INFO [2021-07-20 13:49:31,300] ({hazelcastjet-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: hazelcastjet
+ INFO [2021-07-20 13:49:31,282] ({beam-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: beam
+ INFO [2021-07-20 13:49:31,281] ({beam-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: beam
+ INFO [2021-07-20 13:49:31,304] ({angular-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: angular
+ INFO [2021-07-20 13:49:31,304] ({scalding-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: scalding
+ INFO [2021-07-20 13:49:31,304] ({flink-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: flink
+ INFO [2021-07-20 13:49:31,303] ({kotlin-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: kotlin
+ INFO [2021-07-20 13:49:31,303] ({mongodb-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: mongodb
+ INFO [2021-07-20 13:49:31,303] ({sap-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: sap
+ INFO [2021-07-20 13:49:31,302] ({python-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: python
+ INFO [2021-07-20 13:49:31,302] ({bigquery-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: bigquery
+ INFO [2021-07-20 13:49:31,302] ({hbase-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: hbase
+ INFO [2021-07-20 13:49:31,302] ({alluxio-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: alluxio
+ INFO [2021-07-20 13:49:31,300] ({md-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: md
+ INFO [2021-07-20 13:49:31,298] ({spark-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: spark
+ INFO [2021-07-20 13:49:31,297] ({sh-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: sh
+ INFO [2021-07-20 13:49:31,297] ({elasticsearch-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: elasticsearch
+ INFO [2021-07-20 13:49:31,296] ({file-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: file
+ INFO [2021-07-20 13:49:31,296] ({submarine-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: submarine
+ INFO [2021-07-20 13:49:31,295] ({jupyter-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: jupyter
+ INFO [2021-07-20 13:49:31,294] ({java-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: java
+ INFO [2021-07-20 13:49:31,293] ({pig-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: pig
+ INFO [2021-07-20 13:49:31,293] ({kylin-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: kylin
+ INFO [2021-07-20 13:49:31,293] ({sparql-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: sparql
+ INFO [2021-07-20 13:49:31,293] ({cassandra-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: cassandra
+ INFO [2021-07-20 13:49:31,292] ({groovy-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: groovy
+ INFO [2021-07-20 13:49:31,292] ({neo4j-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: neo4j
+ INFO [2021-07-20 13:49:31,292] ({r-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: r
+ INFO [2021-07-20 13:49:31,292] ({livy-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: livy
+ INFO [2021-07-20 13:49:31,291] ({ksql-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: ksql
+ INFO [2021-07-20 13:49:31,291] ({angular-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: angular
+ INFO [2021-07-20 13:49:31,291] ({flink-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: flink
+ INFO [2021-07-20 13:49:31,290] ({scalding-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: scalding
+ INFO [2021-07-20 13:49:31,290] ({kotlin-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: kotlin
+ INFO [2021-07-20 13:49:31,290] ({sap-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: sap
+ INFO [2021-07-20 13:49:31,290] ({python-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: python
+ INFO [2021-07-20 13:49:31,289] ({hbase-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: hbase
+ INFO [2021-07-20 13:49:31,289] ({mongodb-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: mongodb
+ INFO [2021-07-20 13:49:31,289] ({bigquery-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: bigquery
+ INFO [2021-07-20 13:49:31,289] ({alluxio-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: alluxio
+ INFO [2021-07-20 13:49:31,289] ({hazelcastjet-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: hazelcastjet
+ INFO [2021-07-20 13:49:31,288] ({md-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: md
+ INFO [2021-07-20 13:49:31,288] ({spark-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: spark
+ INFO [2021-07-20 13:49:31,288] ({sh-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: sh
+ INFO [2021-07-20 13:49:31,288] ({elasticsearch-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: elasticsearch
+ INFO [2021-07-20 13:49:31,287] ({submarine-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: submarine
+ INFO [2021-07-20 13:49:31,287] ({file-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: file
+ INFO [2021-07-20 13:49:31,287] ({jupyter-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: jupyter
+ INFO [2021-07-20 13:49:31,287] ({java-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: java
+ INFO [2021-07-20 13:49:31,287] ({pig-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: pig
+ INFO [2021-07-20 13:49:31,286] ({influxdb-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: influxdb
+ INFO [2021-07-20 13:49:31,286] ({lens-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: lens
+ INFO [2021-07-20 13:49:31,285] ({jdbc-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: jdbc
+ INFO [2021-07-20 13:49:31,285] ({geode-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: geode
+ INFO [2021-07-20 13:49:31,284] ({influxdb-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: influxdb
+ INFO [2021-07-20 13:49:31,361] ({Thread-11} NotebookRepoSync.java[close]:460) - Closing all notebook storages
+ INFO [2021-07-20 13:49:31,310] ({kylin-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: kylin
+ INFO [2021-07-20 13:49:31,308] ({sparql-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: sparql
+ INFO [2021-07-20 13:49:31,308] ({cassandra-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: cassandra
+ INFO [2021-07-20 13:49:31,308] ({groovy-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: groovy
+ INFO [2021-07-20 13:49:31,308] ({neo4j-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: neo4j
+ INFO [2021-07-20 13:49:31,308] ({r-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: r
+ INFO [2021-07-20 13:49:31,305] ({livy-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: livy
+ INFO [2021-07-20 13:49:31,305] ({ksql-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: ksql
+ INFO [2021-07-20 13:49:31,368] ({Thread-11} SLF4JLogger.java[info]:71) - Closed connection [connectionId{localValue:2, serverValue:6}] to mongo:27017 because the pool has been closed.
+ INFO [2021-07-20 13:49:34,385] ({Thread-11} ZeppelinServer.java[lambda$shutdown$0]:329) - Bye

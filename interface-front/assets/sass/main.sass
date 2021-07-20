@@ -1,7 +1,7 @@
 @import lib/vars.sass
 @import lib/mixins.sass
 @import lib/reboot.sass
-@import lib/fontawesome/font-awesome.scss
+//@import lib/fontawesome/font-awesome.scss
 @import lib/fontface.sass
 @import lib/keyframes.sass
 
@@ -16,3 +16,28 @@ body
     font-family: $font_family_base
     line-height: $base * 3
     color: $body_color
+
+
+
+.graph_container
+    background: #eee
+    display: grid
+    max-width: 1080px
+    height: 450px
+    width: 95%
+    margin: 1rem auto
+    grid-template-columns: 350px 1fr
+    grid-template-rows: auto 1fr auto
+    &_sidebar
+        grid-area: 2 / 1 / span 1 / span 1
+        &_header
+            &_pane
+        &_pane
+    &_header
+        min-height: 2rem
+        grid-area: 1 / 2 / span 1 / span 1
+    &_body
+        grid-area: 2 / 2 / span 1 / span 1
+    &_footer
+        min-height: 2rem
+        grid-area: 3 / 2 / span 1 / span 1

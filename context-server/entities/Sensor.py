@@ -74,6 +74,10 @@ class Sensor(Device):
         return {
             "id": "urn:ngsi-ld:{}:{}".format(self.__class__.__name__, self.name), 
             "type": self.__class__.__name__,
+            "name": {
+                "type": "Name", 
+                "value": self.name
+            },
             "temperature": {
                 "type": "Number", 
                 "value": self.temperature

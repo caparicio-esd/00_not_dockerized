@@ -1,44 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body ng-app="app">
-    <div id="app" ng-cloak>
-      <div class="graphics" ng-controller="MainController as main">
-        <div class="div">
-          <h3>Graphic {{data.length}}</h3>
-          <p ng-repeat="dItem in data">
-            Sensor: {{dItem.data[0].id}} <br >
-            temperature: {{dItem.data[0].temperature.value}}
-          </p>
-          <hola data="data"></hola>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body ng-app="app">
+  <div id="app" ng-cloak>
+    <div class="graphics" ng-controller="MainController as main">
+      <div class="div">
+        <h3>Graphic {{data.length}}</h3>
+        <p ng-repeat="dItem in data">
+          Sensor: {{dItem.data[0].id}} <br>
+          temperature: {{dItem.data[0].temperature.value}}
+        </p>
+        <hola data="data"></hola>
       </div>
-
-      <div class="graph_container">
-        <div class="graph_container_sidebar">
-          <div class="graph_container_sidebar_header">
-            <div class="graph_container_sidebar_header_pane"></div>
-            <div class="graph_container_sidebar_header_pane"></div>
-          </div>
-          <div class="graph_container_sidebar_pane"></div>
-          <div class="graph_container_sidebar_pane"></div>
-        </div>
-        <div class="graph_container_header">
-
-        </div>
-        <div class="graph_container_body">
-
-        </div>
-        <div class="graph_container_footer"></div>
-      </div>
-
-
     </div>
-    <script type="module" src="/app/main.ts"></script>
-  </body>
+    <div ng-controller="UIController as ui" >
+    <graph-container color="ui.bgColor">
+      <graph-container-sidebar-devices>
+        <div class="graph_main_container_header">
+          <div class="icon"><span class="fa fa-cloud"></span></div>
+          <div class="label">Devices</div>
+        </div>
+        <div class="graph_container_sidebar_body">
+          <device-acc opened="true">
+            <div class="device_acc_header">
+              <div class="icon"><span class="fa fa-chevron-down"></span></div>
+              <div class="label">Sensor</div>
+            </div>
+            <div class="device_acc_body">
+              <div class="device_acc_body_holder">
+                <device-sub-acc>
+                  <div class="device_subacc_header">
+                    <div class="icon"><span class="fa fa-sliders"></span></div>
+                    <div class="label">Sensor:sensor01</div>
+                    <div class="status"><span class="fa fa-circle"></span></div>
+                  </div>
+                  <div class="device_subacc_body opened">
+                    <div class="device_subacc_body_holder">
+                      <device-tag name="'asdasd'" />
+                    </div>
+                  </div>
+                </device-sub-acc>
+              </div>
+            </div>
+          </device-acc>
+        </div>
+      </graph-container-sidebar-devices>
+      <graph-container-sidebar-settings>
+        <div class="graph_main_container_header">
+          <div class="icon"><span class="fa fa-cloud"></span></div>
+          <div class="label">Chart settings</div>
+        </div>
+        <div class="graph_container_sidebar_body">
+          <div class="graph_chart_selector">
+            <setting-selectable icon="'line-chart'" active="true"/>
+          </div>
+          <div class="dropables">
+            <droppable-group label="'xAxis'" tags="['lol', 'jarl']"></droppable-group>         
+            <droppable-group label="'yAxis'" tags="['lol', 'eta']"></droppable-group>
+          </div>
+        </div>
+      </graph-container-sidebar-settings>
+
+      <div class="graph_container_body">
+        <div class="graph_canvas">
+          <img src="./assets/img/Captura de pantalla 2021-07-20 a las 20.00 1.png" alt="">
+        </div>
+      </div>
+    </graph-container>
+  </div>
+
+
+  </div>
+  <script type="module" src="/app/main.ts"></script>
+</body>
+
 </html>

@@ -1,14 +1,23 @@
 @import lib/vars.sass
 @import lib/mixins.sass
 @import lib/reboot.sass
-//@import lib/fontawesome/font-awesome.scss
+@import lib/fontawesome/font-awesome.scss
 @import lib/fontface.sass
 @import lib/keyframes.sass
 
 $corporateColor: pink
+$lightGray: #f3f3f3
+$lightAltGray: #E2E2E2
+$borderGrey: #D2D2D2
+$tabGrey: #B9B9B9
+$iconsGray: #828282
+$headingGray: #3D3D3D
+
+
+
 
 *
-    border: 1px solid $corporateColor
+    // border: 1px solid $corporateColor
 
 html,
 body
@@ -18,26 +27,164 @@ body
     color: $body_color
 
 
+.type_xl
+    font-size: 13px
+    line-height: 20px
+    font-weight: bold
+.type_l
+    font-size: 13px
+    line-height: 20px
+    font-weight: normal
+.type_m
+    font-size: 12px
+    line-height: 16px
+    font-weight: normal
+
 
 .graph_container
-    background: #eee
     display: grid
-    max-width: 1080px
-    height: 450px
+    max-width: 1190px
+    height: 520px
     width: 95%
     margin: 1rem auto
-    grid-template-columns: 350px 1fr
-    grid-template-rows: auto 1fr auto
-    &_sidebar
-        grid-area: 2 / 1 / span 1 / span 1
-        &_header
-            &_pane
-        &_pane
-    &_header
-        min-height: 2rem
+    grid-template-columns: 240px 240px 1fr
+    grid-template-rows: 1fr
+    box-shadow: 0 0 3px rgba(0, 0, 0, .2) inset
+
+    graph-container-sidebar-devices
+        grid-area: 1 / 1 / span 1 / span 1
+        background: $lightGray
+        border-right: 1px solid $borderGrey
+
+    graph-container-sidebar-settings
         grid-area: 1 / 2 / span 1 / span 1
-    &_body
-        grid-area: 2 / 2 / span 1 / span 1
-    &_footer
-        min-height: 2rem
-        grid-area: 3 / 2 / span 1 / span 1
+        border-right: 1px solid $borderGrey
+   
+.graph_main_container_header
+    display: flex
+    align-items: center
+    padding: $base * 2
+    border-bottom: 1px solid $borderGrey
+    font-weight: bold
+    color: $headingGray
+    .icon 
+        margin-right: $base
+        color: $iconsGray 
+
+.device_acc    
+    .device_acc_header
+        display: flex
+        align-items: center
+        padding: $base * 2
+        font-weight: bold
+        color: $headingGray
+        user-select: none
+        cursor: pointer
+        .icon 
+            margin-right: $base   
+            color: $iconsGray  
+    
+    .device_acc_body_holder
+        height: 0
+        overflow: hidden
+    &.opened
+        .device_acc_body_holder
+            height: auto
+            overflow: hidden      
+
+
+.device_subacc
+    .device_subacc_header
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: $base * 1 $base * 2 $base * 1 $base * 5
+        color: $headingGray
+        user-select: none
+        cursor: pointer
+        .label
+            margin-right: auto
+            margin-left: $base * 2
+        .icon
+            color: $iconsGray 
+        .status
+            font-size: .7rem
+            color: $iconsGray
+    
+    .device_subacc_body
+        height: 0
+        overflow: hidden
+        .device_subacc_body_holder
+            padding: $base * 1 $base * 2 $base * 1 $base * 9
+        &.opened
+            height: auto
+    &.active
+        .device_subacc_header
+            background-color: $lightAltGray
+        
+            
+.device_tag
+    padding: $base * .35 $base * 1.5
+    margin-bottom: $base * .5
+    background: $tabGrey
+    display: inline-block
+    border-radius: 9999999px
+    color: white
+    user-select: none
+    cursor: pointer
+
+
+.graph_chart_selector
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    padding: $base * 2 $base * 2
+
+    .chart_selectable
+        border: 2px solid $borderGrey
+        border-radius: 999999px
+        width: 30px
+        height: 30px
+        display: flex
+        justify-content: center
+        align-items: center
+        user-select: none
+        cursor: pointer
+        .fa
+            font-size: .9rem
+        &.active
+            background-color: $headingGray
+            border: 2px solid $headingGray
+            color: white
+
+
+.dropables
+    margin-top: $base*2
+    padding: 0 $base*2
+    .dropable_group
+        margin-bottom: $base*2
+        .dropable_group_header    
+            display: flex
+            align-items: center
+            color: $headingGray
+            .icon 
+                margin-right: $base   
+                color: $iconsGray 
+                font-size: .7rem
+        .dropable_box
+            min-height: 120px
+            border: 1px solid $borderGrey
+            border-radius: 3px
+            .dropable_box_content
+                padding: $base
+
+.graph_container_body
+    display: flex
+    align-items: center
+    .graph_canvas
+        padding: 1rem
+        width: 100%
+        height: 100%
+        img
+            width: 100%

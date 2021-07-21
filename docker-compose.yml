@@ -43,7 +43,7 @@ services:
             - ${PWD}/zeppelin/conf:/opt/zeppelin/conf
             - ${PWD}/zeppelin/logs:/opt/zeppelin/logs
             - ${PWD}/zeppelin/lib:/opt/zeppelin/dependencies
-            - ${PWD}/zeppelin/helium:/opt/zeppelin/helium
+            # - ${PWD}/zeppelin/helium:/opt/zeppelin/helium
         environment: 
             - "ZEPPELIN_NOTEBOOK_MONGO_URI=mongodb://${DBUSER}:${DBPASS}@mongo:27017"
             - "ZEPPELIN_NOTEBOOK_MONGO_DATABASE=zeppelin"

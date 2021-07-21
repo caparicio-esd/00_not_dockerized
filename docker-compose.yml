@@ -64,9 +64,7 @@ services:
         depends_on: 
             - orion
         command: python ./context-server/.
-        # command: pip install --no-cache-dir -r requirements.txt && python /usr/src/.
-        # volumes: 
-        #     - ${PWD}/context-server:/usr/src
+        
 
 networks: 
     default:

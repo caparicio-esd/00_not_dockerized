@@ -1,0 +1,974 @@
+ INFO [2021-07-20 15:31:39,671] ({main} ZeppelinConfiguration.java[create]:172) - Load configuration from file:/opt/zeppelin/conf/zeppelin-site.xml
+ INFO [2021-07-20 15:31:39,846] ({main} ZeppelinConfiguration.java[create]:180) - Server Host: 0.0.0.0
+ INFO [2021-07-20 15:31:39,848] ({main} ZeppelinConfiguration.java[create]:182) - Server Port: 8080
+ INFO [2021-07-20 15:31:39,849] ({main} ZeppelinConfiguration.java[create]:186) - Context Path: /
+ INFO [2021-07-20 15:31:39,851] ({main} ZeppelinConfiguration.java[create]:187) - Zeppelin Version: 0.9.0
+ INFO [2021-07-20 15:31:39,899] ({main} Log.java[initialized]:169) - Logging initialized @1182ms to org.eclipse.jetty.util.log.Slf4jLog
+ WARN [2021-07-20 15:31:40,651] ({main} ZeppelinConfiguration.java[getConfigFSDir]:694) - zeppelin.config.fs.dir is not specified, fall back to local conf directory zeppelin.conf.dir
+ WARN [2021-07-20 15:31:40,652] ({main} ZeppelinConfiguration.java[getConfigFSDir]:694) - zeppelin.config.fs.dir is not specified, fall back to local conf directory zeppelin.conf.dir
+ WARN [2021-07-20 15:31:40,654] ({main} ZeppelinConfiguration.java[getConfigFSDir]:694) - zeppelin.config.fs.dir is not specified, fall back to local conf directory zeppelin.conf.dir
+ WARN [2021-07-20 15:31:40,742] ({main} LocalConfigStorage.java[loadCredentials]:88) - Credential file /opt/zeppelin/conf/credentials.json is not existed
+ INFO [2021-07-20 15:31:40,813] ({ImmediateThread-1626795100640} PluginManager.java[loadNotebookRepo]:78) - Loading NotebookRepo Plugin: org.apache.zeppelin.notebook.repo.MongoNotebookRepo
+ INFO [2021-07-20 15:31:40,891] ({main} ZeppelinServer.java[setupWebAppContext]:575) - warPath is: /opt/zeppelin/zeppelin-web-0.9.0.war
+ INFO [2021-07-20 15:31:40,893] ({main} ZeppelinServer.java[setupWebAppContext]:588) - ZeppelinServer Webapp path: /opt/zeppelin/webapps
+ INFO [2021-07-20 15:31:40,950] ({main} ZeppelinServer.java[setupWebAppContext]:575) - warPath is: /opt/zeppelin/zeppelin-web-angular-0.9.0.war
+ INFO [2021-07-20 15:31:40,952] ({main} ZeppelinServer.java[setupWebAppContext]:588) - ZeppelinServer Webapp path: /opt/zeppelin/webapps/next
+ INFO [2021-07-20 15:31:41,056] ({main} NotebookServer.java[<init>]:157) - NotebookServer instantiated: org.apache.zeppelin.socket.NotebookServer@209da20d
+ INFO [2021-07-20 15:31:41,062] ({main} NotebookServer.java[setNotebook]:168) - Injected NotebookProvider
+ INFO [2021-07-20 15:31:41,063] ({main} NotebookServer.java[setServiceLocator]:162) - Injected ServiceLocator: ServiceLocatorImpl(shared-locator,0,1279309678)
+ INFO [2021-07-20 15:31:41,065] ({main} NotebookServer.java[setNotebookService]:175) - Injected NotebookServiceProvider
+ INFO [2021-07-20 15:31:41,066] ({main} NotebookServer.java[setAuthorizationServiceProvider]:182) - Injected NotebookAuthorizationServiceProvider
+ INFO [2021-07-20 15:31:41,067] ({main} NotebookServer.java[setConnectionManagerProvider]:188) - Injected ConnectionManagerProvider
+ INFO [2021-07-20 15:31:41,071] ({main} ZeppelinServer.java[setupClusterManagerServer]:465) - Cluster mode is disabled
+ INFO [2021-07-20 15:31:41,072] ({main} ZeppelinServer.java[main]:249) - Starting zeppelin server
+ INFO [2021-07-20 15:31:41,076] ({main} Server.java[doStart]:360) - jetty-9.4.31.v20200723; built: 2020-07-23T17:57:36.812Z; git: 450ba27947e13e66baa8cd1ce7e85a4461cacc1d; jvm 1.8.0_282-8u282-b08-0ubuntu1~20.04-b08
+ INFO [2021-07-20 15:31:41,297] ({main} StandardDescriptorProcessor.java[visitServlet]:276) - NO JSP Support for /, did not find org.eclipse.jetty.jsp.JettyJspServlet
+ INFO [2021-07-20 15:31:41,315] ({main} DefaultSessionIdManager.java[doStart]:334) - DefaultSessionIdManager workerName=node0
+ INFO [2021-07-20 15:31:41,317] ({main} DefaultSessionIdManager.java[doStart]:339) - No SessionScavenger set, using defaults
+ INFO [2021-07-20 15:31:41,321] ({main} HouseKeeper.java[startScavenging]:140) - node0 Scavenging every 660000ms
+ INFO [2021-07-20 15:31:41,702] ({ImmediateThread-1626795100640} SLF4JLogger.java[info]:71) - Cluster created with settings {hosts=[mongo:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+ INFO [2021-07-20 15:31:42,043] ({ImmediateThread-1626795100640} VFSNotebookRepo.java[setNotebookDirectory]:69) - Using notebookDir: /opt/zeppelin/notebook
+ INFO [2021-07-20 15:31:42,248] ({cluster-ClusterId{value='60f6ec5d2ab79c0008749d67', description='null'}-mongo:27017} SLF4JLogger.java[info]:71) - Opened connection [connectionId{localValue:1, serverValue:41}] to mongo:27017
+ INFO [2021-07-20 15:31:42,255] ({cluster-ClusterId{value='60f6ec5d2ab79c0008749d67', description='null'}-mongo:27017} SLF4JLogger.java[info]:71) - Monitor thread successfully connected to server with description ServerDescription{address=mongo:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 0]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, roundTripTimeNanos=1177200}
+ INFO [2021-07-20 15:31:42,463] ({ImmediateThread-1626795100640} SLF4JLogger.java[info]:71) - Opened connection [connectionId{localValue:2, serverValue:42}] to mongo:27017
+ WARN [2021-07-20 15:31:42,676] ({ImmediateThread-1626795100640} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/Flink Tutorial/6. Batch ETL': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2EW19CSPA" }', details={ }}]. 
+ WARN [2021-07-20 15:31:42,723] ({ImmediateThread-1626795100640} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/Flink Tutorial/1. Flink Basics': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2F2YS7PCE" }', details={ }}]. 
+ WARN [2021-07-20 15:31:42,796] ({ImmediateThread-1626795100640} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/Miscellaneous Tutorial/Using Mahout': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2BYEZ5EVK" }', details={ }}]. 
+ WARN [2021-07-20 15:31:42,849] ({ImmediateThread-1626795100640} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/Python Tutorial/1. IPython Basic': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2EYDJKFFY" }', details={ }}]. 
+ WARN [2021-07-20 15:31:42,891] ({ImmediateThread-1626795100640} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/Flink Tutorial/2. Three Essential Steps for Building Flink Job': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2F7SKEHPA" }', details={ }}]. 
+ WARN [2021-07-20 15:31:42,908] ({ImmediateThread-1626795100640} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/R Tutorial/2. Shiny App': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2EZ66TM57" }', details={ }}]. 
+ WARN [2021-07-20 15:31:42,950] ({ImmediateThread-1626795100640} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/Spark Tutorial/1. Spark Interpreter Introduction': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2F8KN6TKK" }', details={ }}]. 
+ WARN [2021-07-20 15:31:42,968] ({ImmediateThread-1626795100640} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/Flink Tutorial/5. Streaming Data Analytics': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2EYT7Q6R8" }', details={ }}]. 
+ WARN [2021-07-20 15:31:42,993] ({ImmediateThread-1626795100640} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/Miscellaneous Tutorial/Using Pig for querying data': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2C57UKYWR" }', details={ }}]. 
+ WARN [2021-07-20 15:31:43,024] ({ImmediateThread-1626795100640} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/Flink Tutorial/8. Logistic Regression (Alink)': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2F4HJNWVN" }', details={ }}]. 
+ WARN [2021-07-20 15:31:43,045] ({ImmediateThread-1626795100640} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/Flink Tutorial/4. Streaming ETL': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2EYD56B9B" }', details={ }}]. 
+ WARN [2021-07-20 15:31:43,069] ({ImmediateThread-1626795100640} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/Flink Tutorial/3. Flink Job Control Tutorial': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2F5RKHCDV" }', details={ }}]. 
+ WARN [2021-07-20 15:31:43,093] ({ImmediateThread-1626795100640} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/Spark Tutorial/7. Spark Delta Lake Tutorial': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2F8VDBMMT" }', details={ }}]. 
+ WARN [2021-07-20 15:31:43,140] ({ImmediateThread-1626795100640} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/Spark Tutorial/3. Spark SQL (PySpark)': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2EWM84JXA" }', details={ }}]. 
+ WARN [2021-07-20 15:31:43,172] ({ImmediateThread-1626795100640} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/Spark Tutorial/4. Spark MlLib': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2EZFM3GJA" }', details={ }}]. 
+ WARN [2021-07-20 15:31:43,207] ({ImmediateThread-1626795100640} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/Python Tutorial/3. Keras Binary Classification (IMDB)': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2F2AVWJ77" }', details={ }}]. 
+ WARN [2021-07-20 15:31:43,230] ({ImmediateThread-1626795100640} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/Flink Tutorial/7. Batch Data Analytics': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2EZ9G3JJU" }', details={ }}]. 
+ WARN [2021-07-20 15:31:43,413] ({ImmediateThread-1626795100640} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/Python Tutorial/2. IPython Visualization Tutorial': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2F1S9ZY8Z" }', details={ }}]. 
+ WARN [2021-07-20 15:31:43,464] ({ImmediateThread-1626795100640} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/R Tutorial/1. R Basics': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2BWJFTXKJ" }', details={ }}]. 
+ WARN [2021-07-20 15:31:43,475] ({ImmediateThread-1626795100640} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/Spark Tutorial/6. SparkR Shiny App': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2F1CHQ4TT" }', details={ }}]. 
+ WARN [2021-07-20 15:31:43,531] ({ImmediateThread-1626795100640} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/Spark Tutorial/5. SparkR Basics': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2BWJFTXKM" }', details={ }}]. 
+ WARN [2021-07-20 15:31:43,563] ({ImmediateThread-1626795100640} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/Python Tutorial/4. Matplotlib (Python, PySpark)': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2C2AUG798" }', details={ }}]. 
+ WARN [2021-07-20 15:31:43,578] ({ImmediateThread-1626795100640} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/Spark Tutorial/2. Spark Basic Features': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2A94M5J1Z" }', details={ }}]. 
+ INFO [2021-07-20 15:31:43,593] ({main} ContextHandler.java[doStart]:860) - Started o.e.j.w.WebAppContext@3972a855{zeppelin-web,/,jar:file:///opt/zeppelin/zeppelin-web-0.9.0.war!/,AVAILABLE}{/opt/zeppelin/zeppelin-web-0.9.0.war}
+ WARN [2021-07-20 15:31:43,613] ({ImmediateThread-1626795100640} MongoNotebookRepo.java[saveOrIgnore]:184) - ignore error when insert note '/Spark Tutorial/3. Spark SQL (Scala)': Bulk write operation error on server mongo:27017. Write errors: [BulkWriteError{index=0, code=11000, message='E11000 duplicate key error collection: zeppelin.notes index: _id_ dup key: { _id: "2EYUV26VR" }', details={ }}]. 
+ INFO [2021-07-20 15:31:43,614] ({main} StandardDescriptorProcessor.java[visitServlet]:276) - NO JSP Support for /next, did not find org.eclipse.jetty.jsp.JettyJspServlet
+ INFO [2021-07-20 15:31:43,996] ({main} ContextHandler.java[doStart]:860) - Started o.e.j.w.WebAppContext@2e222612{zeppelin-web-angular,/next,jar:file:///opt/zeppelin/zeppelin-web-angular-0.9.0.war!/,AVAILABLE}{/opt/zeppelin/zeppelin-web-angular-0.9.0.war}
+ INFO [2021-07-20 15:31:44,035] ({main} AbstractConnector.java[doStart]:331) - Started ServerConnector@44c8afef{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+ INFO [2021-07-20 15:31:44,037] ({main} Server.java[doStart]:400) - Started @5329ms
+ INFO [2021-07-20 15:31:49,040] ({main} ZeppelinServer.java[main]:263) - Done, zeppelin server started
+ INFO [2021-07-20 15:31:49,082] ({main} LocalConfigStorage.java[loadNotebookAuthorization]:80) - Load notebook authorization from file: /opt/zeppelin/conf/notebook-authorization.json
+ INFO [2021-07-20 15:31:49,332] ({Thread-12} RemoteInterpreterEventServer.java[run]:105) - InterpreterEventServer is starting at 172.18.0.4:37579
+ INFO [2021-07-20 15:31:49,792] ({main} RemoteInterpreterEventServer.java[start]:133) - RemoteInterpreterEventServer is started
+ INFO [2021-07-20 15:31:49,797] ({main} InterpreterSettingManager.java[<init>]:197) - Using RecoveryStorage: org.apache.zeppelin.interpreter.recovery.NullRecoveryStorage
+ INFO [2021-07-20 15:31:49,817] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: file
+ INFO [2021-07-20 15:31:49,819] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: alluxio
+ INFO [2021-07-20 15:31:49,821] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: lens
+ INFO [2021-07-20 15:31:49,822] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: jdbc
+ INFO [2021-07-20 15:31:49,824] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: bigquery
+ INFO [2021-07-20 15:31:49,826] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: scalding
+ INFO [2021-07-20 15:31:49,828] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: cassandra
+ INFO [2021-07-20 15:31:49,830] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: mongodb
+ INFO [2021-07-20 15:31:49,832] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: kylin
+ INFO [2021-07-20 15:31:49,833] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: jupyter
+ INFO [2021-07-20 15:31:49,834] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: sh
+ INFO [2021-07-20 15:31:49,836] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: angular
+ INFO [2021-07-20 15:31:49,837] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: ksql
+ INFO [2021-07-20 15:31:49,840] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: ignite
+ INFO [2021-07-20 15:31:49,841] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: hazelcastjet
+ INFO [2021-07-20 15:31:49,843] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: influxdb
+ INFO [2021-07-20 15:31:49,845] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: neo4j
+ INFO [2021-07-20 15:31:49,846] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: kotlin
+ INFO [2021-07-20 15:31:49,848] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: java
+ INFO [2021-07-20 15:31:49,849] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: spark
+ INFO [2021-07-20 15:31:49,851] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: python
+ INFO [2021-07-20 15:31:49,853] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: sparql
+ INFO [2021-07-20 15:31:49,854] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: groovy
+ INFO [2021-07-20 15:31:49,856] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: submarine
+ INFO [2021-07-20 15:31:49,858] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: hbase
+ INFO [2021-07-20 15:31:49,860] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: elasticsearch
+ INFO [2021-07-20 15:31:49,861] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: livy
+ WARN [2021-07-20 15:31:49,878] ({main} InterpreterSettingManager.java[loadInterpreterSettingFromDefaultDir]:437) - No interpreter-setting.json found in /opt/zeppelin/interpreter/scio
+ INFO [2021-07-20 15:31:49,880] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: flink
+ INFO [2021-07-20 15:31:49,881] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: beam
+ INFO [2021-07-20 15:31:49,883] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: md
+ INFO [2021-07-20 15:31:49,884] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: sap
+ INFO [2021-07-20 15:31:49,886] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: r
+ INFO [2021-07-20 15:31:49,887] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: geode
+ INFO [2021-07-20 15:31:49,889] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:540) - Register InterpreterSettingTemplate: pig
+ INFO [2021-07-20 15:31:49,890] ({main} LocalConfigStorage.java[loadInterpreterSettings]:63) - Load Interpreter Setting from file: /opt/zeppelin/conf/interpreter.json
+ INFO [2021-07-20 15:31:49,975] ({main} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting ignite from interpreter.json
+ INFO [2021-07-20 15:31:49,978] ({main} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting beam from interpreter.json
+ INFO [2021-07-20 15:31:49,979] ({main} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting geode from interpreter.json
+ INFO [2021-07-20 15:31:49,981] ({main} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting jdbc from interpreter.json
+ INFO [2021-07-20 15:31:49,982] ({main} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting lens from interpreter.json
+ INFO [2021-07-20 15:31:49,983] ({main} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting influxdb from interpreter.json
+ INFO [2021-07-20 15:31:49,984] ({main} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting pig from interpreter.json
+ INFO [2021-07-20 15:31:49,985] ({main} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting java from interpreter.json
+ INFO [2021-07-20 15:31:49,987] ({main} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting jupyter from interpreter.json
+ INFO [2021-07-20 15:31:49,988] ({main} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting file from interpreter.json
+ INFO [2021-07-20 15:31:49,991] ({main} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting submarine from interpreter.json
+ INFO [2021-07-20 15:31:49,992] ({main} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting elasticsearch from interpreter.json
+ INFO [2021-07-20 15:31:49,993] ({main} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting sh from interpreter.json
+ INFO [2021-07-20 15:31:49,995] ({main} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting spark from interpreter.json
+ INFO [2021-07-20 15:31:49,996] ({main} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting md from interpreter.json
+ INFO [2021-07-20 15:31:49,997] ({main} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting hazelcastjet from interpreter.json
+ INFO [2021-07-20 15:31:49,998] ({main} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting alluxio from interpreter.json
+ INFO [2021-07-20 15:31:49,999] ({main} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting bigquery from interpreter.json
+ INFO [2021-07-20 15:31:50,001] ({main} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting mongodb from interpreter.json
+ INFO [2021-07-20 15:31:50,002] ({main} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting hbase from interpreter.json
+ INFO [2021-07-20 15:31:50,003] ({main} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting python from interpreter.json
+ INFO [2021-07-20 15:31:50,005] ({main} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting sap from interpreter.json
+ INFO [2021-07-20 15:31:50,006] ({main} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting kotlin from interpreter.json
+ INFO [2021-07-20 15:31:50,007] ({main} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting scalding from interpreter.json
+ INFO [2021-07-20 15:31:50,008] ({main} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting flink from interpreter.json
+ INFO [2021-07-20 15:31:50,010] ({main} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting angular from interpreter.json
+ INFO [2021-07-20 15:31:50,011] ({main} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting ksql from interpreter.json
+ INFO [2021-07-20 15:31:50,013] ({main} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting livy from interpreter.json
+ INFO [2021-07-20 15:31:50,014] ({main} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting r from interpreter.json
+ INFO [2021-07-20 15:31:50,015] ({main} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting neo4j from interpreter.json
+ INFO [2021-07-20 15:31:50,016] ({main} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting groovy from interpreter.json
+ INFO [2021-07-20 15:31:50,017] ({main} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting cassandra from interpreter.json
+ INFO [2021-07-20 15:31:50,019] ({main} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting sparql from interpreter.json
+ INFO [2021-07-20 15:31:50,021] ({main} InterpreterSettingManager.java[loadFromFile]:294) - Create interpreter setting kylin from interpreter.json
+ INFO [2021-07-20 15:31:50,030] ({main} InterpreterSetting.java[setStatus]:734) - Set interpreter mongodb status to DOWNLOADING_DEPENDENCIES
+ INFO [2021-07-20 15:31:50,032] ({Thread-13} InterpreterSetting.java[run]:964) - Start to download dependencies for interpreter: mongodb
+ INFO [2021-07-20 15:31:50,033] ({main} LocalConfigStorage.java[save]:53) - Save Interpreter Setting to /opt/zeppelin/conf/interpreter.json
+ INFO [2021-07-20 15:31:50,485] ({LuceneSearch-RebuildIndex-Thread} LuceneSearch.java[lambda$startRebuildIndex$1]:399) - Starting rebuild index
+ INFO [2021-07-20 15:31:51,467] ({qtp1864350231-13} NotebookServer.java[onOpen]:247) - New connection from 172.18.0.1:61008
+ INFO [2021-07-20 15:31:52,995] ({LuceneSearch-RebuildIndex-Thread} LuceneSearch.java[lambda$startRebuildIndex$1]:404) - Finish rebuild index
+ INFO [2021-07-20 15:31:53,054] ({qtp1864350231-17} InterpreterSetting.java[getOrCreateInterpreterGroup]:453) - Create InterpreterGroup with groupId: mongodb-shared_process for ExecutionContext{user='anonymous', noteId='2GCS1KRJS', interpreterGroupId='null', defaultInterpreterGroup='spark', inIsolatedMode=false, startTime=}
+ INFO [2021-07-20 15:31:53,068] ({qtp1864350231-17} InterpreterSetting.java[createInterpreters]:823) - Interpreter org.apache.zeppelin.mongodb.MongoDbInterpreter created for user: anonymous, sessionId: shared_session
+ INFO [2021-07-20 15:31:53,074] ({qtp1864350231-17} ManagedInterpreterGroup.java[getOrCreateSession]:180) - Create Session: shared_session in InterpreterGroup: mongodb-shared_process for user: anonymous
+ INFO [2021-07-20 15:31:53,201] ({qtp1864350231-16} NoAuthenticationService.java[<init>]:38) - NoAuthenticationService is initialized
+ INFO [2021-07-20 15:31:53,256] ({qtp1864350231-15} Helium.java[loadConf]:139) - Add helium local registry /opt/zeppelin/helium
+ INFO [2021-07-20 15:31:53,258] ({qtp1864350231-15} Helium.java[loadConf]:136) - Add helium online registry https://s3.amazonaws.com/helium-package/helium.json
+ INFO [2021-07-20 15:31:54,248] ({Thread-13} InterpreterSetting.java[run]:977) - Finish downloading dependencies for interpreter: mongodb
+ INFO [2021-07-20 15:31:54,249] ({Thread-13} InterpreterSetting.java[setStatus]:734) - Set interpreter mongodb status to READY
+ INFO [2021-07-20 15:31:54,251] ({Thread-13} LocalConfigStorage.java[save]:53) - Save Interpreter Setting to /opt/zeppelin/conf/interpreter.json
+ERROR [2021-07-20 15:31:54,899] ({qtp1864350231-13} NotebookServer.java[onMessage]:463) - Can't handle message: {"op":"COMMIT_PARAGRAPH","data":{"id":"paragraph_1626793893404_412426249","paragraph":"%mongodb\ndb.entities.find({\"_id.type\": \"Sensor\"}, {\"attrs.temperature.value\": 1, \"attrs.humidity.value\": 1, \"_id.id\":1}).table()\n","config":{"editorSetting":{"language":"javascript","editOnDblClick":false,"completionKey":"TAB","completionSupport":true},"colWidth":12,"editorMode":"ace/mode/javascript","fontSize":9,"results":{"0":{"graph":{"mode":"table","height":300,"optionOpen":false,"setting":{"table":{"tableGridState":{},"tableColumnTypeState":{"names":{"_id.id":"string","attrs.temperature.value":"string","attrs.humidity.value":"string"},"updated":true},"tableOptionSpecHash":"[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]","tableOptionValue":{"useFilter":false,"showPagination":false,"showAggregationFooter":false},"updated":false,"initialized":false}},"commonSetting":{}}}},"enabled":true},"params":{}},"principal":"anonymous","ticket":"anonymous","roles":"[]","msgId":"uehly-350"}
+java.lang.IllegalArgumentException: Invalid BSON field name _id.id
+	at org.bson.AbstractBsonWriter.writeName(AbstractBsonWriter.java:516)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:188)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeIterable(DocumentCodec.java:197)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:170)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.encode(DocumentCodec.java:131)
+	at org.bson.codecs.DocumentCodec.encode(DocumentCodec.java:45)
+	at org.bson.codecs.BsonDocumentWrapperCodec.encode(BsonDocumentWrapperCodec.java:63)
+	at org.bson.codecs.BsonDocumentWrapperCodec.encode(BsonDocumentWrapperCodec.java:29)
+	at com.mongodb.connection.UpdateCommandMessage.writeTheWrites(UpdateCommandMessage.java:85)
+	at com.mongodb.connection.UpdateCommandMessage.writeTheWrites(UpdateCommandMessage.java:43)
+	at com.mongodb.connection.BaseWriteCommandMessage.encodeMessageBodyWithMetadata(BaseWriteCommandMessage.java:129)
+	at com.mongodb.connection.RequestMessage.encodeWithMetadata(RequestMessage.java:160)
+	at com.mongodb.connection.WriteCommandProtocol.sendMessage(WriteCommandProtocol.java:220)
+	at com.mongodb.connection.WriteCommandProtocol.execute(WriteCommandProtocol.java:101)
+	at com.mongodb.connection.UpdateCommandProtocol.execute(UpdateCommandProtocol.java:64)
+	at com.mongodb.connection.UpdateCommandProtocol.execute(UpdateCommandProtocol.java:37)
+	at com.mongodb.connection.DefaultServer$DefaultServerProtocolExecutor.execute(DefaultServer.java:168)
+	at com.mongodb.connection.DefaultServerConnection.executeProtocol(DefaultServerConnection.java:289)
+	at com.mongodb.connection.DefaultServerConnection.updateCommand(DefaultServerConnection.java:143)
+	at com.mongodb.operation.MixedBulkWriteOperation$Run$3.executeWriteCommandProtocol(MixedBulkWriteOperation.java:490)
+	at com.mongodb.operation.MixedBulkWriteOperation$Run$RunExecutor.execute(MixedBulkWriteOperation.java:656)
+	at com.mongodb.operation.MixedBulkWriteOperation$Run.execute(MixedBulkWriteOperation.java:409)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:177)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:168)
+	at com.mongodb.operation.OperationHelper.withConnectionSource(OperationHelper.java:422)
+	at com.mongodb.operation.OperationHelper.withConnection(OperationHelper.java:413)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:168)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:74)
+	at com.mongodb.Mongo.execute(Mongo.java:845)
+	at com.mongodb.Mongo$2.execute(Mongo.java:828)
+	at com.mongodb.MongoCollectionImpl.executeSingleWriteRequest(MongoCollectionImpl.java:550)
+	at com.mongodb.MongoCollectionImpl.replaceOne(MongoCollectionImpl.java:369)
+	at org.apache.zeppelin.notebook.repo.MongoNotebookRepo.saveNote(MongoNotebookRepo.java:215)
+	at org.apache.zeppelin.notebook.repo.MongoNotebookRepo.save(MongoNotebookRepo.java:171)
+	at org.apache.zeppelin.notebook.repo.NotebookRepoSync.save(NotebookRepoSync.java:214)
+	at org.apache.zeppelin.notebook.NoteManager.saveNote(NoteManager.java:182)
+	at org.apache.zeppelin.notebook.Notebook.saveNote(Notebook.java:379)
+	at org.apache.zeppelin.service.NotebookService.updateParagraph(NotebookService.java:636)
+	at org.apache.zeppelin.socket.NotebookServer.updateParagraph(NotebookServer.java:1109)
+	at org.apache.zeppelin.socket.NotebookServer.onMessage(NotebookServer.java:353)
+	at org.apache.zeppelin.socket.NotebookSocket.onWebSocketText(NotebookSocket.java:58)
+	at org.eclipse.jetty.websocket.common.events.JettyListenerEventDriver.onTextMessage(JettyListenerEventDriver.java:231)
+	at org.eclipse.jetty.websocket.common.message.SimpleTextMessage.messageComplete(SimpleTextMessage.java:69)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.appendMessage(AbstractEventDriver.java:65)
+	at org.eclipse.jetty.websocket.common.events.JettyListenerEventDriver.onTextFrame(JettyListenerEventDriver.java:179)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.incomingFrame(AbstractEventDriver.java:150)
+	at org.eclipse.jetty.websocket.common.WebSocketSession.incomingFrame(WebSocketSession.java:326)
+	at org.eclipse.jetty.websocket.common.extensions.AbstractExtension.nextIncomingFrame(AbstractExtension.java:147)
+	at org.eclipse.jetty.websocket.common.extensions.compress.PerMessageDeflateExtension.nextIncomingFrame(PerMessageDeflateExtension.java:112)
+	at org.eclipse.jetty.websocket.common.extensions.compress.CompressExtension.forwardIncoming(CompressExtension.java:168)
+	at org.eclipse.jetty.websocket.common.extensions.compress.PerMessageDeflateExtension.incomingFrame(PerMessageDeflateExtension.java:92)
+	at org.eclipse.jetty.websocket.common.extensions.ExtensionStack.incomingFrame(ExtensionStack.java:202)
+	at org.eclipse.jetty.websocket.common.Parser.notifyFrame(Parser.java:225)
+	at org.eclipse.jetty.websocket.common.Parser.parseSingleFrame(Parser.java:259)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onFillable(AbstractWebSocketConnection.java:459)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onFillable(AbstractWebSocketConnection.java:440)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR [2021-07-20 15:31:55,889] ({qtp1864350231-14} NotebookServer.java[onMessage]:463) - Can't handle message: {"op":"COMMIT_PARAGRAPH","data":{"id":"paragraph_1626793893404_412426249","paragraph":"%mongodb\ndb.entities.find({\"_id.type\": \"Sensor\"}, {\"attrs.temperature.value\": 1, \"attrs.humidity.value\": 1, \"_id.id\":1}).table()\n","config":{"editorSetting":{"language":"javascript","editOnDblClick":false,"completionKey":"TAB","completionSupport":true},"colWidth":12,"editorMode":"ace/mode/javascript","fontSize":9,"results":{"0":{"graph":{"mode":"table","height":300,"optionOpen":false,"setting":{"table":{"tableGridState":{},"tableColumnTypeState":{"names":{"_id.id":"string","attrs.temperature.value":"string","attrs.humidity.value":"string"},"updated":false},"tableOptionSpecHash":"[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]","tableOptionValue":{"useFilter":false,"showPagination":false,"showAggregationFooter":false},"updated":false,"initialized":false}},"commonSetting":{}}}},"enabled":true},"params":{}},"principal":"anonymous","ticket":"anonymous","roles":"[]","msgId":"uehly-351"}
+java.lang.IllegalArgumentException: Invalid BSON field name _id.id
+	at org.bson.AbstractBsonWriter.writeName(AbstractBsonWriter.java:516)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:188)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeIterable(DocumentCodec.java:197)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:170)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.encode(DocumentCodec.java:131)
+	at org.bson.codecs.DocumentCodec.encode(DocumentCodec.java:45)
+	at org.bson.codecs.BsonDocumentWrapperCodec.encode(BsonDocumentWrapperCodec.java:63)
+	at org.bson.codecs.BsonDocumentWrapperCodec.encode(BsonDocumentWrapperCodec.java:29)
+	at com.mongodb.connection.UpdateCommandMessage.writeTheWrites(UpdateCommandMessage.java:85)
+	at com.mongodb.connection.UpdateCommandMessage.writeTheWrites(UpdateCommandMessage.java:43)
+	at com.mongodb.connection.BaseWriteCommandMessage.encodeMessageBodyWithMetadata(BaseWriteCommandMessage.java:129)
+	at com.mongodb.connection.RequestMessage.encodeWithMetadata(RequestMessage.java:160)
+	at com.mongodb.connection.WriteCommandProtocol.sendMessage(WriteCommandProtocol.java:220)
+	at com.mongodb.connection.WriteCommandProtocol.execute(WriteCommandProtocol.java:101)
+	at com.mongodb.connection.UpdateCommandProtocol.execute(UpdateCommandProtocol.java:64)
+	at com.mongodb.connection.UpdateCommandProtocol.execute(UpdateCommandProtocol.java:37)
+	at com.mongodb.connection.DefaultServer$DefaultServerProtocolExecutor.execute(DefaultServer.java:168)
+	at com.mongodb.connection.DefaultServerConnection.executeProtocol(DefaultServerConnection.java:289)
+	at com.mongodb.connection.DefaultServerConnection.updateCommand(DefaultServerConnection.java:143)
+	at com.mongodb.operation.MixedBulkWriteOperation$Run$3.executeWriteCommandProtocol(MixedBulkWriteOperation.java:490)
+	at com.mongodb.operation.MixedBulkWriteOperation$Run$RunExecutor.execute(MixedBulkWriteOperation.java:656)
+	at com.mongodb.operation.MixedBulkWriteOperation$Run.execute(MixedBulkWriteOperation.java:409)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:177)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:168)
+	at com.mongodb.operation.OperationHelper.withConnectionSource(OperationHelper.java:422)
+	at com.mongodb.operation.OperationHelper.withConnection(OperationHelper.java:413)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:168)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:74)
+	at com.mongodb.Mongo.execute(Mongo.java:845)
+	at com.mongodb.Mongo$2.execute(Mongo.java:828)
+	at com.mongodb.MongoCollectionImpl.executeSingleWriteRequest(MongoCollectionImpl.java:550)
+	at com.mongodb.MongoCollectionImpl.replaceOne(MongoCollectionImpl.java:369)
+	at org.apache.zeppelin.notebook.repo.MongoNotebookRepo.saveNote(MongoNotebookRepo.java:215)
+	at org.apache.zeppelin.notebook.repo.MongoNotebookRepo.save(MongoNotebookRepo.java:171)
+	at org.apache.zeppelin.notebook.repo.NotebookRepoSync.save(NotebookRepoSync.java:214)
+	at org.apache.zeppelin.notebook.NoteManager.saveNote(NoteManager.java:182)
+	at org.apache.zeppelin.notebook.Notebook.saveNote(Notebook.java:379)
+	at org.apache.zeppelin.service.NotebookService.updateParagraph(NotebookService.java:636)
+	at org.apache.zeppelin.socket.NotebookServer.updateParagraph(NotebookServer.java:1109)
+	at org.apache.zeppelin.socket.NotebookServer.onMessage(NotebookServer.java:353)
+	at org.apache.zeppelin.socket.NotebookSocket.onWebSocketText(NotebookSocket.java:58)
+	at org.eclipse.jetty.websocket.common.events.JettyListenerEventDriver.onTextMessage(JettyListenerEventDriver.java:231)
+	at org.eclipse.jetty.websocket.common.message.SimpleTextMessage.messageComplete(SimpleTextMessage.java:69)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.appendMessage(AbstractEventDriver.java:65)
+	at org.eclipse.jetty.websocket.common.events.JettyListenerEventDriver.onTextFrame(JettyListenerEventDriver.java:179)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.incomingFrame(AbstractEventDriver.java:150)
+	at org.eclipse.jetty.websocket.common.WebSocketSession.incomingFrame(WebSocketSession.java:326)
+	at org.eclipse.jetty.websocket.common.extensions.AbstractExtension.nextIncomingFrame(AbstractExtension.java:147)
+	at org.eclipse.jetty.websocket.common.extensions.compress.PerMessageDeflateExtension.nextIncomingFrame(PerMessageDeflateExtension.java:112)
+	at org.eclipse.jetty.websocket.common.extensions.compress.CompressExtension.forwardIncoming(CompressExtension.java:168)
+	at org.eclipse.jetty.websocket.common.extensions.compress.PerMessageDeflateExtension.incomingFrame(PerMessageDeflateExtension.java:92)
+	at org.eclipse.jetty.websocket.common.extensions.ExtensionStack.incomingFrame(ExtensionStack.java:202)
+	at org.eclipse.jetty.websocket.common.Parser.notifyFrame(Parser.java:225)
+	at org.eclipse.jetty.websocket.common.Parser.parseSingleFrame(Parser.java:259)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onFillable(AbstractWebSocketConnection.java:459)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onFillable(AbstractWebSocketConnection.java:440)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.lang.Thread.run(Thread.java:748)
+ INFO [2021-07-20 15:32:15,644] ({qtp1864350231-12} NotebookServer.java[onClose]:474) - Closed connection to 172.18.0.1:61008 (1001) null
+ WARN [2021-07-20 15:32:16,003] ({qtp1864350231-15} SecurityRestApi.java[ticket]:89) - {"status":"OK","message":"","body":{"principal":"anonymous","ticket":"anonymous","roles":"[]"}}
+ INFO [2021-07-20 15:32:16,062] ({qtp1864350231-13} NotebookServer.java[onOpen]:247) - New connection from 172.18.0.1:61366
+ WARN [2021-07-20 15:32:16,134] ({qtp1864350231-12} ClusterRestApi.java[<init>]:61) - Cluster mode is disabled, ClusterRestApi won't work
+ INFO [2021-07-20 15:32:18,464] ({qtp1864350231-11} NotebookService.java[runParagraph]:324) - Start to run paragraph: paragraph_1626793893404_412426249 of note: 2GCS1KRJS
+ERROR [2021-07-20 15:32:18,467] ({qtp1864350231-11} NotebookService.java[runParagraph]:372) - Exception from run
+java.lang.IllegalArgumentException: Invalid BSON field name _id.id
+	at org.bson.AbstractBsonWriter.writeName(AbstractBsonWriter.java:516)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:188)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeIterable(DocumentCodec.java:197)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:170)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.encode(DocumentCodec.java:131)
+	at org.bson.codecs.DocumentCodec.encode(DocumentCodec.java:45)
+	at org.bson.codecs.BsonDocumentWrapperCodec.encode(BsonDocumentWrapperCodec.java:63)
+	at org.bson.codecs.BsonDocumentWrapperCodec.encode(BsonDocumentWrapperCodec.java:29)
+	at com.mongodb.connection.UpdateCommandMessage.writeTheWrites(UpdateCommandMessage.java:85)
+	at com.mongodb.connection.UpdateCommandMessage.writeTheWrites(UpdateCommandMessage.java:43)
+	at com.mongodb.connection.BaseWriteCommandMessage.encodeMessageBodyWithMetadata(BaseWriteCommandMessage.java:129)
+	at com.mongodb.connection.RequestMessage.encodeWithMetadata(RequestMessage.java:160)
+	at com.mongodb.connection.WriteCommandProtocol.sendMessage(WriteCommandProtocol.java:220)
+	at com.mongodb.connection.WriteCommandProtocol.execute(WriteCommandProtocol.java:101)
+	at com.mongodb.connection.UpdateCommandProtocol.execute(UpdateCommandProtocol.java:64)
+	at com.mongodb.connection.UpdateCommandProtocol.execute(UpdateCommandProtocol.java:37)
+	at com.mongodb.connection.DefaultServer$DefaultServerProtocolExecutor.execute(DefaultServer.java:168)
+	at com.mongodb.connection.DefaultServerConnection.executeProtocol(DefaultServerConnection.java:289)
+	at com.mongodb.connection.DefaultServerConnection.updateCommand(DefaultServerConnection.java:143)
+	at com.mongodb.operation.MixedBulkWriteOperation$Run$3.executeWriteCommandProtocol(MixedBulkWriteOperation.java:490)
+	at com.mongodb.operation.MixedBulkWriteOperation$Run$RunExecutor.execute(MixedBulkWriteOperation.java:656)
+	at com.mongodb.operation.MixedBulkWriteOperation$Run.execute(MixedBulkWriteOperation.java:409)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:177)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:168)
+	at com.mongodb.operation.OperationHelper.withConnectionSource(OperationHelper.java:422)
+	at com.mongodb.operation.OperationHelper.withConnection(OperationHelper.java:413)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:168)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:74)
+	at com.mongodb.Mongo.execute(Mongo.java:845)
+	at com.mongodb.Mongo$2.execute(Mongo.java:828)
+	at com.mongodb.MongoCollectionImpl.executeSingleWriteRequest(MongoCollectionImpl.java:550)
+	at com.mongodb.MongoCollectionImpl.replaceOne(MongoCollectionImpl.java:369)
+	at org.apache.zeppelin.notebook.repo.MongoNotebookRepo.saveNote(MongoNotebookRepo.java:215)
+	at org.apache.zeppelin.notebook.repo.MongoNotebookRepo.save(MongoNotebookRepo.java:171)
+	at org.apache.zeppelin.notebook.repo.NotebookRepoSync.save(NotebookRepoSync.java:214)
+	at org.apache.zeppelin.notebook.NoteManager.saveNote(NoteManager.java:182)
+	at org.apache.zeppelin.notebook.Notebook.saveNote(Notebook.java:379)
+	at org.apache.zeppelin.service.NotebookService.runParagraph(NotebookService.java:367)
+	at org.apache.zeppelin.socket.NotebookServer.runParagraph(NotebookServer.java:1525)
+	at org.apache.zeppelin.socket.NotebookServer.onMessage(NotebookServer.java:356)
+	at org.apache.zeppelin.socket.NotebookSocket.onWebSocketText(NotebookSocket.java:58)
+	at org.eclipse.jetty.websocket.common.events.JettyListenerEventDriver.onTextMessage(JettyListenerEventDriver.java:231)
+	at org.eclipse.jetty.websocket.common.message.SimpleTextMessage.messageComplete(SimpleTextMessage.java:69)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.appendMessage(AbstractEventDriver.java:65)
+	at org.eclipse.jetty.websocket.common.events.JettyListenerEventDriver.onTextFrame(JettyListenerEventDriver.java:179)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.incomingFrame(AbstractEventDriver.java:150)
+	at org.eclipse.jetty.websocket.common.WebSocketSession.incomingFrame(WebSocketSession.java:326)
+	at org.eclipse.jetty.websocket.common.extensions.AbstractExtension.nextIncomingFrame(AbstractExtension.java:147)
+	at org.eclipse.jetty.websocket.common.extensions.compress.PerMessageDeflateExtension.nextIncomingFrame(PerMessageDeflateExtension.java:112)
+	at org.eclipse.jetty.websocket.common.extensions.compress.CompressExtension.forwardIncoming(CompressExtension.java:168)
+	at org.eclipse.jetty.websocket.common.extensions.compress.PerMessageDeflateExtension.incomingFrame(PerMessageDeflateExtension.java:92)
+	at org.eclipse.jetty.websocket.common.extensions.ExtensionStack.incomingFrame(ExtensionStack.java:202)
+	at org.eclipse.jetty.websocket.common.Parser.notifyFrame(Parser.java:225)
+	at org.eclipse.jetty.websocket.common.Parser.parseSingleFrame(Parser.java:259)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onFillable(AbstractWebSocketConnection.java:459)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onFillable(AbstractWebSocketConnection.java:440)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.lang.Thread.run(Thread.java:748)
+ INFO [2021-07-20 15:32:45,709] ({qtp1864350231-17} NotebookServer.java[onClose]:474) - Closed connection to 172.18.0.1:61366 (1001) null
+ WARN [2021-07-20 15:32:46,128] ({qtp1864350231-16} SecurityRestApi.java[ticket]:89) - {"status":"OK","message":"","body":{"principal":"anonymous","ticket":"anonymous","roles":"[]"}}
+ INFO [2021-07-20 15:32:46,179] ({qtp1864350231-79} NotebookServer.java[onOpen]:247) - New connection from 172.18.0.1:61690
+ WARN [2021-07-20 15:32:46,268] ({qtp1864350231-12} ClusterRestApi.java[<init>]:61) - Cluster mode is disabled, ClusterRestApi won't work
+ INFO [2021-07-20 15:32:50,408] ({qtp1864350231-15} NotebookService.java[runParagraph]:324) - Start to run paragraph: paragraph_1626793893404_412426249 of note: 2GCS1KRJS
+ERROR [2021-07-20 15:32:50,414] ({qtp1864350231-15} NotebookService.java[runParagraph]:372) - Exception from run
+java.lang.IllegalArgumentException: Invalid BSON field name _id.id
+	at org.bson.AbstractBsonWriter.writeName(AbstractBsonWriter.java:516)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:188)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeIterable(DocumentCodec.java:197)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:170)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.encode(DocumentCodec.java:131)
+	at org.bson.codecs.DocumentCodec.encode(DocumentCodec.java:45)
+	at org.bson.codecs.BsonDocumentWrapperCodec.encode(BsonDocumentWrapperCodec.java:63)
+	at org.bson.codecs.BsonDocumentWrapperCodec.encode(BsonDocumentWrapperCodec.java:29)
+	at com.mongodb.connection.UpdateCommandMessage.writeTheWrites(UpdateCommandMessage.java:85)
+	at com.mongodb.connection.UpdateCommandMessage.writeTheWrites(UpdateCommandMessage.java:43)
+	at com.mongodb.connection.BaseWriteCommandMessage.encodeMessageBodyWithMetadata(BaseWriteCommandMessage.java:129)
+	at com.mongodb.connection.RequestMessage.encodeWithMetadata(RequestMessage.java:160)
+	at com.mongodb.connection.WriteCommandProtocol.sendMessage(WriteCommandProtocol.java:220)
+	at com.mongodb.connection.WriteCommandProtocol.execute(WriteCommandProtocol.java:101)
+	at com.mongodb.connection.UpdateCommandProtocol.execute(UpdateCommandProtocol.java:64)
+	at com.mongodb.connection.UpdateCommandProtocol.execute(UpdateCommandProtocol.java:37)
+	at com.mongodb.connection.DefaultServer$DefaultServerProtocolExecutor.execute(DefaultServer.java:168)
+	at com.mongodb.connection.DefaultServerConnection.executeProtocol(DefaultServerConnection.java:289)
+	at com.mongodb.connection.DefaultServerConnection.updateCommand(DefaultServerConnection.java:143)
+	at com.mongodb.operation.MixedBulkWriteOperation$Run$3.executeWriteCommandProtocol(MixedBulkWriteOperation.java:490)
+	at com.mongodb.operation.MixedBulkWriteOperation$Run$RunExecutor.execute(MixedBulkWriteOperation.java:656)
+	at com.mongodb.operation.MixedBulkWriteOperation$Run.execute(MixedBulkWriteOperation.java:409)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:177)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:168)
+	at com.mongodb.operation.OperationHelper.withConnectionSource(OperationHelper.java:422)
+	at com.mongodb.operation.OperationHelper.withConnection(OperationHelper.java:413)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:168)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:74)
+	at com.mongodb.Mongo.execute(Mongo.java:845)
+	at com.mongodb.Mongo$2.execute(Mongo.java:828)
+	at com.mongodb.MongoCollectionImpl.executeSingleWriteRequest(MongoCollectionImpl.java:550)
+	at com.mongodb.MongoCollectionImpl.replaceOne(MongoCollectionImpl.java:369)
+	at org.apache.zeppelin.notebook.repo.MongoNotebookRepo.saveNote(MongoNotebookRepo.java:215)
+	at org.apache.zeppelin.notebook.repo.MongoNotebookRepo.save(MongoNotebookRepo.java:171)
+	at org.apache.zeppelin.notebook.repo.NotebookRepoSync.save(NotebookRepoSync.java:214)
+	at org.apache.zeppelin.notebook.NoteManager.saveNote(NoteManager.java:182)
+	at org.apache.zeppelin.notebook.Notebook.saveNote(Notebook.java:379)
+	at org.apache.zeppelin.service.NotebookService.runParagraph(NotebookService.java:367)
+	at org.apache.zeppelin.socket.NotebookServer.runParagraph(NotebookServer.java:1525)
+	at org.apache.zeppelin.socket.NotebookServer.onMessage(NotebookServer.java:356)
+	at org.apache.zeppelin.socket.NotebookSocket.onWebSocketText(NotebookSocket.java:58)
+	at org.eclipse.jetty.websocket.common.events.JettyListenerEventDriver.onTextMessage(JettyListenerEventDriver.java:231)
+	at org.eclipse.jetty.websocket.common.message.SimpleTextMessage.messageComplete(SimpleTextMessage.java:69)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.appendMessage(AbstractEventDriver.java:65)
+	at org.eclipse.jetty.websocket.common.events.JettyListenerEventDriver.onTextFrame(JettyListenerEventDriver.java:179)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.incomingFrame(AbstractEventDriver.java:150)
+	at org.eclipse.jetty.websocket.common.WebSocketSession.incomingFrame(WebSocketSession.java:326)
+	at org.eclipse.jetty.websocket.common.extensions.AbstractExtension.nextIncomingFrame(AbstractExtension.java:147)
+	at org.eclipse.jetty.websocket.common.extensions.compress.PerMessageDeflateExtension.nextIncomingFrame(PerMessageDeflateExtension.java:112)
+	at org.eclipse.jetty.websocket.common.extensions.compress.CompressExtension.forwardIncoming(CompressExtension.java:168)
+	at org.eclipse.jetty.websocket.common.extensions.compress.PerMessageDeflateExtension.incomingFrame(PerMessageDeflateExtension.java:92)
+	at org.eclipse.jetty.websocket.common.extensions.ExtensionStack.incomingFrame(ExtensionStack.java:202)
+	at org.eclipse.jetty.websocket.common.Parser.notifyFrame(Parser.java:225)
+	at org.eclipse.jetty.websocket.common.Parser.parseSingleFrame(Parser.java:259)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onFillable(AbstractWebSocketConnection.java:459)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onFillable(AbstractWebSocketConnection.java:440)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.lang.Thread.run(Thread.java:748)
+ INFO [2021-07-20 15:33:07,588] ({qtp1864350231-16} NotebookServer.java[onClose]:474) - Closed connection to 172.18.0.1:61690 (1001) null
+ WARN [2021-07-20 15:33:07,959] ({qtp1864350231-16} SecurityRestApi.java[ticket]:89) - {"status":"OK","message":"","body":{"principal":"anonymous","ticket":"anonymous","roles":"[]"}}
+ INFO [2021-07-20 15:33:08,037] ({qtp1864350231-15} NotebookServer.java[onOpen]:247) - New connection from 172.18.0.1:61924
+ WARN [2021-07-20 15:33:08,127] ({qtp1864350231-17} ClusterRestApi.java[<init>]:61) - Cluster mode is disabled, ClusterRestApi won't work
+ERROR [2021-07-20 15:33:12,365] ({qtp1864350231-17} NotebookServer.java[onMessage]:463) - Can't handle message: {"op":"COMMIT_PARAGRAPH","data":{"id":"paragraph_1626793893404_412426249","noteId":"2GCS1KRJS","paragraph":"%mongodb\ndb.entities.find({\"_id.type\": \"Sensor\"}, {\"attrs.temperature.value\": 1, \"attrs.humidity.value\": 1, \"_id.id\":0}).table()\n","config":{"editorSetting":{"language":"javascript","editOnDblClick":false,"completionKey":"TAB","completionSupport":true},"colWidth":12,"editorMode":"ace/mode/javascript","fontSize":9,"results":{"0":{"graph":{"mode":"table","height":300,"optionOpen":false,"setting":{"table":{"tableGridState":{},"tableColumnTypeState":{"names":{"_id.id":"string","attrs.temperature.value":"string","attrs.humidity.value":"string"},"updated":false},"tableOptionSpecHash":"[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]","tableOptionValue":{"useFilter":false,"showPagination":false,"showAggregationFooter":false},"updated":false,"initialized":false}},"commonSetting":{}}}},"enabled":true},"params":{}},"principal":"anonymous","ticket":"anonymous","roles":"[]","msgId":"mvgwk-10"}
+java.lang.IllegalArgumentException: Invalid BSON field name _id.id
+	at org.bson.AbstractBsonWriter.writeName(AbstractBsonWriter.java:516)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:188)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeIterable(DocumentCodec.java:197)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:170)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.encode(DocumentCodec.java:131)
+	at org.bson.codecs.DocumentCodec.encode(DocumentCodec.java:45)
+	at org.bson.codecs.BsonDocumentWrapperCodec.encode(BsonDocumentWrapperCodec.java:63)
+	at org.bson.codecs.BsonDocumentWrapperCodec.encode(BsonDocumentWrapperCodec.java:29)
+	at com.mongodb.connection.UpdateCommandMessage.writeTheWrites(UpdateCommandMessage.java:85)
+	at com.mongodb.connection.UpdateCommandMessage.writeTheWrites(UpdateCommandMessage.java:43)
+	at com.mongodb.connection.BaseWriteCommandMessage.encodeMessageBodyWithMetadata(BaseWriteCommandMessage.java:129)
+	at com.mongodb.connection.RequestMessage.encodeWithMetadata(RequestMessage.java:160)
+	at com.mongodb.connection.WriteCommandProtocol.sendMessage(WriteCommandProtocol.java:220)
+	at com.mongodb.connection.WriteCommandProtocol.execute(WriteCommandProtocol.java:101)
+	at com.mongodb.connection.UpdateCommandProtocol.execute(UpdateCommandProtocol.java:64)
+	at com.mongodb.connection.UpdateCommandProtocol.execute(UpdateCommandProtocol.java:37)
+	at com.mongodb.connection.DefaultServer$DefaultServerProtocolExecutor.execute(DefaultServer.java:168)
+	at com.mongodb.connection.DefaultServerConnection.executeProtocol(DefaultServerConnection.java:289)
+	at com.mongodb.connection.DefaultServerConnection.updateCommand(DefaultServerConnection.java:143)
+	at com.mongodb.operation.MixedBulkWriteOperation$Run$3.executeWriteCommandProtocol(MixedBulkWriteOperation.java:490)
+	at com.mongodb.operation.MixedBulkWriteOperation$Run$RunExecutor.execute(MixedBulkWriteOperation.java:656)
+	at com.mongodb.operation.MixedBulkWriteOperation$Run.execute(MixedBulkWriteOperation.java:409)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:177)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:168)
+	at com.mongodb.operation.OperationHelper.withConnectionSource(OperationHelper.java:422)
+	at com.mongodb.operation.OperationHelper.withConnection(OperationHelper.java:413)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:168)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:74)
+	at com.mongodb.Mongo.execute(Mongo.java:845)
+	at com.mongodb.Mongo$2.execute(Mongo.java:828)
+	at com.mongodb.MongoCollectionImpl.executeSingleWriteRequest(MongoCollectionImpl.java:550)
+	at com.mongodb.MongoCollectionImpl.replaceOne(MongoCollectionImpl.java:369)
+	at org.apache.zeppelin.notebook.repo.MongoNotebookRepo.saveNote(MongoNotebookRepo.java:215)
+	at org.apache.zeppelin.notebook.repo.MongoNotebookRepo.save(MongoNotebookRepo.java:171)
+	at org.apache.zeppelin.notebook.repo.NotebookRepoSync.save(NotebookRepoSync.java:214)
+	at org.apache.zeppelin.notebook.NoteManager.saveNote(NoteManager.java:182)
+	at org.apache.zeppelin.notebook.Notebook.saveNote(Notebook.java:379)
+	at org.apache.zeppelin.service.NotebookService.updateParagraph(NotebookService.java:636)
+	at org.apache.zeppelin.socket.NotebookServer.updateParagraph(NotebookServer.java:1109)
+	at org.apache.zeppelin.socket.NotebookServer.onMessage(NotebookServer.java:353)
+	at org.apache.zeppelin.socket.NotebookSocket.onWebSocketText(NotebookSocket.java:58)
+	at org.eclipse.jetty.websocket.common.events.JettyListenerEventDriver.onTextMessage(JettyListenerEventDriver.java:231)
+	at org.eclipse.jetty.websocket.common.message.SimpleTextMessage.messageComplete(SimpleTextMessage.java:69)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.appendMessage(AbstractEventDriver.java:65)
+	at org.eclipse.jetty.websocket.common.events.JettyListenerEventDriver.onTextFrame(JettyListenerEventDriver.java:179)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.incomingFrame(AbstractEventDriver.java:150)
+	at org.eclipse.jetty.websocket.common.WebSocketSession.incomingFrame(WebSocketSession.java:326)
+	at org.eclipse.jetty.websocket.common.extensions.AbstractExtension.nextIncomingFrame(AbstractExtension.java:147)
+	at org.eclipse.jetty.websocket.common.extensions.compress.PerMessageDeflateExtension.nextIncomingFrame(PerMessageDeflateExtension.java:112)
+	at org.eclipse.jetty.websocket.common.extensions.compress.CompressExtension.forwardIncoming(CompressExtension.java:168)
+	at org.eclipse.jetty.websocket.common.extensions.compress.PerMessageDeflateExtension.incomingFrame(PerMessageDeflateExtension.java:92)
+	at org.eclipse.jetty.websocket.common.extensions.ExtensionStack.incomingFrame(ExtensionStack.java:202)
+	at org.eclipse.jetty.websocket.common.Parser.notifyFrame(Parser.java:225)
+	at org.eclipse.jetty.websocket.common.Parser.parseSingleFrame(Parser.java:259)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onFillable(AbstractWebSocketConnection.java:459)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onFillable(AbstractWebSocketConnection.java:440)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.lang.Thread.run(Thread.java:748)
+ INFO [2021-07-20 15:33:14,802] ({qtp1864350231-11} NotebookService.java[runParagraph]:324) - Start to run paragraph: paragraph_1626793893404_412426249 of note: 2GCS1KRJS
+ERROR [2021-07-20 15:33:14,807] ({qtp1864350231-11} NotebookService.java[runParagraph]:372) - Exception from run
+java.lang.IllegalArgumentException: Invalid BSON field name _id.id
+	at org.bson.AbstractBsonWriter.writeName(AbstractBsonWriter.java:516)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:188)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeIterable(DocumentCodec.java:197)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:170)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.encode(DocumentCodec.java:131)
+	at org.bson.codecs.DocumentCodec.encode(DocumentCodec.java:45)
+	at org.bson.codecs.BsonDocumentWrapperCodec.encode(BsonDocumentWrapperCodec.java:63)
+	at org.bson.codecs.BsonDocumentWrapperCodec.encode(BsonDocumentWrapperCodec.java:29)
+	at com.mongodb.connection.UpdateCommandMessage.writeTheWrites(UpdateCommandMessage.java:85)
+	at com.mongodb.connection.UpdateCommandMessage.writeTheWrites(UpdateCommandMessage.java:43)
+	at com.mongodb.connection.BaseWriteCommandMessage.encodeMessageBodyWithMetadata(BaseWriteCommandMessage.java:129)
+	at com.mongodb.connection.RequestMessage.encodeWithMetadata(RequestMessage.java:160)
+	at com.mongodb.connection.WriteCommandProtocol.sendMessage(WriteCommandProtocol.java:220)
+	at com.mongodb.connection.WriteCommandProtocol.execute(WriteCommandProtocol.java:101)
+	at com.mongodb.connection.UpdateCommandProtocol.execute(UpdateCommandProtocol.java:64)
+	at com.mongodb.connection.UpdateCommandProtocol.execute(UpdateCommandProtocol.java:37)
+	at com.mongodb.connection.DefaultServer$DefaultServerProtocolExecutor.execute(DefaultServer.java:168)
+	at com.mongodb.connection.DefaultServerConnection.executeProtocol(DefaultServerConnection.java:289)
+	at com.mongodb.connection.DefaultServerConnection.updateCommand(DefaultServerConnection.java:143)
+	at com.mongodb.operation.MixedBulkWriteOperation$Run$3.executeWriteCommandProtocol(MixedBulkWriteOperation.java:490)
+	at com.mongodb.operation.MixedBulkWriteOperation$Run$RunExecutor.execute(MixedBulkWriteOperation.java:656)
+	at com.mongodb.operation.MixedBulkWriteOperation$Run.execute(MixedBulkWriteOperation.java:409)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:177)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:168)
+	at com.mongodb.operation.OperationHelper.withConnectionSource(OperationHelper.java:422)
+	at com.mongodb.operation.OperationHelper.withConnection(OperationHelper.java:413)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:168)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:74)
+	at com.mongodb.Mongo.execute(Mongo.java:845)
+	at com.mongodb.Mongo$2.execute(Mongo.java:828)
+	at com.mongodb.MongoCollectionImpl.executeSingleWriteRequest(MongoCollectionImpl.java:550)
+	at com.mongodb.MongoCollectionImpl.replaceOne(MongoCollectionImpl.java:369)
+	at org.apache.zeppelin.notebook.repo.MongoNotebookRepo.saveNote(MongoNotebookRepo.java:215)
+	at org.apache.zeppelin.notebook.repo.MongoNotebookRepo.save(MongoNotebookRepo.java:171)
+	at org.apache.zeppelin.notebook.repo.NotebookRepoSync.save(NotebookRepoSync.java:214)
+	at org.apache.zeppelin.notebook.NoteManager.saveNote(NoteManager.java:182)
+	at org.apache.zeppelin.notebook.Notebook.saveNote(Notebook.java:379)
+	at org.apache.zeppelin.service.NotebookService.runParagraph(NotebookService.java:367)
+	at org.apache.zeppelin.socket.NotebookServer.runParagraph(NotebookServer.java:1525)
+	at org.apache.zeppelin.socket.NotebookServer.onMessage(NotebookServer.java:356)
+	at org.apache.zeppelin.socket.NotebookSocket.onWebSocketText(NotebookSocket.java:58)
+	at org.eclipse.jetty.websocket.common.events.JettyListenerEventDriver.onTextMessage(JettyListenerEventDriver.java:231)
+	at org.eclipse.jetty.websocket.common.message.SimpleTextMessage.messageComplete(SimpleTextMessage.java:69)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.appendMessage(AbstractEventDriver.java:65)
+	at org.eclipse.jetty.websocket.common.events.JettyListenerEventDriver.onTextFrame(JettyListenerEventDriver.java:179)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.incomingFrame(AbstractEventDriver.java:150)
+	at org.eclipse.jetty.websocket.common.WebSocketSession.incomingFrame(WebSocketSession.java:326)
+	at org.eclipse.jetty.websocket.common.extensions.AbstractExtension.nextIncomingFrame(AbstractExtension.java:147)
+	at org.eclipse.jetty.websocket.common.extensions.compress.PerMessageDeflateExtension.nextIncomingFrame(PerMessageDeflateExtension.java:112)
+	at org.eclipse.jetty.websocket.common.extensions.compress.CompressExtension.forwardIncoming(CompressExtension.java:168)
+	at org.eclipse.jetty.websocket.common.extensions.compress.PerMessageDeflateExtension.incomingFrame(PerMessageDeflateExtension.java:92)
+	at org.eclipse.jetty.websocket.common.extensions.ExtensionStack.incomingFrame(ExtensionStack.java:202)
+	at org.eclipse.jetty.websocket.common.Parser.notifyFrame(Parser.java:225)
+	at org.eclipse.jetty.websocket.common.Parser.parseSingleFrame(Parser.java:259)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onFillable(AbstractWebSocketConnection.java:459)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onFillable(AbstractWebSocketConnection.java:440)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.lang.Thread.run(Thread.java:748)
+ INFO [2021-07-20 15:33:21,123] ({qtp1864350231-11} InterpreterSetting.java[getOrCreateInterpreterGroup]:453) - Create InterpreterGroup with groupId: python-shared_process for ExecutionContext{user='anonymous', noteId='2G9U36QSR', interpreterGroupId='null', defaultInterpreterGroup='python', inIsolatedMode=false, startTime=}
+ INFO [2021-07-20 15:33:21,127] ({qtp1864350231-11} InterpreterSetting.java[createInterpreters]:823) - Interpreter org.apache.zeppelin.python.PythonInterpreter created for user: anonymous, sessionId: shared_session
+ INFO [2021-07-20 15:33:21,138] ({qtp1864350231-11} InterpreterSetting.java[createInterpreters]:823) - Interpreter org.apache.zeppelin.python.IPythonInterpreter created for user: anonymous, sessionId: shared_session
+ INFO [2021-07-20 15:33:21,147] ({qtp1864350231-11} InterpreterSetting.java[createInterpreters]:823) - Interpreter org.apache.zeppelin.python.PythonInterpreterPandasSql created for user: anonymous, sessionId: shared_session
+ INFO [2021-07-20 15:33:21,152] ({qtp1864350231-11} InterpreterSetting.java[createInterpreters]:823) - Interpreter org.apache.zeppelin.python.PythonCondaInterpreter created for user: anonymous, sessionId: shared_session
+ INFO [2021-07-20 15:33:21,156] ({qtp1864350231-11} InterpreterSetting.java[createInterpreters]:823) - Interpreter org.apache.zeppelin.python.PythonDockerInterpreter created for user: anonymous, sessionId: shared_session
+ INFO [2021-07-20 15:33:21,160] ({qtp1864350231-11} ManagedInterpreterGroup.java[getOrCreateSession]:180) - Create Session: shared_session in InterpreterGroup: python-shared_process for user: anonymous
+ERROR [2021-07-20 15:33:21,399] ({qtp1864350231-17} NotebookServer.java[onMessage]:463) - Can't handle message: {"op":"COMMIT_PARAGRAPH","data":{"id":"paragraph_1626367581533_402771751","paragraph":"%mongodb\n\nprint(db.getCollectionNames())\ndb.csubs.find({}).table()","config":{"colWidth":12,"fontSize":9,"enabled":true,"results":{"1":{"graph":{"mode":"table","height":300,"optionOpen":false,"setting":{"table":{"tableGridState":{},"tableColumnTypeState":{"names":{"_id":"string","expiration":"string","reference":"string","custom":"string","throttling":"string","servicePath":"string","description":"string","status":"string","entities":"string","attrs":"string","metadata":"string","blacklist":"string","onlyChanged":"string","conditions":"string","expression.q":"string","expression.mq":"string","expression.geometry":"string","expression.coords":"string","expression.georel":"string","format":"string","count":"string","lastNotification":"string","lastSuccess":"string","lastSuccessCode":"string"},"updated":true},"tableOptionSpecHash":"[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]","tableOptionValue":{"useFilter":false,"showPagination":false,"showAggregationFooter":false},"updated":false,"initialized":false}},"commonSetting":{}}}},"editorSetting":{"language":"javascript","editOnDblClick":false,"completionSupport":true,"completionKey":"TAB"},"editorMode":"ace/mode/javascript"},"params":{}},"principal":"anonymous","ticket":"anonymous","roles":"[]","msgId":"mvgwk-22"}
+java.lang.IllegalArgumentException: Invalid BSON field name expression.q
+	at org.bson.AbstractBsonWriter.writeName(AbstractBsonWriter.java:516)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:188)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeIterable(DocumentCodec.java:197)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:170)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.encode(DocumentCodec.java:131)
+	at org.bson.codecs.DocumentCodec.encode(DocumentCodec.java:45)
+	at org.bson.codecs.BsonDocumentWrapperCodec.encode(BsonDocumentWrapperCodec.java:63)
+	at org.bson.codecs.BsonDocumentWrapperCodec.encode(BsonDocumentWrapperCodec.java:29)
+	at com.mongodb.connection.UpdateCommandMessage.writeTheWrites(UpdateCommandMessage.java:85)
+	at com.mongodb.connection.UpdateCommandMessage.writeTheWrites(UpdateCommandMessage.java:43)
+	at com.mongodb.connection.BaseWriteCommandMessage.encodeMessageBodyWithMetadata(BaseWriteCommandMessage.java:129)
+	at com.mongodb.connection.RequestMessage.encodeWithMetadata(RequestMessage.java:160)
+	at com.mongodb.connection.WriteCommandProtocol.sendMessage(WriteCommandProtocol.java:220)
+	at com.mongodb.connection.WriteCommandProtocol.execute(WriteCommandProtocol.java:101)
+	at com.mongodb.connection.UpdateCommandProtocol.execute(UpdateCommandProtocol.java:64)
+	at com.mongodb.connection.UpdateCommandProtocol.execute(UpdateCommandProtocol.java:37)
+	at com.mongodb.connection.DefaultServer$DefaultServerProtocolExecutor.execute(DefaultServer.java:168)
+	at com.mongodb.connection.DefaultServerConnection.executeProtocol(DefaultServerConnection.java:289)
+	at com.mongodb.connection.DefaultServerConnection.updateCommand(DefaultServerConnection.java:143)
+	at com.mongodb.operation.MixedBulkWriteOperation$Run$3.executeWriteCommandProtocol(MixedBulkWriteOperation.java:490)
+	at com.mongodb.operation.MixedBulkWriteOperation$Run$RunExecutor.execute(MixedBulkWriteOperation.java:656)
+	at com.mongodb.operation.MixedBulkWriteOperation$Run.execute(MixedBulkWriteOperation.java:409)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:177)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:168)
+	at com.mongodb.operation.OperationHelper.withConnectionSource(OperationHelper.java:422)
+	at com.mongodb.operation.OperationHelper.withConnection(OperationHelper.java:413)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:168)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:74)
+	at com.mongodb.Mongo.execute(Mongo.java:845)
+	at com.mongodb.Mongo$2.execute(Mongo.java:828)
+	at com.mongodb.MongoCollectionImpl.executeSingleWriteRequest(MongoCollectionImpl.java:550)
+	at com.mongodb.MongoCollectionImpl.replaceOne(MongoCollectionImpl.java:369)
+	at org.apache.zeppelin.notebook.repo.MongoNotebookRepo.saveNote(MongoNotebookRepo.java:215)
+	at org.apache.zeppelin.notebook.repo.MongoNotebookRepo.save(MongoNotebookRepo.java:171)
+	at org.apache.zeppelin.notebook.repo.NotebookRepoSync.save(NotebookRepoSync.java:214)
+	at org.apache.zeppelin.notebook.NoteManager.saveNote(NoteManager.java:182)
+	at org.apache.zeppelin.notebook.Notebook.saveNote(Notebook.java:379)
+	at org.apache.zeppelin.service.NotebookService.updateParagraph(NotebookService.java:636)
+	at org.apache.zeppelin.socket.NotebookServer.updateParagraph(NotebookServer.java:1109)
+	at org.apache.zeppelin.socket.NotebookServer.onMessage(NotebookServer.java:353)
+	at org.apache.zeppelin.socket.NotebookSocket.onWebSocketText(NotebookSocket.java:58)
+	at org.eclipse.jetty.websocket.common.events.JettyListenerEventDriver.onTextMessage(JettyListenerEventDriver.java:231)
+	at org.eclipse.jetty.websocket.common.message.SimpleTextMessage.messageComplete(SimpleTextMessage.java:69)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.appendMessage(AbstractEventDriver.java:65)
+	at org.eclipse.jetty.websocket.common.events.JettyListenerEventDriver.onTextFrame(JettyListenerEventDriver.java:179)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.incomingFrame(AbstractEventDriver.java:150)
+	at org.eclipse.jetty.websocket.common.WebSocketSession.incomingFrame(WebSocketSession.java:326)
+	at org.eclipse.jetty.websocket.common.extensions.AbstractExtension.nextIncomingFrame(AbstractExtension.java:147)
+	at org.eclipse.jetty.websocket.common.extensions.compress.PerMessageDeflateExtension.nextIncomingFrame(PerMessageDeflateExtension.java:112)
+	at org.eclipse.jetty.websocket.common.extensions.compress.CompressExtension.forwardIncoming(CompressExtension.java:168)
+	at org.eclipse.jetty.websocket.common.extensions.compress.PerMessageDeflateExtension.incomingFrame(PerMessageDeflateExtension.java:92)
+	at org.eclipse.jetty.websocket.common.extensions.ExtensionStack.incomingFrame(ExtensionStack.java:202)
+	at org.eclipse.jetty.websocket.common.Parser.notifyFrame(Parser.java:225)
+	at org.eclipse.jetty.websocket.common.Parser.parseSingleFrame(Parser.java:259)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onFillable(AbstractWebSocketConnection.java:459)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onFillable(AbstractWebSocketConnection.java:440)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.lang.Thread.run(Thread.java:748)
+ERROR [2021-07-20 15:33:21,838] ({qtp1864350231-12} NotebookServer.java[onMessage]:463) - Can't handle message: {"op":"COMMIT_PARAGRAPH","data":{"id":"paragraph_1626367581533_402771751","paragraph":"%mongodb\n\nprint(db.getCollectionNames())\ndb.csubs.find({}).table()","config":{"colWidth":12,"fontSize":9,"enabled":true,"results":{"1":{"graph":{"mode":"table","height":300,"optionOpen":false,"setting":{"table":{"tableGridState":{},"tableColumnTypeState":{"names":{"_id":"string","expiration":"string","reference":"string","custom":"string","throttling":"string","servicePath":"string","description":"string","status":"string","entities":"string","attrs":"string","metadata":"string","blacklist":"string","onlyChanged":"string","conditions":"string","expression.q":"string","expression.mq":"string","expression.geometry":"string","expression.coords":"string","expression.georel":"string","format":"string","count":"string","lastNotification":"string","lastSuccess":"string","lastSuccessCode":"string"},"updated":false},"tableOptionSpecHash":"[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]","tableOptionValue":{"useFilter":false,"showPagination":false,"showAggregationFooter":false},"updated":false,"initialized":false}},"commonSetting":{}}}},"editorSetting":{"language":"javascript","editOnDblClick":false,"completionSupport":true,"completionKey":"TAB"},"editorMode":"ace/mode/javascript"},"params":{}},"principal":"anonymous","ticket":"anonymous","roles":"[]","msgId":"mvgwk-23"}
+java.lang.IllegalArgumentException: Invalid BSON field name expression.q
+	at org.bson.AbstractBsonWriter.writeName(AbstractBsonWriter.java:516)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:188)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:172)
+	at org.bson.codecs.DocumentCodec.writeIterable(DocumentCodec.java:197)
+	at org.bson.codecs.DocumentCodec.writeValue(DocumentCodec.java:170)
+	at org.bson.codecs.DocumentCodec.writeMap(DocumentCodec.java:189)
+	at org.bson.codecs.DocumentCodec.encode(DocumentCodec.java:131)
+	at org.bson.codecs.DocumentCodec.encode(DocumentCodec.java:45)
+	at org.bson.codecs.BsonDocumentWrapperCodec.encode(BsonDocumentWrapperCodec.java:63)
+	at org.bson.codecs.BsonDocumentWrapperCodec.encode(BsonDocumentWrapperCodec.java:29)
+	at com.mongodb.connection.UpdateCommandMessage.writeTheWrites(UpdateCommandMessage.java:85)
+	at com.mongodb.connection.UpdateCommandMessage.writeTheWrites(UpdateCommandMessage.java:43)
+	at com.mongodb.connection.BaseWriteCommandMessage.encodeMessageBodyWithMetadata(BaseWriteCommandMessage.java:129)
+	at com.mongodb.connection.RequestMessage.encodeWithMetadata(RequestMessage.java:160)
+	at com.mongodb.connection.WriteCommandProtocol.sendMessage(WriteCommandProtocol.java:220)
+	at com.mongodb.connection.WriteCommandProtocol.execute(WriteCommandProtocol.java:101)
+	at com.mongodb.connection.UpdateCommandProtocol.execute(UpdateCommandProtocol.java:64)
+	at com.mongodb.connection.UpdateCommandProtocol.execute(UpdateCommandProtocol.java:37)
+	at com.mongodb.connection.DefaultServer$DefaultServerProtocolExecutor.execute(DefaultServer.java:168)
+	at com.mongodb.connection.DefaultServerConnection.executeProtocol(DefaultServerConnection.java:289)
+	at com.mongodb.connection.DefaultServerConnection.updateCommand(DefaultServerConnection.java:143)
+	at com.mongodb.operation.MixedBulkWriteOperation$Run$3.executeWriteCommandProtocol(MixedBulkWriteOperation.java:490)
+	at com.mongodb.operation.MixedBulkWriteOperation$Run$RunExecutor.execute(MixedBulkWriteOperation.java:656)
+	at com.mongodb.operation.MixedBulkWriteOperation$Run.execute(MixedBulkWriteOperation.java:409)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:177)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:168)
+	at com.mongodb.operation.OperationHelper.withConnectionSource(OperationHelper.java:422)
+	at com.mongodb.operation.OperationHelper.withConnection(OperationHelper.java:413)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:168)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:74)
+	at com.mongodb.Mongo.execute(Mongo.java:845)
+	at com.mongodb.Mongo$2.execute(Mongo.java:828)
+	at com.mongodb.MongoCollectionImpl.executeSingleWriteRequest(MongoCollectionImpl.java:550)
+	at com.mongodb.MongoCollectionImpl.replaceOne(MongoCollectionImpl.java:369)
+	at org.apache.zeppelin.notebook.repo.MongoNotebookRepo.saveNote(MongoNotebookRepo.java:215)
+	at org.apache.zeppelin.notebook.repo.MongoNotebookRepo.save(MongoNotebookRepo.java:171)
+	at org.apache.zeppelin.notebook.repo.NotebookRepoSync.save(NotebookRepoSync.java:214)
+	at org.apache.zeppelin.notebook.NoteManager.saveNote(NoteManager.java:182)
+	at org.apache.zeppelin.notebook.Notebook.saveNote(Notebook.java:379)
+	at org.apache.zeppelin.service.NotebookService.updateParagraph(NotebookService.java:636)
+	at org.apache.zeppelin.socket.NotebookServer.updateParagraph(NotebookServer.java:1109)
+	at org.apache.zeppelin.socket.NotebookServer.onMessage(NotebookServer.java:353)
+	at org.apache.zeppelin.socket.NotebookSocket.onWebSocketText(NotebookSocket.java:58)
+	at org.eclipse.jetty.websocket.common.events.JettyListenerEventDriver.onTextMessage(JettyListenerEventDriver.java:231)
+	at org.eclipse.jetty.websocket.common.message.SimpleTextMessage.messageComplete(SimpleTextMessage.java:69)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.appendMessage(AbstractEventDriver.java:65)
+	at org.eclipse.jetty.websocket.common.events.JettyListenerEventDriver.onTextFrame(JettyListenerEventDriver.java:179)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.incomingFrame(AbstractEventDriver.java:150)
+	at org.eclipse.jetty.websocket.common.WebSocketSession.incomingFrame(WebSocketSession.java:326)
+	at org.eclipse.jetty.websocket.common.extensions.AbstractExtension.nextIncomingFrame(AbstractExtension.java:147)
+	at org.eclipse.jetty.websocket.common.extensions.compress.PerMessageDeflateExtension.nextIncomingFrame(PerMessageDeflateExtension.java:112)
+	at org.eclipse.jetty.websocket.common.extensions.compress.CompressExtension.forwardIncoming(CompressExtension.java:168)
+	at org.eclipse.jetty.websocket.common.extensions.compress.PerMessageDeflateExtension.incomingFrame(PerMessageDeflateExtension.java:92)
+	at org.eclipse.jetty.websocket.common.extensions.ExtensionStack.incomingFrame(ExtensionStack.java:202)
+	at org.eclipse.jetty.websocket.common.Parser.notifyFrame(Parser.java:225)
+	at org.eclipse.jetty.websocket.common.Parser.parseSingleFrame(Parser.java:259)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onFillable(AbstractWebSocketConnection.java:459)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onFillable(AbstractWebSocketConnection.java:440)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.lang.Thread.run(Thread.java:748)
+ INFO [2021-07-20 15:33:24,935] ({qtp1864350231-12} NotebookService.java[runParagraph]:324) - Start to run paragraph: paragraph_1626367581533_402771751 of note: 2G9U36QSR
+ INFO [2021-07-20 15:33:24,981] ({qtp1864350231-12} SchedulerFactory.java[<init>]:56) - Scheduler Thread Pool Size: 100
+ INFO [2021-07-20 15:33:24,995] ({SchedulerFactory2} AbstractScheduler.java[runJob]:127) - Job paragraph_1626367581533_402771751 started by scheduler RemoteInterpreter-mongodb-shared_process-shared_session
+ INFO [2021-07-20 15:33:25,000] ({SchedulerFactory2} Paragraph.java[jobRun]:420) - Run paragraph [paragraph_id: paragraph_1626367581533_402771751, interpreter: org.apache.zeppelin.mongodb.MongoDbInterpreter, note_id: 2G9U36QSR, user: anonymous]
+ INFO [2021-07-20 15:33:25,003] ({SchedulerFactory2} ManagedInterpreterGroup.java[getOrCreateInterpreterProcess]:65) - Create InterpreterProcess for InterpreterGroup: mongodb-shared_process
+ INFO [2021-07-20 15:33:25,011] ({SchedulerFactory2} PluginManager.java[loadInterpreterLauncher]:154) - Loading Interpreter Launcher Plugin: org.apache.zeppelin.interpreter.launcher.StandardInterpreterLauncher
+ INFO [2021-07-20 15:33:25,015] ({SchedulerFactory2} StandardInterpreterLauncher.java[launchDirectly]:49) - Launching new interpreter process of mongodb
+ INFO [2021-07-20 15:33:25,069] ({SchedulerFactory2} ProcessLauncher.java[transition]:109) - Process state is transitioned to LAUNCHED
+ INFO [2021-07-20 15:33:25,070] ({SchedulerFactory2} ProcessLauncher.java[launch]:96) - Process is launched: [/opt/zeppelin/bin/interpreter.sh, -d, /opt/zeppelin/interpreter/mongodb, -c, 172.18.0.4, -p, 37579, -r, :, -i, mongodb-shared_process, -l, /opt/zeppelin/local-repo/mongodb, -g, mongodb]
+ INFO [2021-07-20 15:33:27,171] ({pool-7-thread-1} RemoteInterpreterEventServer.java[registerInterpreterProcess]:176) - Register interpreter process: 172.18.0.4:37165, interpreterGroup: mongodb-shared_process
+ INFO [2021-07-20 15:33:27,173] ({pool-7-thread-1} ProcessLauncher.java[transition]:109) - Process state is transitioned to RUNNING
+ INFO [2021-07-20 15:33:27,376] ({SchedulerFactory2} RemoteInterpreter.java[lambda$internal_create$1]:160) - Create RemoteInterpreter org.apache.zeppelin.mongodb.MongoDbInterpreter
+ INFO [2021-07-20 15:33:27,587] ({SchedulerFactory2} RemoteInterpreter.java[lambda$open$0]:134) - Open RemoteInterpreter org.apache.zeppelin.mongodb.MongoDbInterpreter
+ INFO [2021-07-20 15:33:27,588] ({SchedulerFactory2} RemoteInterpreter.java[pushAngularObjectRegistryToRemote]:393) - Push local angular object registry from ZeppelinServer to remote interpreter group mongodb-shared_process
+ INFO [2021-07-20 15:33:27,831] ({JobStatusPoller-paragraph_1626367581533_402771751} NotebookServer.java[onStatusChange]:1931) - Job paragraph_1626367581533_402771751 starts to RUNNING
+ INFO [2021-07-20 15:33:28,168] ({SchedulerFactory2} NotebookServer.java[onStatusChange]:1926) - Job paragraph_1626367581533_402771751 is finished successfully, status: FINISHED
+ INFO [2021-07-20 15:33:28,200] ({SchedulerFactory2} AbstractScheduler.java[runJob]:154) - Job paragraph_1626367581533_402771751 finished by scheduler RemoteInterpreter-mongodb-shared_process-shared_session with status FINISHED
+ INFO [2021-07-20 15:34:57,745] ({Thread-11} ZeppelinServer.java[lambda$shutdown$0]:314) - Shutting down Zeppelin Server ... 
+ INFO [2021-07-20 15:34:57,754] ({qtp1864350231-80} NotebookServer.java[onClose]:474) - Closed connection to 172.18.0.1:61924 (1005) null
+ INFO [2021-07-20 15:34:57,762] ({Thread-11} AbstractConnector.java[doStop]:381) - Stopped ServerConnector@44c8afef{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+ INFO [2021-07-20 15:34:57,763] ({Thread-11} HouseKeeper.java[stopScavenging]:158) - node0 Stopped scavenging
+ INFO [2021-07-20 15:34:57,820] ({Thread-11} ContextHandler.java[doStop]:1099) - Stopped o.e.j.w.WebAppContext@2e222612{zeppelin-web-angular,/next,null,UNAVAILABLE}{/opt/zeppelin/zeppelin-web-angular-0.9.0.war}
+ INFO [2021-07-20 15:34:57,838] ({Thread-11} ContextHandler.java[doStop]:1099) - Stopped o.e.j.w.WebAppContext@3972a855{zeppelin-web,/,null,UNAVAILABLE}{/opt/zeppelin/zeppelin-web-0.9.0.war}
+ INFO [2021-07-20 15:34:57,846] ({ignite-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: ignite
+ INFO [2021-07-20 15:34:57,847] ({geode-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: geode
+ INFO [2021-07-20 15:34:57,846] ({beam-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: beam
+ INFO [2021-07-20 15:34:57,850] ({beam-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: beam
+ INFO [2021-07-20 15:34:57,846] ({ignite-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: ignite
+ INFO [2021-07-20 15:34:57,856] ({md-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: md
+ INFO [2021-07-20 15:34:57,855] ({pig-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: pig
+ INFO [2021-07-20 15:34:57,855] ({spark-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: spark
+ INFO [2021-07-20 15:34:57,854] ({sh-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: sh
+ INFO [2021-07-20 15:34:57,854] ({elasticsearch-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: elasticsearch
+ INFO [2021-07-20 15:34:57,854] ({submarine-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: submarine
+ INFO [2021-07-20 15:34:57,853] ({file-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: file
+ INFO [2021-07-20 15:34:57,853] ({jupyter-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: jupyter
+ INFO [2021-07-20 15:34:57,853] ({java-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: java
+ INFO [2021-07-20 15:34:57,851] ({influxdb-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: influxdb
+ INFO [2021-07-20 15:34:57,851] ({lens-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: lens
+ INFO [2021-07-20 15:34:57,850] ({jdbc-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: jdbc
+ INFO [2021-07-20 15:34:57,850] ({geode-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: geode
+ INFO [2021-07-20 15:34:57,849] ({java-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: java
+ INFO [2021-07-20 15:34:57,849] ({pig-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: pig
+ INFO [2021-07-20 15:34:57,884] ({r-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: r
+ INFO [2021-07-20 15:34:57,848] ({influxdb-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: influxdb
+ INFO [2021-07-20 15:34:57,848] ({lens-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: lens
+ INFO [2021-07-20 15:34:57,847] ({jdbc-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: jdbc
+ INFO [2021-07-20 15:34:57,892] ({kylin-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: kylin
+ INFO [2021-07-20 15:34:57,891] ({groovy-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: groovy
+ INFO [2021-07-20 15:34:57,891] ({neo4j-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: neo4j
+ INFO [2021-07-20 15:34:57,890] ({cassandra-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: cassandra
+ INFO [2021-07-20 15:34:57,887] ({sparql-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: sparql
+ INFO [2021-07-20 15:34:57,884] ({livy-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: livy
+ INFO [2021-07-20 15:34:57,883] ({ksql-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: ksql
+ INFO [2021-07-20 15:34:57,882] ({angular-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: angular
+ INFO [2021-07-20 15:34:57,881] ({flink-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: flink
+ INFO [2021-07-20 15:34:57,881] ({scalding-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: scalding
+ INFO [2021-07-20 15:34:57,880] ({kotlin-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: kotlin
+ INFO [2021-07-20 15:34:57,877] ({sap-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: sap
+ INFO [2021-07-20 15:34:57,876] ({python-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: python
+ INFO [2021-07-20 15:34:57,873] ({hbase-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: hbase
+ INFO [2021-07-20 15:34:57,913] ({python-close} ManagedInterpreterGroup.java[close]:91) - Close InterpreterGroup: python-shared_process
+ INFO [2021-07-20 15:34:57,873] ({mongodb-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: mongodb
+ INFO [2021-07-20 15:34:57,872] ({bigquery-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: bigquery
+ INFO [2021-07-20 15:34:57,870] ({alluxio-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: alluxio
+ INFO [2021-07-20 15:34:57,870] ({elasticsearch-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: elasticsearch
+ INFO [2021-07-20 15:34:57,869] ({hazelcastjet-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: hazelcastjet
+ INFO [2021-07-20 15:34:57,869] ({md-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: md
+ INFO [2021-07-20 15:34:57,868] ({spark-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: spark
+ INFO [2021-07-20 15:34:57,868] ({sh-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: sh
+ INFO [2021-07-20 15:34:57,866] ({submarine-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: submarine
+ INFO [2021-07-20 15:34:57,866] ({kylin-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: kylin
+ INFO [2021-07-20 15:34:57,866] ({sparql-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: sparql
+ INFO [2021-07-20 15:34:57,866] ({cassandra-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: cassandra
+ INFO [2021-07-20 15:34:57,865] ({groovy-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: groovy
+ INFO [2021-07-20 15:34:57,865] ({neo4j-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: neo4j
+ INFO [2021-07-20 15:34:57,865] ({r-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: r
+ INFO [2021-07-20 15:34:57,865] ({livy-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: livy
+ INFO [2021-07-20 15:34:57,864] ({ksql-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: ksql
+ INFO [2021-07-20 15:34:57,864] ({angular-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: angular
+ INFO [2021-07-20 15:34:57,864] ({flink-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: flink
+ INFO [2021-07-20 15:34:57,864] ({scalding-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: scalding
+ INFO [2021-07-20 15:34:57,863] ({kotlin-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: kotlin
+ INFO [2021-07-20 15:34:57,863] ({sap-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: sap
+ INFO [2021-07-20 15:34:57,863] ({python-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: python
+ INFO [2021-07-20 15:34:57,862] ({hbase-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: hbase
+ INFO [2021-07-20 15:34:57,862] ({mongodb-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: mongodb
+ INFO [2021-07-20 15:34:57,861] ({bigquery-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: bigquery
+ INFO [2021-07-20 15:34:57,860] ({alluxio-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: alluxio
+ INFO [2021-07-20 15:34:57,860] ({file-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: file
+ INFO [2021-07-20 15:34:57,858] ({jupyter-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: jupyter
+ INFO [2021-07-20 15:34:57,857] ({hazelcastjet-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: hazelcastjet
+ INFO [2021-07-20 15:34:57,915] ({mongodb-close} ManagedInterpreterGroup.java[close]:91) - Close InterpreterGroup: mongodb-shared_process
+ INFO [2021-07-20 15:34:57,915] ({python-close} ManagedInterpreterGroup.java[close]:102) - Close Session: shared_session for interpreter setting: python
+ INFO [2021-07-20 15:34:57,942] ({mongodb-close} ManagedInterpreterGroup.java[close]:102) - Close Session: shared_session for interpreter setting: mongodb
+ INFO [2021-07-20 15:34:57,948] ({RemoteInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.mongodb.MongoDbInterpreter
+ INFO [2021-07-20 15:34:57,949] ({RemoteInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.python.PythonCondaInterpreter
+ INFO [2021-07-20 15:34:57,949] ({ConfInterpreter-close} SchedulerFactory.java[createOrGetFIFOScheduler]:76) - Create FIFOScheduler: interpreter_662531362
+ WARN [2021-07-20 15:34:57,950] ({RemoteInterpreter-close} RemoteInterpreter.java[close]:186) - close is called when RemoterInterpreter is not opened for org.apache.zeppelin.python.PythonCondaInterpreter
+ INFO [2021-07-20 15:34:57,954] ({ConfInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.interpreter.ConfInterpreter
+ INFO [2021-07-20 15:34:57,954] ({RemoteInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.python.PythonInterpreter
+ INFO [2021-07-20 15:34:57,954] ({RemoteInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.python.PythonInterpreterPandasSql
+ WARN [2021-07-20 15:34:57,961] ({RemoteInterpreter-close} RemoteInterpreter.java[close]:186) - close is called when RemoterInterpreter is not opened for org.apache.zeppelin.python.PythonInterpreterPandasSql
+ INFO [2021-07-20 15:34:57,954] ({RemoteInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.python.PythonDockerInterpreter
+ INFO [2021-07-20 15:34:57,954] ({RemoteInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.python.IPythonInterpreter
+ WARN [2021-07-20 15:34:57,965] ({RemoteInterpreter-close} RemoteInterpreter.java[close]:186) - close is called when RemoterInterpreter is not opened for org.apache.zeppelin.python.IPythonInterpreter
+ WARN [2021-07-20 15:34:57,964] ({RemoteInterpreter-close} RemoteInterpreter.java[close]:186) - close is called when RemoterInterpreter is not opened for org.apache.zeppelin.python.PythonDockerInterpreter
+ WARN [2021-07-20 15:34:57,956] ({RemoteInterpreter-close} RemoteInterpreter.java[close]:186) - close is called when RemoterInterpreter is not opened for org.apache.zeppelin.python.PythonInterpreter
+ INFO [2021-07-20 15:34:57,954] ({ConfInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: interpreter_662531362
+ WARN [2021-07-20 15:34:57,969] ({SchedulerFactory3} AbstractScheduler.java[run]:91) - FIFOScheduler is interrupted
+ INFO [2021-07-20 15:34:57,971] ({ConfInterpreter-close} SchedulerFactory.java[createOrGetFIFOScheduler]:76) - Create FIFOScheduler: interpreter_286858395
+ INFO [2021-07-20 15:34:57,973] ({ConfInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.interpreter.ConfInterpreter
+ INFO [2021-07-20 15:34:57,973] ({RemoteInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: RemoteInterpreter-mongodb-shared_process-shared_session
+ WARN [2021-07-20 15:34:57,975] ({SchedulerFactory1} AbstractScheduler.java[run]:91) - RemoteScheduler is interrupted
+ INFO [2021-07-20 15:34:57,975] ({RemoteInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: RemoteInterpreter-python-shared_process-shared_session
+ WARN [2021-07-20 15:34:57,977] ({SchedulerFactory2} AbstractScheduler.java[run]:91) - RemoteScheduler is interrupted
+ INFO [2021-07-20 15:34:57,978] ({RemoteInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: RemoteInterpreter-python-shared_process-shared_session
+ INFO [2021-07-20 15:34:57,982] ({RemoteInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: RemoteInterpreter-python-shared_process-shared_session
+ INFO [2021-07-20 15:34:57,983] ({RemoteInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: RemoteInterpreter-python-shared_process-shared_session
+ INFO [2021-07-20 15:34:57,984] ({RemoteInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: RemoteInterpreter-python-shared_process-shared_session
+ INFO [2021-07-20 15:34:57,985] ({ConfInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: interpreter_286858395
+ INFO [2021-07-20 15:34:57,985] ({python-close} ManagedInterpreterGroup.java[close]:106) - Remove this InterpreterGroup: python-shared_process as all the sessions are closed
+ INFO [2021-07-20 15:34:57,986] ({mongodb-close} ManagedInterpreterGroup.java[close]:106) - Remove this InterpreterGroup: mongodb-shared_process as all the sessions are closed
+ INFO [2021-07-20 15:34:57,987] ({mongodb-close} ManagedInterpreterGroup.java[close]:109) - Kill RemoteInterpreterProcess
+ WARN [2021-07-20 15:34:57,986] ({SchedulerFactory4} AbstractScheduler.java[run]:91) - FIFOScheduler is interrupted
+ INFO [2021-07-20 15:34:57,988] ({mongodb-close} RemoteInterpreterManagedProcess.java[stop]:141) - Kill interpreter process for interpreter group: mongodb-shared_process
+ INFO [2021-07-20 15:34:58,015] ({pool-7-thread-2} RemoteInterpreterEventServer.java[unRegisterInterpreterProcess]:183) - Unregister interpreter process: mongodb-shared_process
+ WARN [2021-07-20 15:34:58,016] ({pool-7-thread-2} RemoteInterpreterEventServer.java[unRegisterInterpreterProcess]:187) - Unable to unregister interpreter process because no such interpreterGroup: mongodb-shared_process
+ INFO [2021-07-20 15:34:58,026] ({mongodb-close} RemoteInterpreterManagedProcess.java[stop]:155) - Remote process of interpreter group: mongodb-shared_process is terminated
+ INFO [2021-07-20 15:34:58,027] ({Thread-11} NotebookRepoSync.java[close]:460) - Closing all notebook storages
+ INFO [2021-07-20 15:34:58,034] ({Thread-11} SLF4JLogger.java[info]:71) - Closed connection [connectionId{localValue:2, serverValue:42}] to mongo:27017 because the pool has been closed.
+ WARN [2021-07-20 15:34:58,052] ({Exec Default Executor} ProcessLauncher.java[onProcessFailed]:134) - Process with cmd [/opt/zeppelin/bin/interpreter.sh, -d, /opt/zeppelin/interpreter/mongodb, -c, 172.18.0.4, -p, 37579, -r, :, -i, mongodb-shared_process, -l, /opt/zeppelin/local-repo/mongodb, -g, mongodb] is failed due to
+org.apache.commons.exec.ExecuteException: Process exited with an error: 143 (Exit value: 143)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.access$200(DefaultExecutor.java:48)
+	at org.apache.commons.exec.DefaultExecutor$1.run(DefaultExecutor.java:200)
+	at java.lang.Thread.run(Thread.java:748)
+ INFO [2021-07-20 15:34:58,057] ({Exec Default Executor} ProcessLauncher.java[transition]:109) - Process state is transitioned to TERMINATED
+ INFO [2021-07-20 15:35:01,060] ({Thread-11} ZeppelinServer.java[lambda$shutdown$0]:329) - Bye

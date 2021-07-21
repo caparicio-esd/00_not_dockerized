@@ -1,0 +1,26 @@
+ INFO [2021-07-20 15:36:28,946] ({RegisterThread} RemoteInterpreterServer.java[run]:595) - Start registration
+ INFO [2021-07-20 15:36:28,947] ({RemoteInterpreterServer-Thread} RemoteInterpreterServer.java[run]:193) - Launching ThriftServer at 172.18.0.2:45545
+ INFO [2021-07-20 15:36:30,274] ({RegisterThread} RemoteInterpreterServer.java[run]:609) - Registering interpreter process
+ INFO [2021-07-20 15:36:30,326] ({RegisterThread} RemoteInterpreterServer.java[run]:611) - Registered interpreter process
+ INFO [2021-07-20 15:36:30,327] ({RegisterThread} RemoteInterpreterServer.java[run]:632) - Registration finished
+ INFO [2021-07-20 15:36:30,379] ({pool-2-thread-1} ZeppelinConfiguration.java[create]:172) - Load configuration from file:/opt/zeppelin/conf/zeppelin-site.xml
+ INFO [2021-07-20 15:36:30,535] ({pool-2-thread-1} ZeppelinConfiguration.java[create]:180) - Server Host: 0.0.0.0
+ INFO [2021-07-20 15:36:30,537] ({pool-2-thread-1} ZeppelinConfiguration.java[create]:182) - Server Port: 8080
+ INFO [2021-07-20 15:36:30,538] ({pool-2-thread-1} ZeppelinConfiguration.java[create]:186) - Context Path: /
+ INFO [2021-07-20 15:36:30,539] ({pool-2-thread-1} ZeppelinConfiguration.java[create]:187) - Zeppelin Version: 0.9.0
+ INFO [2021-07-20 15:36:30,541] ({pool-2-thread-1} RemoteInterpreterServer.java[createLifecycleManager]:286) - Creating interpreter lifecycle manager: org.apache.zeppelin.interpreter.lifecycle.NullLifecycleManager
+ INFO [2021-07-20 15:36:30,542] ({pool-2-thread-1} RemoteInterpreterServer.java[init]:229) - Creating RemoteInterpreterEventClient with connection pool size: 10
+ INFO [2021-07-20 15:36:30,761] ({pool-2-thread-1} RemoteInterpreterServer.java[createInterpreter]:383) - Instantiate interpreter org.apache.zeppelin.mongodb.MongoDbInterpreter
+ INFO [2021-07-20 15:36:30,867] ({pool-2-thread-2} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-20 15:36:30,875] ({pool-2-thread-2} SchedulerFactory.java[<init>]:56) - Scheduler Thread Pool Size: 100
+ INFO [2021-07-20 15:36:30,880] ({pool-2-thread-2} SchedulerFactory.java[createOrGetParallelScheduler]:88) - Create ParallelScheduler: org.apache.zeppelin.mongodb.MongoDbInterpreter2012515230 with maxConcurrency: 10
+ INFO [2021-07-20 15:36:30,980] ({pool-2-thread-1} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-20 15:36:30,989] ({ParallelScheduler-Worker-1} AbstractScheduler.java[runJob]:127) - Job paragraph_1626696799937_917446348 started by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter2012515230
+ INFO [2021-07-20 15:36:31,006] ({pool-2-thread-2} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
+ INFO [2021-07-20 15:36:31,342] ({ParallelScheduler-Worker-1} AbstractScheduler.java[runJob]:154) - Job paragraph_1626696799937_917446348 finished by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter2012515230 with status FINISHED
+ INFO [2021-07-20 16:41:46,744] ({pool-2-thread-2} RemoteInterpreterServer.java[shutdown]:244) - Unregister interpreter process
+ INFO [2021-07-20 16:41:46,756] ({ShutdownThread} RemoteInterpreterServer.java[run]:649) - Shutting down...
+ INFO [2021-07-20 16:41:46,757] ({ShutdownThread} RemoteInterpreterServer.java[run]:650) - Shutdown initialized by ShutdownCall
+ INFO [2021-07-20 16:41:46,758] ({ShutdownThread} SchedulerFactory.java[destroy]:61) - Destroy all executors
+ INFO [2021-07-20 16:41:46,760] ({ShutdownThread} SchedulerFactory.java[destroy]:65) - Stopping Scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter2012515230
+ WARN [2021-07-20 16:41:46,762] ({SchedulerFactory1} AbstractScheduler.java[run]:91) - ParallelScheduler is interrupted

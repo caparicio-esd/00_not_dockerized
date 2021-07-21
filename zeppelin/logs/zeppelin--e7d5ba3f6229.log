@@ -10815,3 +10815,171 @@ java.lang.IllegalArgumentException: Invalid BSON field name _id.id
 	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
 	at java.lang.Thread.run(Thread.java:748)
+ INFO [2021-07-20 15:31:27,000] ({Thread-11} ZeppelinServer.java[lambda$shutdown$0]:314) - Shutting down Zeppelin Server ... 
+ INFO [2021-07-20 15:31:27,013] ({qtp1864350231-18} NotebookServer.java[onClose]:474) - Closed connection to 172.18.0.1:60318 (1006) Disconnected
+ INFO [2021-07-20 15:31:27,016] ({Thread-11} AbstractConnector.java[doStop]:381) - Stopped ServerConnector@44c8afef{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+ INFO [2021-07-20 15:31:27,018] ({Thread-11} HouseKeeper.java[stopScavenging]:158) - node0 Stopped scavenging
+ INFO [2021-07-20 15:31:27,043] ({Thread-11} ContextHandler.java[doStop]:1099) - Stopped o.e.j.w.WebAppContext@2e222612{zeppelin-web-angular,/next,null,UNAVAILABLE}{/opt/zeppelin/zeppelin-web-angular-0.9.0.war}
+ INFO [2021-07-20 15:31:27,054] ({Thread-11} ContextHandler.java[doStop]:1099) - Stopped o.e.j.w.WebAppContext@3972a855{zeppelin-web,/,null,UNAVAILABLE}{/opt/zeppelin/zeppelin-web-0.9.0.war}
+ INFO [2021-07-20 15:31:27,061] ({ignite-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: ignite
+ INFO [2021-07-20 15:31:27,062] ({beam-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: beam
+ INFO [2021-07-20 15:31:27,061] ({ignite-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: ignite
+ INFO [2021-07-20 15:31:27,064] ({jdbc-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: jdbc
+ INFO [2021-07-20 15:31:27,064] ({geode-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: geode
+ INFO [2021-07-20 15:31:27,064] ({lens-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: lens
+ INFO [2021-07-20 15:31:27,068] ({submarine-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: submarine
+ INFO [2021-07-20 15:31:27,063] ({beam-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: beam
+ INFO [2021-07-20 15:31:27,063] ({jdbc-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: jdbc
+ INFO [2021-07-20 15:31:27,063] ({geode-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: geode
+ INFO [2021-07-20 15:31:27,071] ({bigquery-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: bigquery
+ INFO [2021-07-20 15:31:27,073] ({sap-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: sap
+ INFO [2021-07-20 15:31:27,071] ({alluxio-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: alluxio
+ INFO [2021-07-20 15:31:27,070] ({hazelcastjet-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: hazelcastjet
+ INFO [2021-07-20 15:31:27,069] ({md-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: md
+ INFO [2021-07-20 15:31:27,069] ({spark-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: spark
+ INFO [2021-07-20 15:31:27,069] ({sh-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: sh
+ INFO [2021-07-20 15:31:27,068] ({elasticsearch-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: elasticsearch
+ INFO [2021-07-20 15:31:27,068] ({influxdb-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: influxdb
+ INFO [2021-07-20 15:31:27,067] ({file-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: file
+ INFO [2021-07-20 15:31:27,067] ({jupyter-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: jupyter
+ INFO [2021-07-20 15:31:27,066] ({java-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: java
+ INFO [2021-07-20 15:31:27,066] ({pig-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: pig
+ INFO [2021-07-20 15:31:27,086] ({groovy-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: groovy
+ INFO [2021-07-20 15:31:27,065] ({influxdb-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: influxdb
+ INFO [2021-07-20 15:31:27,065] ({lens-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: lens
+ INFO [2021-07-20 15:31:27,089] ({r-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: r
+ INFO [2021-07-20 15:31:27,089] ({livy-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: livy
+ INFO [2021-07-20 15:31:27,089] ({ksql-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: ksql
+ INFO [2021-07-20 15:31:27,088] ({angular-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: angular
+ INFO [2021-07-20 15:31:27,087] ({kylin-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: kylin
+ INFO [2021-07-20 15:31:27,086] ({sparql-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: sparql
+ INFO [2021-07-20 15:31:27,086] ({cassandra-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: cassandra
+ INFO [2021-07-20 15:31:27,085] ({neo4j-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: neo4j
+ INFO [2021-07-20 15:31:27,084] ({flink-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: flink
+ INFO [2021-07-20 15:31:27,084] ({scalding-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: scalding
+ INFO [2021-07-20 15:31:27,083] ({kotlin-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: kotlin
+ INFO [2021-07-20 15:31:27,082] ({sap-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: sap
+ INFO [2021-07-20 15:31:27,082] ({hazelcastjet-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: hazelcastjet
+ INFO [2021-07-20 15:31:27,082] ({python-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: python
+ INFO [2021-07-20 15:31:27,082] ({mongodb-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: mongodb
+ INFO [2021-07-20 15:31:27,082] ({hbase-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: hbase
+ INFO [2021-07-20 15:31:27,082] ({bigquery-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: bigquery
+ INFO [2021-07-20 15:31:27,081] ({alluxio-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: alluxio
+ INFO [2021-07-20 15:31:27,080] ({md-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: md
+ INFO [2021-07-20 15:31:27,079] ({spark-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: spark
+ INFO [2021-07-20 15:31:27,079] ({sh-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: sh
+ INFO [2021-07-20 15:31:27,079] ({elasticsearch-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: elasticsearch
+ INFO [2021-07-20 15:31:27,078] ({submarine-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: submarine
+ INFO [2021-07-20 15:31:27,078] ({file-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: file
+ INFO [2021-07-20 15:31:27,077] ({jupyter-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: jupyter
+ INFO [2021-07-20 15:31:27,077] ({java-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: java
+ INFO [2021-07-20 15:31:27,076] ({pig-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: pig
+ INFO [2021-07-20 15:31:27,076] ({r-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: r
+ INFO [2021-07-20 15:31:27,075] ({livy-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: livy
+ INFO [2021-07-20 15:31:27,074] ({ksql-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: ksql
+ INFO [2021-07-20 15:31:27,074] ({angular-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: angular
+ INFO [2021-07-20 15:31:27,074] ({flink-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: flink
+ INFO [2021-07-20 15:31:27,073] ({scalding-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: scalding
+ INFO [2021-07-20 15:31:27,073] ({kotlin-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: kotlin
+ INFO [2021-07-20 15:31:27,072] ({python-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: python
+ INFO [2021-07-20 15:31:27,072] ({hbase-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: hbase
+ INFO [2021-07-20 15:31:27,072] ({mongodb-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: mongodb
+ INFO [2021-07-20 15:31:27,104] ({mongodb-close} ManagedInterpreterGroup.java[close]:91) - Close InterpreterGroup: mongodb-shared_process
+ INFO [2021-07-20 15:31:27,103] ({python-close} ManagedInterpreterGroup.java[close]:91) - Close InterpreterGroup: python-shared_process
+ INFO [2021-07-20 15:31:27,126] ({python-close} ManagedInterpreterGroup.java[close]:102) - Close Session: shared_session for interpreter setting: python
+ INFO [2021-07-20 15:31:27,092] ({sh-close} ManagedInterpreterGroup.java[close]:91) - Close InterpreterGroup: sh-shared_process
+ INFO [2021-07-20 15:31:27,092] ({spark-close} ManagedInterpreterGroup.java[close]:91) - Close InterpreterGroup: spark-shared_process
+ INFO [2021-07-20 15:31:27,091] ({kylin-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: kylin
+ INFO [2021-07-20 15:31:27,090] ({sparql-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: sparql
+ INFO [2021-07-20 15:31:27,090] ({cassandra-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: cassandra
+ INFO [2021-07-20 15:31:27,090] ({groovy-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: groovy
+ INFO [2021-07-20 15:31:27,089] ({neo4j-close} InterpreterSetting.java[close]:529) - Close InterpreterSetting: neo4j
+ INFO [2021-07-20 15:31:27,131] ({RemoteInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.python.PythonCondaInterpreter
+ WARN [2021-07-20 15:31:27,135] ({RemoteInterpreter-close} RemoteInterpreter.java[close]:186) - close is called when RemoterInterpreter is not opened for org.apache.zeppelin.python.PythonCondaInterpreter
+ INFO [2021-07-20 15:31:27,131] ({ConfInterpreter-close} SchedulerFactory.java[createOrGetFIFOScheduler]:76) - Create FIFOScheduler: interpreter_382802317
+ INFO [2021-07-20 15:31:27,131] ({RemoteInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.python.PythonDockerInterpreter
+ WARN [2021-07-20 15:31:27,138] ({RemoteInterpreter-close} RemoteInterpreter.java[close]:186) - close is called when RemoterInterpreter is not opened for org.apache.zeppelin.python.PythonDockerInterpreter
+ INFO [2021-07-20 15:31:27,131] ({RemoteInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.python.PythonInterpreter
+ INFO [2021-07-20 15:31:27,129] ({spark-close} ManagedInterpreterGroup.java[close]:102) - Close Session: shared_session for interpreter setting: spark
+ INFO [2021-07-20 15:31:27,128] ({sh-close} ManagedInterpreterGroup.java[close]:102) - Close Session: shared_session for interpreter setting: sh
+ INFO [2021-07-20 15:31:27,125] ({mongodb-close} ManagedInterpreterGroup.java[close]:102) - Close Session: shared_session for interpreter setting: mongodb
+ WARN [2021-07-20 15:31:27,140] ({RemoteInterpreter-close} RemoteInterpreter.java[close]:186) - close is called when RemoterInterpreter is not opened for org.apache.zeppelin.python.PythonInterpreter
+ INFO [2021-07-20 15:31:27,138] ({RemoteInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.python.IPythonInterpreter
+ WARN [2021-07-20 15:31:27,145] ({RemoteInterpreter-close} RemoteInterpreter.java[close]:186) - close is called when RemoterInterpreter is not opened for org.apache.zeppelin.python.IPythonInterpreter
+ INFO [2021-07-20 15:31:27,138] ({RemoteInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: RemoteInterpreter-python-shared_process-shared_session
+ INFO [2021-07-20 15:31:27,138] ({RemoteInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.python.PythonInterpreterPandasSql
+ WARN [2021-07-20 15:31:27,148] ({RemoteInterpreter-close} RemoteInterpreter.java[close]:186) - close is called when RemoterInterpreter is not opened for org.apache.zeppelin.python.PythonInterpreterPandasSql
+ INFO [2021-07-20 15:31:27,138] ({ConfInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.interpreter.ConfInterpreter
+ WARN [2021-07-20 15:31:27,147] ({SchedulerFactory16} AbstractScheduler.java[run]:91) - RemoteScheduler is interrupted
+ INFO [2021-07-20 15:31:27,147] ({RemoteInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: RemoteInterpreter-python-shared_process-shared_session
+ INFO [2021-07-20 15:31:27,153] ({ConfInterpreter-close} SchedulerFactory.java[createOrGetFIFOScheduler]:76) - Create FIFOScheduler: interpreter_247635552
+ INFO [2021-07-20 15:31:27,155] ({ConfInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.interpreter.ConfInterpreter
+ INFO [2021-07-20 15:31:27,155] ({ConfInterpreter-close} SchedulerFactory.java[createOrGetFIFOScheduler]:76) - Create FIFOScheduler: interpreter_963574813
+ INFO [2021-07-20 15:31:27,155] ({RemoteInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.shell.ShellInterpreter
+ INFO [2021-07-20 15:31:27,158] ({RemoteInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: RemoteInterpreter-python-shared_process-shared_session
+ INFO [2021-07-20 15:31:27,159] ({ConfInterpreter-close} SchedulerFactory.java[createOrGetFIFOScheduler]:76) - Create FIFOScheduler: interpreter_1289291081
+ INFO [2021-07-20 15:31:27,155] ({RemoteInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.shell.TerminalInterpreter
+ INFO [2021-07-20 15:31:27,162] ({RemoteInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.spark.SparkShinyInterpreter
+ WARN [2021-07-20 15:31:27,163] ({RemoteInterpreter-close} RemoteInterpreter.java[close]:186) - close is called when RemoterInterpreter is not opened for org.apache.zeppelin.spark.SparkShinyInterpreter
+ INFO [2021-07-20 15:31:27,162] ({RemoteInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.spark.KotlinSparkInterpreter
+ WARN [2021-07-20 15:31:27,165] ({RemoteInterpreter-close} RemoteInterpreter.java[close]:186) - close is called when RemoterInterpreter is not opened for org.apache.zeppelin.spark.KotlinSparkInterpreter
+ INFO [2021-07-20 15:31:27,161] ({ConfInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.interpreter.ConfInterpreter
+ WARN [2021-07-20 15:31:27,158] ({RemoteInterpreter-close} RemoteInterpreter.java[close]:186) - close is called when RemoterInterpreter is not opened for org.apache.zeppelin.shell.ShellInterpreter
+ INFO [2021-07-20 15:31:27,157] ({ConfInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.interpreter.ConfInterpreter
+ INFO [2021-07-20 15:31:27,157] ({RemoteInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.mongodb.MongoDbInterpreter
+ INFO [2021-07-20 15:31:27,163] ({RemoteInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: RemoteInterpreter-python-shared_process-shared_session
+ INFO [2021-07-20 15:31:27,171] ({ConfInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: interpreter_963574813
+ INFO [2021-07-20 15:31:27,172] ({RemoteInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: RemoteInterpreter-sh-shared_process-shared_session
+ INFO [2021-07-20 15:31:27,163] ({RemoteInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.spark.SparkInterpreter
+ WARN [2021-07-20 15:31:27,174] ({RemoteInterpreter-close} RemoteInterpreter.java[close]:186) - close is called when RemoterInterpreter is not opened for org.apache.zeppelin.spark.SparkInterpreter
+ INFO [2021-07-20 15:31:27,163] ({RemoteInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.spark.SparkSqlInterpreter
+ WARN [2021-07-20 15:31:27,176] ({RemoteInterpreter-close} RemoteInterpreter.java[close]:186) - close is called when RemoterInterpreter is not opened for org.apache.zeppelin.spark.SparkSqlInterpreter
+ INFO [2021-07-20 15:31:27,163] ({RemoteInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.spark.IPySparkInterpreter
+ WARN [2021-07-20 15:31:27,179] ({RemoteInterpreter-close} RemoteInterpreter.java[close]:186) - close is called when RemoterInterpreter is not opened for org.apache.zeppelin.spark.IPySparkInterpreter
+ INFO [2021-07-20 15:31:27,163] ({RemoteInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.spark.PySparkInterpreter
+ WARN [2021-07-20 15:31:27,181] ({RemoteInterpreter-close} RemoteInterpreter.java[close]:186) - close is called when RemoterInterpreter is not opened for org.apache.zeppelin.spark.PySparkInterpreter
+ INFO [2021-07-20 15:31:27,163] ({RemoteInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.spark.SparkRInterpreter
+ WARN [2021-07-20 15:31:27,183] ({RemoteInterpreter-close} RemoteInterpreter.java[close]:186) - close is called when RemoterInterpreter is not opened for org.apache.zeppelin.spark.SparkRInterpreter
+ WARN [2021-07-20 15:31:27,162] ({RemoteInterpreter-close} RemoteInterpreter.java[close]:186) - close is called when RemoterInterpreter is not opened for org.apache.zeppelin.shell.TerminalInterpreter
+ INFO [2021-07-20 15:31:27,162] ({RemoteInterpreter-close} ManagedInterpreterGroup.java[closeInterpreter]:162) - Trying to close interpreter org.apache.zeppelin.spark.SparkIRInterpreter
+ WARN [2021-07-20 15:31:27,187] ({RemoteInterpreter-close} RemoteInterpreter.java[close]:186) - close is called when RemoterInterpreter is not opened for org.apache.zeppelin.spark.SparkIRInterpreter
+ WARN [2021-07-20 15:31:27,173] ({SchedulerFactory32} AbstractScheduler.java[run]:91) - RemoteScheduler is interrupted
+ INFO [2021-07-20 15:31:27,173] ({ConfInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: interpreter_1289291081
+ INFO [2021-07-20 15:31:27,196] ({RemoteInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: RemoteInterpreter-spark-shared_process-shared_session
+ WARN [2021-07-20 15:31:27,197] ({SchedulerFactory19} AbstractScheduler.java[run]:91) - RemoteScheduler is interrupted
+ WARN [2021-07-20 15:31:27,172] ({SchedulerFactory18} AbstractScheduler.java[run]:91) - FIFOScheduler is interrupted
+ INFO [2021-07-20 15:31:27,197] ({RemoteInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: RemoteInterpreter-spark-shared_process-shared_session
+ WARN [2021-07-20 15:31:27,196] ({SchedulerFactory10} AbstractScheduler.java[run]:91) - FIFOScheduler is interrupted
+ INFO [2021-07-20 15:31:27,200] ({ConfInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: interpreter_247635552
+ INFO [2021-07-20 15:31:27,203] ({ConfInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: interpreter_382802317
+ WARN [2021-07-20 15:31:27,205] ({SchedulerFactory9} AbstractScheduler.java[run]:91) - FIFOScheduler is interrupted
+ WARN [2021-07-20 15:31:27,203] ({SchedulerFactory17} AbstractScheduler.java[run]:91) - FIFOScheduler is interrupted
+ INFO [2021-07-20 15:31:27,205] ({RemoteInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: RemoteInterpreter-python-shared_process-shared_session
+ INFO [2021-07-20 15:31:27,208] ({RemoteInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: RemoteInterpreter-spark-shared_process-shared_session
+ INFO [2021-07-20 15:31:27,208] ({python-close} ManagedInterpreterGroup.java[close]:106) - Remove this InterpreterGroup: python-shared_process as all the sessions are closed
+ INFO [2021-07-20 15:31:27,210] ({RemoteInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: RemoteInterpreter-sh-shared_process-shared_session
+ INFO [2021-07-20 15:31:27,212] ({sh-close} ManagedInterpreterGroup.java[close]:106) - Remove this InterpreterGroup: sh-shared_process as all the sessions are closed
+ INFO [2021-07-20 15:31:27,212] ({RemoteInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: RemoteInterpreter-spark-shared_process-shared_session
+ INFO [2021-07-20 15:31:27,215] ({RemoteInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: RemoteInterpreter-mongodb-shared_process-shared_session
+ WARN [2021-07-20 15:31:27,216] ({SchedulerFactory4} AbstractScheduler.java[run]:91) - RemoteScheduler is interrupted
+ INFO [2021-07-20 15:31:27,216] ({mongodb-close} ManagedInterpreterGroup.java[close]:106) - Remove this InterpreterGroup: mongodb-shared_process as all the sessions are closed
+ INFO [2021-07-20 15:31:27,218] ({mongodb-close} ManagedInterpreterGroup.java[close]:109) - Kill RemoteInterpreterProcess
+ INFO [2021-07-20 15:31:27,216] ({RemoteInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: RemoteInterpreter-spark-shared_process-shared_session
+ INFO [2021-07-20 15:31:27,219] ({mongodb-close} RemoteInterpreterManagedProcess.java[stop]:141) - Kill interpreter process for interpreter group: mongodb-shared_process
+ INFO [2021-07-20 15:31:27,220] ({RemoteInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: RemoteInterpreter-spark-shared_process-shared_session
+ INFO [2021-07-20 15:31:27,222] ({RemoteInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: RemoteInterpreter-spark-shared_process-shared_session
+ INFO [2021-07-20 15:31:27,223] ({RemoteInterpreter-close} SchedulerFactory.java[removeScheduler]:110) - Remove scheduler: RemoteInterpreter-spark-shared_process-shared_session
+ INFO [2021-07-20 15:31:27,224] ({spark-close} ManagedInterpreterGroup.java[close]:106) - Remove this InterpreterGroup: spark-shared_process as all the sessions are closed
+ INFO [2021-07-20 15:31:27,226] ({Thread-11} NotebookRepoSync.java[close]:460) - Closing all notebook storages
+ INFO [2021-07-20 15:31:27,232] ({Thread-11} SLF4JLogger.java[info]:71) - Closed connection [connectionId{localValue:2, serverValue:14}] to mongo:27017 because the pool has been closed.
+ INFO [2021-07-20 15:31:27,243] ({pool-7-thread-4} RemoteInterpreterEventServer.java[unRegisterInterpreterProcess]:183) - Unregister interpreter process: mongodb-shared_process
+ WARN [2021-07-20 15:31:27,244] ({pool-7-thread-4} RemoteInterpreterEventServer.java[unRegisterInterpreterProcess]:187) - Unable to unregister interpreter process because no such interpreterGroup: mongodb-shared_process
+ INFO [2021-07-20 15:31:27,251] ({mongodb-close} RemoteInterpreterManagedProcess.java[stop]:155) - Remote process of interpreter group: mongodb-shared_process is terminated
+ WARN [2021-07-20 15:31:27,619] ({Exec Default Executor} ProcessLauncher.java[onProcessFailed]:134) - Process with cmd [/opt/zeppelin/bin/interpreter.sh, -d, /opt/zeppelin/interpreter/mongodb, -c, 172.18.0.4, -p, 37753, -r, :, -i, mongodb-shared_process, -l, /opt/zeppelin/local-repo/mongodb, -g, mongodb] is failed due to
+org.apache.commons.exec.ExecuteException: Process exited with an error: 143 (Exit value: 143)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:404)
+	at org.apache.commons.exec.DefaultExecutor.access$200(DefaultExecutor.java:48)
+	at org.apache.commons.exec.DefaultExecutor$1.run(DefaultExecutor.java:200)
+	at java.lang.Thread.run(Thread.java:748)
+ INFO [2021-07-20 15:31:27,620] ({Exec Default Executor} ProcessLauncher.java[transition]:109) - Process state is transitioned to TERMINATED
+ INFO [2021-07-20 15:31:30,247] ({Thread-11} ZeppelinServer.java[lambda$shutdown$0]:329) - Bye

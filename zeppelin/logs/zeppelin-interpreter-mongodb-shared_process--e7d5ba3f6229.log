@@ -203,3 +203,9 @@ org.apache.commons.exec.ExecuteException: Process exited with an error: 253 (Exi
  INFO [2021-07-20 15:28:06,050] ({ParallelScheduler-Worker-3} AbstractScheduler.java[runJob]:127) - Job paragraph_1626793893404_412426249 started by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter900894389
  INFO [2021-07-20 15:28:06,147] ({pool-2-thread-1} MongoDbInterpreter.java[getScheduler]:170) - maxConcurrency is 10
  INFO [2021-07-20 15:28:06,183] ({ParallelScheduler-Worker-3} AbstractScheduler.java[runJob]:154) - Job paragraph_1626793893404_412426249 finished by scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter900894389 with status FINISHED
+ INFO [2021-07-20 15:31:27,234] ({pool-2-thread-2} RemoteInterpreterServer.java[shutdown]:244) - Unregister interpreter process
+ INFO [2021-07-20 15:31:27,249] ({ShutdownThread} RemoteInterpreterServer.java[run]:649) - Shutting down...
+ INFO [2021-07-20 15:31:27,250] ({ShutdownThread} RemoteInterpreterServer.java[run]:650) - Shutdown initialized by ShutdownCall
+ INFO [2021-07-20 15:31:27,251] ({ShutdownThread} SchedulerFactory.java[destroy]:61) - Destroy all executors
+ INFO [2021-07-20 15:31:27,252] ({ShutdownThread} SchedulerFactory.java[destroy]:65) - Stopping Scheduler org.apache.zeppelin.mongodb.MongoDbInterpreter900894389
+ WARN [2021-07-20 15:31:27,253] ({SchedulerFactory1} AbstractScheduler.java[run]:91) - ParallelScheduler is interrupted

@@ -6,6 +6,11 @@ export default class Draggable implements IDirective {
     restrict: string = "E"
     replace: boolean = true
 
+    static $inject = ["DragDropTransferService"]
+    constructor(DragDropTransferService) {
+      
+    }
+
     link(scope, element: IAugmentedJQuery, attrs: IAttributes, controllers: any) {
         const draggableDOM = element[0].querySelector('div')
         scope.position = { x: 0, y: 0 }
@@ -41,6 +46,6 @@ export default class Draggable implements IDirective {
     }
 
     static factory(): IDirectiveFactory {
-        return () => new Draggable()
+        return (DragDropTransferService) => new Draggable(DragDropTransferService)
     }
 }

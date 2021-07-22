@@ -6,6 +6,11 @@ export default class Droppable implements IDirective {
     restrict: string = "E"
     replace: boolean = true
 
+    static $inject = ["DragDropTransferService"]
+    constructor(DragDropTransferService) {
+      
+    }
+
     link(scope, element: IAugmentedJQuery, attrs: IAttributes, controllers: any) {
         const droppableDOM = element[0].querySelector('div')
         scope.dropping = null
@@ -30,6 +35,6 @@ export default class Droppable implements IDirective {
 
 
     static factory(): IDirectiveFactory {
-        return () => new Droppable()
+        return (DragDropTransferService) => new Droppable(DragDropTransferService)
     }
 }

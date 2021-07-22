@@ -17,7 +17,7 @@ export default class SettingSelectable implements IComponentOptions {
 
         static $inject = ["$scope"]
         constructor($scope: IScope) {
-            console.log($scope);
+            
         }
         $onChanges(): void{
 

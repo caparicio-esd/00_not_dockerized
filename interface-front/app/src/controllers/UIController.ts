@@ -1,14 +1,19 @@
 import { IController, IScope } from "angular";
 
-interface UIControllerScope extends ng.IScope {
-    bgColor: string
-}
-
 export default class UIController implements IController {
-    bgColor = "pink"
-
+    openedDeviceType = null
+    openedDevice = null
     public static $inject = ["$scope"]
-    constructor($scope: UIControllerScope) { //inject dependencies
+    constructor($scope) { //inject dependencies
         
+    }
+    openDeviceType(deviceType) {
+        this.openedDeviceType = this.openedDeviceType == deviceType ? null: deviceType
+        if (this.openedDeviceType == null) {
+            this.openedDevice = null;
+        }
+    }
+    openDevice(device) {
+        this.openedDevice = this.openedDevice?.id == device?.id ? null: device
     }
 }

@@ -13,7 +13,7 @@ export default class DeviceTag implements IComponentOptions {
         initialCount: number = 0
         static $inject = ["$scope"]
         constructor($scope: IScope) {
-            console.log($scope);
+            
         }
         $onChanges(): void{
 

@@ -3,11 +3,17 @@ import { IComponentOptions, IControllerConstructor, Injectable, IScope } from "a
 
 export default class DeviceSubAcc implements IComponentOptions {
     bindings = {
-
+        opened: "<",
+        active: "<"
     }
     restrict = "E"
     bindToController = true;
-    template = `<div class="device_subacc" ng-transclude></div> `;
+    template = `
+        <div 
+            ng-class="['device_subacc', {active: $ctrl.active}, {opened: $ctrl.opened}]" 
+            ng-transclude
+        ></div>
+    `;
     controllerAs = '$ctrl'
     transclude = true
     controller: Injectable<IControllerConstructor> = class  {
@@ -15,7 +21,7 @@ export default class DeviceSubAcc implements IComponentOptions {
         
         static $inject = []
         constructor() {
-            console.log("yooos...");
+            
         }
         $onChanges(): void{
 

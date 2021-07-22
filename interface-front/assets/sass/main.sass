@@ -50,15 +50,28 @@ body
     grid-template-columns: 240px 240px 1fr
     grid-template-rows: 1fr
     box-shadow: 0 0 3px rgba(0, 0, 0, .2) inset
+    overflow: hidden
 
     graph-container-sidebar-devices
         grid-area: 1 / 1 / span 1 / span 1
         background: $lightGray
         border-right: 1px solid $borderGrey
+        overflow: hidden
+        > div
+            display: flex
+            flex-direction: column
+            overflow: hidden
+            height: 100%
 
     graph-container-sidebar-settings
         grid-area: 1 / 2 / span 1 / span 1
         border-right: 1px solid $borderGrey
+        overflow: hidden
+        > div
+            display: flex
+            flex-direction: column
+            overflow: hidden
+            height: 100%
    
 .graph_main_container_header
     display: flex
@@ -71,6 +84,10 @@ body
         margin-right: $base
         color: $iconsGray 
 
+.graph_container_sidebar_body
+    flex-basis: 100%
+    overflow: auto
+
 .device_acc    
     .device_acc_header
         display: flex
@@ -81,6 +98,7 @@ body
         user-select: none
         cursor: pointer
         .icon 
+            width: 15px
             margin-right: $base   
             color: $iconsGray  
     
@@ -90,7 +108,7 @@ body
     &.opened
         .device_acc_body_holder
             height: auto
-            overflow: hidden      
+            overflow: visible
 
 
 .device_subacc
@@ -116,11 +134,15 @@ body
         overflow: hidden
         .device_subacc_body_holder
             padding: $base * 1 $base * 2 $base * 1 $base * 9
-        &.opened
-            height: auto
+
     &.active
         .device_subacc_header
             background-color: $lightAltGray
+            
+    &.opened
+        .device_subacc_body
+            height: auto
+            overflow: visible
         
             
 .device_tag

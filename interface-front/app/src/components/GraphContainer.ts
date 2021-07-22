@@ -1,24 +1,23 @@
-import { IComponentOptions, IControllerConstructor, Injectable, IScope } from "angular";
+import { IComponentOptions, IControllerConstructor, IControllerService, Injectable, IScope } from "angular";
+import UIController from "../controllers/UIController";
 import GraphContainerSidebarDevices from "./GraphContainerSidebarDevices";
 
 export default class GraphComponent implements IComponentOptions {
     restrict = "E"
-    bindings = {
-        color: "<"
-    };
+    bindings = {};
     template = `
         <div 
             class="graph_container" 
             ng-transclude
-            ng-style="{background: $ctrl.color}"
         ></div>
     `;
     controllerAs = '$ctrl'
     transclude = true
     controller: Injectable<IControllerConstructor> = class {
-        static $inject = ["$rootScope"]
-        constructor($rootScope: IScope){
-            console.log(this);            
+        ui: object
+        static $inject = ["$scope", "$controller"]
+        constructor($scope: IScope, $controller: IControllerService){
+            this.ui = $controller("UIController", {$scope: $scope})              
         }
         $onChanges(): void{
 

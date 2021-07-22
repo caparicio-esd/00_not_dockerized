@@ -12,9 +12,12 @@ import SettingSelectable from "./components/SettingSelectable";
 import { Values } from "./constants";
 import MainController from "./controllers/MainController";
 import UIController from "./controllers/UIController";
+import Draggable from "./directives/Draggable";
+import Droppable from "./directives/Droppable";
 import MyHola from "./directives/MyHola";
 import EDVLChart from "./factories/EDVLChart";
 import DataService from "./services/DataService";
+import ChartSettingsService from "./services/ChartSettingsService";
 
 
 export default class App {
@@ -26,10 +29,11 @@ export default class App {
             .value("rootValues", Values)
             .controller("MainController", MainController)
             .controller("UIController", UIController)
-
-            // .service("DataService", DataService)
-            // .service("EDVLCharts", EDVLChart)
-            // .directive("hola", MyHola.factory())
+            .service("DataService", DataService)
+            .service("ChartSettingsService", ChartSettingsService)
+            .service("EDVLCharts", EDVLChart)
+            .directive("draggable", Draggable.factory())
+            .directive("droppable", Droppable.factory())
             .component("graphContainer", new GraphComponent())
             .component("graphContainerSidebarDevices", new GraphContainerSidebarDevices())
             .component("graphContainerSidebarSettings", new GraphContainerSidebarSettings())

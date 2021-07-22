@@ -1,6 +1,4 @@
 import angular from "angular"
-import { Chart } from "chart.js";
-import interact from "interactjs"
 import DeviceAcc from "./components/DeviceAcc";
 import DeviceSubAcc from "./components/DeviceSubAcc";
 import DeviceTag from "./components/DeviceTag";
@@ -14,7 +12,7 @@ import MainController from "./controllers/MainController";
 import UIController from "./controllers/UIController";
 import Draggable from "./directives/Draggable";
 import Droppable from "./directives/Droppable";
-import MyHola from "./directives/MyHola";
+import Chart from "./directives/Chart";
 import EDVLChart from "./factories/EDVLChart";
 import DataService from "./services/DataService";
 import ChartSettingsService from "./services/ChartSettingsService";
@@ -36,6 +34,7 @@ export default class App {
             .service("EDVLCharts", EDVLChart)
             .directive("draggable", Draggable.factory())
             .directive("droppable", Droppable.factory())
+            .directive("chart", Chart.factory())
             .component("graphContainer", new GraphComponent())
             .component("graphContainerSidebarDevices", new GraphContainerSidebarDevices())
             .component("graphContainerSidebarSettings", new GraphContainerSidebarSettings())

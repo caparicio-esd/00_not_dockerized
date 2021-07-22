@@ -7,6 +7,6 @@ export default class DragDropTransferService {
 
     static $inject = ["ChartSettingsService"]
     constructor(ChartSettingsService: IServiceProviderClass) {
-        console.log(ChartSettingsService);        
+        // console.log(ChartSettingsService);        
     }
 }

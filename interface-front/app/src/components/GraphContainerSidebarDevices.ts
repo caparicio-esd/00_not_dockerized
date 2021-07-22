@@ -2,19 +2,15 @@ import { IComponentOptions, IControllerConstructor, IDirective, IDirectiveContro
 
 
 export default class GraphContainerSidebarDevices implements IDirective {
-    bindings = {
-
-    }
+    bindings = {}
+    template = `
+        <div class="graph_container_sidebar_devices" ng-transclude></div>
+    `;
     restrict = "E"
     bindToController = true;
-    template = `<div class="graph_container_sidebar_devices" ng-transclude></div>`;
     controllerAs = '$ctrl'
     transclude = true
-    selector = "div.graph_container_sidebar_devices"
-
     controller: Injectable<IControllerConstructor> = class  {
-        initialCount: number = 0;
-        
         static $inject = []
         constructor() {
 

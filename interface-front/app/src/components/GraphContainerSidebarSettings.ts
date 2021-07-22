@@ -5,8 +5,6 @@ export default class GraphContainerSidebarSettings implements IComponentOptions 
     bindings = {
 
     }
-    restrict = "E"
-    bindToController = true;
     template = `
         <div class="graph_container_sidebar_settings">
             <div class="graph_main_container_header">
@@ -34,6 +32,7 @@ export default class GraphContainerSidebarSettings implements IComponentOptions 
     `;
     controllerAs = '$ctrl'
     transclude = true
+    restrict = "E"
     controller: Injectable<IControllerConstructor> = class {
         scope: any
         

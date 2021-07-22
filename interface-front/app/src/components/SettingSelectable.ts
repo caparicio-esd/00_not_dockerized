@@ -6,17 +6,15 @@ export default class SettingSelectable implements IComponentOptions {
         icon: "=", 
         active: "="
     }
-    bindToController = true;
-    restrict = "E"
     template = `
         <div ng-class="['chart_selectable', {active: $chs.active}]">
             <span ng-class="['fa', 'fa-{{ $chs.icon }}']"></span>
         </div>`;
     controllerAs = '$chs'
+    restrict = "E"
     controller: Injectable<IControllerConstructor> = class  {
-
-        static $inject = ["$scope"]
-        constructor($scope: IScope) {
+        static $inject = []
+        constructor() {
             
         }
         $onChanges(): void{

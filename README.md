@@ -19,7 +19,7 @@
 * [ ] Use case with streamin
 
 ### Zeppelin
-* [ ] Wire up angular front end
+* [ ] Wire up angular front end :skull_and_crossbones:
 
 
 

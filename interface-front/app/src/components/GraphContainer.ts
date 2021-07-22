@@ -3,7 +3,6 @@ import UIController from "../controllers/UIController";
 import GraphContainerSidebarDevices from "./GraphContainerSidebarDevices";
 
 export default class GraphComponent implements IComponentOptions {
-    restrict = "E"
     bindings = {};
     template = `
         <div 
@@ -13,6 +12,7 @@ export default class GraphComponent implements IComponentOptions {
     `;
     controllerAs = '$ctrl'
     transclude = true
+    restrict = "E"
     controller: Injectable<IControllerConstructor> = class {
         ui: object
         static $inject = ["$scope", "$controller"]

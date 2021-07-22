@@ -6,8 +6,6 @@ export default class DroppableGroup implements IComponentOptions {
         label: "<",
         tags: "<"
     }
-    bindToController = true;
-    restrict = "E"
     template = `
         <div class="dropable_group">
             <div class="dropable_group_header">
@@ -24,6 +22,8 @@ export default class DroppableGroup implements IComponentOptions {
         </div>
     `;
     controllerAs = '$dg'
+    bindToController = true;
+    restrict = "E"
     controller: Injectable<IControllerConstructor> = class  {
         static $inject = ["$scope"]
         constructor($scope: IScope) {

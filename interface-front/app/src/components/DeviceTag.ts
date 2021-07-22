@@ -5,9 +5,13 @@ export default class DeviceTag implements IComponentOptions {
     bindings = {
         name: "="
     }
+    template = `
+        <div class="device_tag">
+            {{ $dt.name }}
+        </div>
+    `;
     bindToController = true;
     restrict = "E"
-    template = `<div class="device_tag">{{ $dt.name }}</div>`;
     controllerAs = '$dt'
     controller: Injectable<IControllerConstructor> = class  {
         initialCount: number = 0

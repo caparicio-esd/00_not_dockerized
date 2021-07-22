@@ -40,13 +40,10 @@ export default class GraphContainerSidebarSettings implements IComponentOptions 
         static $inject = ["$scope", "ChartSettingsService"]
         constructor($scope, ChartSettingsService: IServiceProviderClass) {
             this.scope = $scope
-            this.scope.settings = ChartSettingsService
-            console.log(this.scope);
-                        
+            this.scope.settings = ChartSettingsService                        
         }
         $onChanges(): void{
-            console.log("a");
-            
+                        
         }
         $onInit(): void {
     

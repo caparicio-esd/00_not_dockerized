@@ -5,8 +5,6 @@ export default class DeviceAcc implements IComponentOptions {
     bindings = {
         opened: "<"
     }
-    restrict = "E"
-    bindToController = true;
     template = `
         <div 
             ng-class="['device_acc', {opened: $ctrl.opened}]" 
@@ -15,10 +13,12 @@ export default class DeviceAcc implements IComponentOptions {
     `;
     controllerAs = '$ctrl'
     transclude = true
+    restrict = "E"
+    bindToController = true;
     controller: Injectable<IControllerConstructor> = class {
-        static $inject = []
+        static $inject = ["$scope"]
         constructor($scope: IScope) {
-
+            
         }
         $onChanges(): void{
 

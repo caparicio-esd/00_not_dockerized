@@ -6,8 +6,6 @@ export default class DeviceSubAcc implements IComponentOptions {
         opened: "<",
         active: "<"
     }
-    restrict = "E"
-    bindToController = true;
     template = `
         <div 
             ng-class="['device_subacc', {active: $ctrl.active}, {opened: $ctrl.opened}]" 
@@ -16,9 +14,9 @@ export default class DeviceSubAcc implements IComponentOptions {
     `;
     controllerAs = '$ctrl'
     transclude = true
+    restrict = "E"
+    bindToController = true;
     controller: Injectable<IControllerConstructor> = class  {
-        initialCount: number = 0;
-        
         static $inject = []
         constructor() {
             

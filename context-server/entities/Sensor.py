@@ -63,7 +63,7 @@ class Sensor(Device):
         """
         self.temperature = np_random.normal(self.temperatureCenter, self.temperatureRadius)
         self.humidity = np_random.normal(self.humidityCenter, self.humidityRadius)
-        OrionConnector.updateEntity(self.orion_format(), ["temperature", "humidity"])
+        OrionConnector.updateEntity(self.orion_format(), ["temperature", "humidity", "updated"])
         if (self.debug or DEBUG): print(self)
         self._run()
 
@@ -92,7 +92,7 @@ class Sensor(Device):
             }, 
             "updated": {
                 "type": "DateTime", 
-                "value": datetime.now().strftime("%Y-%m-%dT%H:%M:%S.000Z")
+                "value": datetime.now().isoformat()
             }
         }
 
@@ -111,5 +111,5 @@ class Sensor(Device):
             "{}, {}".format(self.geoLocation[0], self.geoLocation[1]),
             self.temperature, 
             self.humidity,
-            datetime.now().strftime("%Y-%m-%dT%H:%M:%S.000Z")
+            datetime.now().isoformat()
         ).lstrip()

@@ -1,7 +1,9 @@
 ### Front-end
 
-* [ ] Setup right the data ingest for charts
-* [ ] Chart type dynamic
+* [ ] Setup right the data ingest for charts - drag-drop
+* [ ] Add random colors
+* [ ] Chart type dynamic: just realtime line, map and table
+* [ ] Adjust for Zeppelin graphic guidelines
 
 ### Back-end
 * [ ] Dockerize

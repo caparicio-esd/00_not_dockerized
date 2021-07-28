@@ -1,6 +1,14 @@
-import { IScope } from "angular";
+import { IScope, IServiceProvider, IServiceProviderClass } from "angular";
 
-export default class ChartSettingsService {
+
+interface IChartSettingService extends IServiceProvider {
+    root: IScope, 
+    activeState: string, 
+    activeProps: string[],
+    state: any[]
+}
+
+export default class ChartSettingsService implements IChartSettingService {
     root: IScope
     activeState: string = "line"
     activeProps
@@ -9,14 +17,36 @@ export default class ChartSettingsService {
             id: "line",
             icon: "line-chart", 
             active: true,
+            multiProp: "yAxis",
             props: [
                 {
                     label: "xAxis", 
-                    content: ["hola"]
+                    content: [{
+                        device: "urn:ngsi-ld:Sensor:sensor01", 
+                        prop: "updated",
+                        aggregation: "value"
+                    }]
                 },
                 {
                     label: "yAxis", 
-                    content: []
+                    content: [{
+                        device: "urn:ngsi-ld:Sensor:sensor01", 
+                        prop: "humidity",
+                        aggregation: "value"
+                    },{
+                        device: "urn:ngsi-ld:Sensor:sensor01", 
+                        prop: "temperature",
+                        aggregation: "value"
+                    }, {
+                        device: "urn:ngsi-ld:Sensor:sensor02", 
+                        prop: "temperature",
+                        aggregation: "value"
+                    }, {
+                        device: "urn:ngsi-ld:Sensor:sensor02", 
+                        prop: "humidity",
+                        aggregation: "value"
+                    }
+                ]
                 }
             ]
         },{
@@ -96,6 +126,7 @@ export default class ChartSettingsService {
     constructor() {
 
     }
+    $get: any;
     getStateElementById(id) {        
         return this.state.find(s => s.id == id)?.props
     }

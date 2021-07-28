@@ -1,12 +1,23 @@
-import angular, { IComponentOptions, IControllerConstructor, IDirective, IDirectiveFactory, Injectable, IScope } from "angular";
-import {Chart as ChartJS, registerables} from "chart.js"
+import angular, { IAugmentedJQuery, IComponentOptions, IController, IControllerConstructor, IDirective, IDirectiveFactory, Injectable, IScope, IServiceProvider } from "angular";
+import { Chart as ChartJS, registerables } from "chart.js"
+import { RealTimeScale, StreamingPlugin } from 'chartjs-plugin-streaming';
+import 'chartjs-adapter-moment';
 
 ChartJS.register(...registerables)
+ChartJS.register(RealTimeScale);
+ChartJS.register(StreamingPlugin);
+
+
+interface IChartScope extends IScope {
+    $chart: ChartJS,
+    $chartSettings: any,
+    $controller: IController
+}
 
 export default class Chart implements IDirective {
     restrict = "E"
-    controllerAs = "$chart"
-    bindToController = true   
+    controllerAs = "$controller"
+    bindToController = true
     scope = {
         chartGetColor: "=?",
         chartType: "=",
@@ -18,137 +29,179 @@ export default class Chart implements IDirective {
         chartClick: "=?",
         chartHover: "=?",
         chartDatasetOverride: "=?",
-    } 
+    }
 
     link($scope, $element, $attrs, $controller) {
-        $scope.$watch("$chart.chartType", (nv, ov, $scope) => this.watchTypeHandler(nv, ov, $scope, $element), true)
-        $scope.$watchCollection("$chart.chartData", (nv, ov, $scope) => this.watchDataHandler(nv, ov, $scope, $element), true)
-        $scope.$watch("$chart.chartLabels", this.watchOtherHandler, true)
-        $scope.$watch("$chart.chartOptions", this.watchOtherHandler, true)
-        $scope.$watch("$chart.chartSeries", () => this.watchOtherHandler, true)
-        $scope.$watch("$chart.chartColors", this.watchOtherHandler, true)
-        $scope.$watch("$chart.chartDatasetOverride", this.watchOtherHandler, true)
+        $scope.$watch("$controller.chartType", (nv, ov, $scope) => this.watchTypeHandler(nv, ov, $scope, $element), true)
+        $scope.$watch("$controller.chartData", (nv, ov, $scope) => this.watchDataHandler(nv, ov, $scope, $element), true)
+        $scope.$watch("$controller.chartLabels", this.watchOtherHandler, true)
+        $scope.$watch("$controller.chartOptions", this.watchOtherHandler, true)
+        $scope.$watch("$controller.chartSeries", () => this.watchOtherHandler, true)
+        $scope.$watch("$controller.chartColors", this.watchOtherHandler, true)
+        $scope.$watch("$controller.chartDatasetOverride", this.watchOtherHandler, true)
     }
+
     controller: Injectable<IControllerConstructor> = class {
-        static $inject = ["$scope", "ChartSettingsService"]
-        constructor($scope, ChartSettingsService) {
-            $scope.$chartSettings = ChartSettingsService        
+        static $inject = ["$rootScope", "$scope", "ChartSettingsService"]
+        constructor($rootScope, $scope, ChartSettingsService: IServiceProvider) {
+            $scope.$chartSettings = ChartSettingsService
         }
     }
-    isDataVoid(newVal) {
+
+    /**
+     * 
+     * @param {any[]} newVal 
+     * @returns {boolean}
+     */
+    isDataVoid(newVal: any[]): boolean {
         return (!newVal || !newVal.length || angular.isArray(newVal[0]) && !newVal[0].length)
     }
-    
-    watchDataHandler(newVal, oldVal, $scope, $element) {
-        // no data -> destroy
-        // if (this.isDataVoid(newVal)) {
-        //     this.destroyChart()
-        //     return;
-        // }
-        // already chart
-        // if (this.scope.chart)
-        // console.log($scope);
-        // this.createChart($scope.$chartSettings.activeState, $scope, $element)
-        if ($scope.$chart.$chart != undefined) {
-            this.destroyChart($scope)
+
+    /**
+     * 
+     * @param {any[]} newVal 
+     * @param {any[]} oldVal 
+     * @returns {boolean}
+     */
+    canUpdateChart(newVal: any[], oldVal: any[]): boolean {
+        console.log(newVal);
+
+
+
+        const sum = (carry, val) => carry + val
+        if (newVal && oldVal && newVal.length && oldVal.length) {
+            return Array.isArray(newVal[0])
+                ? newVal.length === oldVal.length &&
+                newVal.every(function (element, index) {
+                    return element.length === oldVal[index].length;
+                })
+                : oldVal.reduce(sum, 0) > 0
+                    ? newVal.length === oldVal.length
+                    : false;
         }
-        this.createChart("line", $scope, $element)
+        return false;
     }
+
+    /**
+     * 
+     * @param newVal 
+     * @param oldVal 
+     * @param $scope 
+     * @param $element 
+     * @returns 
+     */
+    watchDataHandler(newVal: any[], oldVal: any[], $scope: IChartScope, $element: IAugmentedJQuery) {
+
+        // case no data -> destroy chart
+        if (this.isDataVoid(newVal)) {
+            this.destroyChart($scope)
+            return
+        }
+        // case no type -> destroy chart
+        if (!$scope.$controller.chartType) {
+            this.destroyChart($scope)
+            return
+        }
+        // case there's a chart already
+        if ($scope.$chart) {
+            this.updateChart(newVal, $scope, $element)
+            return
+        }
+
+        this.createChart($scope.$chartSettings.activeState, $scope, $element)
+    }
+
     watchTypeHandler(newVal, oldVal, $scope, $element) {
 
     }
     watchOtherHandler(newVal, oldVal, $scope, $element) {
 
     }
+
     createChart(type, $scope, $element) {
         const canvas = document.createElement("CANVAS")
-        $element[0].appendChild(canvas)        
+        $element[0].appendChild(canvas)
         const ctx = $element[0].querySelector("canvas").getContext("2d")
-        console.log(type);
-        
 
-        $scope.$chart.$chart = new ChartJS(ctx, {
+
+        $scope.$chart = new ChartJS(ctx, {
             type: type,
             data: {
-                labels: [1, 4, 5, 6, 7, 1, 4], 
-                datasets: [{
-                    label: "hola", 
-                    data: [65, 59, 80, 81, 56, 55, 40], 
-                    fill: false, 
-                    borderColor: "rgb(75, 192, 192)",
-                    tension: 0.1
-                }]
+                labels: [],
+                datasets: []
             },
             options: {
+                parsing: {
+                    xAxisKey: 'x',
+                    yAxisKey: 'y'
+                },
                 onClick: e => {
                     console.log(e);
-                    
+
+                }, 
+                scales: {
+                    x: {
+                        type: 'realtime',
+                        realtime: {
+                            duration: 20000, 
+                          }
+                    }
                 }
-            }
-        })        
+            },
+        })
     }
+
     updateChart(values, $scope, $element) {
 
+        // // $scope.$chart.data.labels = dataSetsInSetting.map(d => d.device)
+        // $scope.$chart.data.labels = $scope.$controller.chartData.filter(
+        //     chd => chd.data[0].id == dataSetsInSetting[0].device
+        // )
+        // $scope.$chart.data.datasets = dataSetsInSetting.map(d => ({
+        //     label: d.device, 
+        //     data: $scope.$controller.chartData.filter(
+        //         chd => chd.data[0].id == dataSetsInSetting[0].device
+        //     ),
+        //     fill: false
+        // }))
+
+
+        // const multiProp = $scope.$chartSettings.state[activeState].multiProp
+        // const dataSetsInSetting = $scope.$chartSettings.state[activeState].props.find(prop => prop.label == multiProp).content
+
+        const chart = $scope.$chart;
+        const data = $scope.$controller.chartData.map(d => ({ ...d.data[0] }));
+        const lastData = data[data.length - 1];
+
+        // opts
+        const activeState = $scope.$chartSettings.state.findIndex(s => s.id == $scope.$chartSettings.activeState)
+        const multiProp = $scope.$chartSettings.state[activeState].multiProp
+        const dataSetsInSetting = $scope.$chartSettings.state[activeState].props.find(prop => prop.label == multiProp).content
+
+        if ($scope.$chart.data.datasets.findIndex(ds => ds.label == lastData.id) < 0) {
+            if (dataSetsInSetting.filter(dsetting => dsetting.device == lastData.id).length > 0) {
+                $scope.$chart.data.datasets.push(({
+                    label: lastData.id,
+                    data: [],
+                    tension: 0.5
+                }))
+            }
+        }
+
+        $scope.$chart.data.datasets.find(ds => ds.label == lastData.id)?.data?.push({
+            x: lastData.updated.value,
+            y: lastData.humidity.value
+        })
+
+        $scope.$chart?.update("none")
+        $scope.$emit("chart-update", $scope.$chart)
     }
-    destroyChart($scope) {
-        $scope.$chart.$chart.destroy()
+
+    destroyChart($scope: IChartScope) {
+        $scope.$chart?.destroy()
     }
 
 
-
-    // controller: Injectable<IControllerConstructor> = class {
-    //     chartDom: HTMLElement
-    //     scope
-
-    //     static $inject = ["$scope", "$element", "$attrs"]
-    //     constructor($scope: IScope, $element, $attrs) {
-    //         this.scope = {$scope, $element, $attrs}
-    //         this.chartDom = this.scope.$element[0];
-
-    //         console.log($scope);
-    //         console.log(this);
-            
-            
-    //         $scope.$watchCollection("chartData", this.watchDataHandler);
-    //         // this.scope.$scope.$watch("chartSeries", this.watchPropsHandler, true);
-    //         // this.scope.$scope.$watch("chartLabels", this.watchPropsHandler, true);
-    //         // this.scope.$scope.$watch("chartOptions", this.watchPropsHandler, true);
-    //         // this.scope.$scope.$watch("chartColors", this.watchPropsHandler, true);
-    //         // this.scope.$scope.$watch("chartDatasetOverride", this.watchPropsHandler, true);
-    //         // this.scope.$scope.$watch("chartType", this.watchTypeHandler, false); 
-    //     }
-
-    //     $onInit() {
-            
-    //     }
-    //     $onChanges() {
-
-    //     }
-
-    //     isDataVoid(newVal) {
-    //         return (!newVal || !newVal.length || angular.isArray(newVal[0]) && !newVal[0].length)
-    //     }
-    
-    //     watchDataHandler(newVal, oldVal) {
-    //         // no data -> destroy
-    //         // if (this.isDataVoid(newVal)) {
-    //         //     this.destroyChart()
-    //         //     return;
-    //         // }
-    //         // already chart
-    //         // if (this.scope.chart)
-    //         console.log("hola");
-            
-    //     }
-    //     watchPropsHandler() {
-    
-    //     }
-    //     watchTypeHandler() {
-            
-    //     }
-    //     destroyChart() {}
-
-    // }
 
     static factory(): IDirectiveFactory {
         return () => new Chart()

@@ -17,6 +17,7 @@ import EDVLChart from "./factories/EDVLChart";
 import DataService from "./services/DataService";
 import ChartSettingsService from "./services/ChartSettingsService";
 import DragDropTransferService from "./services/DragDropTransferService";
+import TimeWindowService from "./services/TimeWindowService";
 
 
 export default class App {
@@ -30,6 +31,7 @@ export default class App {
             .controller("UIController", UIController)
             .service("DataService", DataService)
             .service("ChartSettingsService", ChartSettingsService)
+            .service("TimeWindowService", TimeWindowService)
             .service("DragDropTransferService", DragDropTransferService)
             .service("EDVLCharts", EDVLChart)
             .directive("draggable", Draggable.factory())

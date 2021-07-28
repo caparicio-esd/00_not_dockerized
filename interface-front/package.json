@@ -14,7 +14,10 @@
     "@types/chart.js": "^2.9.34",
     "angular": "^1.8.2",
     "chart.js": "^3.4.1",
+    "chartjs-adapter-moment": "^1.0.0",
+    "chartjs-plugin-streaming": "^2.0.0",
     "interactjs": "^1.10.11",
+    "moment": "^2.29.1",
     "socket.io-client": "^4.1.3"
   }
 }

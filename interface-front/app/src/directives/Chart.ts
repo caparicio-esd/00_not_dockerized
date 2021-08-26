@@ -153,22 +153,6 @@ export default class Chart implements IDirective {
 
     updateChart(values, $scope, $element) {
 
-        // // $scope.$chart.data.labels = dataSetsInSetting.map(d => d.device)
-        // $scope.$chart.data.labels = $scope.$controller.chartData.filter(
-        //     chd => chd.data[0].id == dataSetsInSetting[0].device
-        // )
-        // $scope.$chart.data.datasets = dataSetsInSetting.map(d => ({
-        //     label: d.device, 
-        //     data: $scope.$controller.chartData.filter(
-        //         chd => chd.data[0].id == dataSetsInSetting[0].device
-        //     ),
-        //     fill: false
-        // }))
-
-
-        // const multiProp = $scope.$chartSettings.state[activeState].multiProp
-        // const dataSetsInSetting = $scope.$chartSettings.state[activeState].props.find(prop => prop.label == multiProp).content
-
         const chart = $scope.$chart;
         const data = $scope.$controller.chartData.map(d => ({ ...d.data[0] }));
         const lastData = data[data.length - 1];

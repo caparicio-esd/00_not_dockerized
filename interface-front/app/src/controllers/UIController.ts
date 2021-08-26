@@ -4,7 +4,7 @@ export default class UIController implements IController {
     openedDeviceType = null
     openedDevice = null
     public static $inject = ["$scope"]
-    constructor($scope) { //inject dependencies
+    constructor($scope: IScope) { //inject dependencies
         
     }
     openDeviceType(deviceType) {

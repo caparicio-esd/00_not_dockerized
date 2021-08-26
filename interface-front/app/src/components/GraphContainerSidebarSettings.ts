@@ -34,8 +34,7 @@ export default class GraphContainerSidebarSettings implements IComponentOptions 
     transclude = true
     restrict = "E"
     controller: Injectable<IControllerConstructor> = class {
-        scope: any
-        
+        scope: any 
         static $inject = ["$scope", "ChartSettingsService"]
         constructor($scope, ChartSettingsService: IServiceProviderClass) {
             this.scope = $scope

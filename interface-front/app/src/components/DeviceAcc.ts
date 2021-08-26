@@ -1,7 +1,9 @@
-import { IComponentOptions, IController, IControllerConstructor, IControllerService, Injectable, IScope } from "angular";
+import { IComponentOptions, IControllerConstructor, ILogProvider, ILogService, Injectable, IScope } from "angular";
 
 
 export default class DeviceAcc implements IComponentOptions {
+    controllerAs = '$ctrl'
+    transclude = true
     bindings = {
         opened: "<"
     }
@@ -11,13 +13,11 @@ export default class DeviceAcc implements IComponentOptions {
             ng-transclude 
         ></div>
     `;
-    controllerAs = '$ctrl'
-    transclude = true
-    restrict = "E"
-    bindToController = true;
     controller: Injectable<IControllerConstructor> = class {
-        static $inject = ["$scope"]
-        constructor($scope: IScope) {
+        static $inject = ["$scope", "$log"]
+        constructor($scope: IScope, $log: ILogService) {
+            $log.debug("hola")
+            
             
         }
         $onChanges(): void{

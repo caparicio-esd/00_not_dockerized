@@ -16,18 +16,18 @@ export default class DeviceSubAcc implements IComponentOptions {
     transclude = true
     restrict = "E"
     bindToController = true;
-    controller: Injectable<IControllerConstructor> = class  {
+    controller: Injectable<IControllerConstructor> = class {
         static $inject = []
         constructor() {
-            
+
         }
-        $onChanges(): void{
+        $onChanges(): void {
 
         }
         $onInit(): void {
-    
+
         }
-        $doCheck(): void{
+        $doCheck(): void {
 
         }
         $onDestroy(): void {

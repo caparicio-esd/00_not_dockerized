@@ -24,18 +24,18 @@ export default class DroppableGroup implements IComponentOptions {
     controllerAs = '$dg'
     bindToController = true;
     restrict = "E"
-    controller: Injectable<IControllerConstructor> = class  {
+    controller: Injectable<IControllerConstructor> = class {
         static $inject = ["$scope"]
         constructor($scope: IScope) {
             
         }
-        $onChanges(): void{
+        $onChanges(): void {
 
         }
         $onInit(): void {
     
         }
-        $doCheck(): void{
+        $doCheck(): void {
 
         }
         $onDestroy(): void {

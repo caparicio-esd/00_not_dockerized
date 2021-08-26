@@ -20,19 +20,19 @@ export default class MainController implements IController {
         this.scope.deviceTypes = []
         this.scope.devices = []
         this.scope.getDevicesByType = (deviceType) => this.getDevicesByType(deviceType)
-        this.scope.$on("data:update", (ev, data) => { this.dataUpdateHandler(data) })        
+        this.scope.$on("data:update", (ev, data) => { this.dataUpdateHandler(data) })
     }
-    
+
     dataUpdateHandler(data) {
         this.scope.data.push(data)
         this.getDeviceTypes(data)
-        this.getDevices(data)   
+        this.getDevices(data)
         this.scope.$digest()
     }
 
     getDeviceTypes(incomingData): void {
         const type = incomingData.data[0].type;
-        if(!this.scope.deviceTypes.includes(type)) this.scope.deviceTypes.push(
+        if (!this.scope.deviceTypes.includes(type)) this.scope.deviceTypes.push(
             type
         )
     }

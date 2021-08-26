@@ -10,25 +10,25 @@ export default class GraphContainerSidebarDevices implements IDirective {
     bindToController = true;
     controllerAs = '$ctrl'
     transclude = true
-    controller: Injectable<IControllerConstructor> = class  {
+    controller: Injectable<IControllerConstructor> = class {
         static $inject = []
         constructor() {
 
         }
-        $onChanges(): void{
+        $onChanges(): void {
 
         }
         $onInit(): void {
-    
+
         }
-        $doCheck(): void{
+        $doCheck(): void {
 
         }
         $onDestroy(): void {
 
         }
         $postLink(): void {
-            
+
         }
     }
 }

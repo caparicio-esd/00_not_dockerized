@@ -3,7 +3,7 @@ import { IComponentOptions, IControllerConstructor, Injectable, IScope } from "a
 
 export default class SettingSelectable implements IComponentOptions {
     bindings = {
-        icon: "=", 
+        icon: "=",
         active: "="
     }
     template = `
@@ -12,18 +12,18 @@ export default class SettingSelectable implements IComponentOptions {
         </div>`;
     controllerAs = '$chs'
     restrict = "E"
-    controller: Injectable<IControllerConstructor> = class  {
+    controller: Injectable<IControllerConstructor> = class {
         static $inject = []
         constructor() {
-            
+
         }
-        $onChanges(): void{
+        $onChanges(): void {
 
         }
         $onInit(): void {
-    
+
         }
-        $doCheck(): void{
+        $doCheck(): void {
 
         }
         $onDestroy(): void {

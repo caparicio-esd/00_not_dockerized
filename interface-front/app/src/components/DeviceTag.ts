@@ -13,19 +13,18 @@ export default class DeviceTag implements IComponentOptions {
     bindToController = true;
     restrict = "E"
     controllerAs = '$dt'
-    controller: Injectable<IControllerConstructor> = class  {
-        initialCount: number = 0
+    controller: Injectable<IControllerConstructor> = class {
         static $inject = ["$scope"]
         constructor($scope: IScope) {
-            
+
         }
-        $onChanges(): void{
+        $onChanges(): void {
 
         }
         $onInit(): void {
-    
+
         }
-        $doCheck(): void{
+        $doCheck(): void {
 
         }
         $onDestroy(): void {

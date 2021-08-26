@@ -13,7 +13,6 @@ import UIController from "./controllers/UIController";
 import Draggable from "./directives/Draggable";
 import Droppable from "./directives/Droppable";
 import Chart from "./directives/Chart";
-import EDVLChart from "./factories/EDVLChart";
 import DataService from "./services/DataService";
 import ChartSettingsService from "./services/ChartSettingsService";
 import DragDropTransferService from "./services/DragDropTransferService";
@@ -33,7 +32,6 @@ export default class App {
             .service("ChartSettingsService", ChartSettingsService)
             .service("TimeWindowService", TimeWindowService)
             .service("DragDropTransferService", DragDropTransferService)
-            .service("EDVLCharts", EDVLChart)
             .directive("draggable", Draggable.factory())
             .directive("droppable", Droppable.factory())
             .directive("chart", Chart.factory())

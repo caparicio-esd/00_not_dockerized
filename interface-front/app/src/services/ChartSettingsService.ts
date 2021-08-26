@@ -14,9 +14,12 @@ interface IChartSettingService extends IServiceProvider {
  * {
                         device: "urn:ngsi-ld:Sensor:sensor01", 
                         prop: "humidity",
-                        aggregation: "value"
+                        aggregation: "value", 
                     }
  */
+
+
+
 
 export default class ChartSettingsService implements IChartSettingService {
     root: IScope
@@ -31,7 +34,9 @@ export default class ChartSettingsService implements IChartSettingService {
             props: [
                 {
                     label: "yAxis",
-                    content: []
+                    content: [
+
+                    ]
                 }
             ]
         }, {

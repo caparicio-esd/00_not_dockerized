@@ -130,20 +130,23 @@ export default class ChartSettingsService implements IChartSettingService {
             this.activeState = id;
         }
     }
-    setProperty(type, property, {deviceId, deviceTag}) {
-        const idx = this.state.findIndex(s => s.id == type)
-        if (idx > -1) {
-            const propIdx = this.state[idx].props?.findIndex(p => p.label == property)
-            if (propIdx > -1) {
-                const prop = this.state[idx].props[propIdx].content.find(p => p.device == deviceId && p.prop == deviceTag)
-                if (!prop) {
-                    this.state[idx].props[propIdx].content.push({
-                        device: deviceId,
-                        prop:  deviceTag, 
-                        aggregation: "value"
-                    })
-                }
-            }
+    setProperty(type, property, { device, deviceTag }) {
+        const state = this.state.find(s => s.id == type);
+        const prop = state?.props?.find(p => p.label == property)
+        const contentIdx = prop?.content.findIndex(c => c.device.id == device.id && c.device.prop == property)
+        if (contentIdx == -1) {
+            prop.content.push({
+                device: device,
+                prop: deviceTag,
+                aggregation: "value"
+            });
         }
+    }
+
+    removeProperty(type, property, { device, deviceTag }) {        
+        const state = this.state.find(s => s.id == type)
+        const prop = state?.props?.find(p => p.label == property)
+        const contentIdx = prop?.content.findIndex(c => c.device.id == device.id && c.prop == deviceTag)
+        prop.content.splice(contentIdx, 1);
     }
 }

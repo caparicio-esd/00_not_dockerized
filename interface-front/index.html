@@ -51,7 +51,7 @@
                       </div>
                       <div class="device_subacc_body" ng-class="[{opened: false}]">
                         <div class="device_subacc_body_holder">
-                          <draggable ng-repeat="deviceTag in device.props" device="{{device}}">
+                          <draggable ng-repeat="deviceTag in device.props" device="{{device}}" dropped="{{false}}">
                             <device-tag name="deviceTag" />
                           </draggable>
                         </div>

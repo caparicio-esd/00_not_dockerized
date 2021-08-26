@@ -46,7 +46,7 @@ export default class DragDropTransferService {
         this.transferObjectScope.position.y += ev.dy
         this.transferObject.style.transform = `translate(${this.transferObjectScope.position.x}px, ${this.transferObjectScope.position.y}px)`
     }
-    
+
     resetDrag(ev) {
         const speed = 200;
         this.transferObjectScope.position.x = 0
@@ -57,39 +57,52 @@ export default class DragDropTransferService {
         })
         window.setTimeout(() => { this.abortDrag() }, speed)
     }
-    
+
     abortDrag() {
         document.getElementById("transfer_tag").outerHTML = ""
     }
-    
+
     dropEnterListener(ev) {
         Object.assign(this.droppingObject.style, {
             borderColor: "blue"
         })
     }
-    
+
     dropLeaveListener(ev) {
         Object.assign(this.droppingObject.style, {
             borderColor: ""
         })
     }
 
-    dropListener() {
-        const deviceId = this.draggingObjectScope.deviceId;
-        const deviceTag = this.draggingObjectScope.deviceTag;
+    dropListener(dropout = false) {
+        const device = this.draggingObjectScope.device;
         const activeType = this.ChartSettingsService.activeState
-        const state = this.ChartSettingsService.getStateElementById(activeType);
-        const property = this.droppingObjectScope.droppingProperty
-        this.ChartSettingsService.setProperty(activeType, property, {
-            deviceId, 
-            deviceTag, 
-        })
+
+        if (!this.draggingObjectScope.dropped) {
+            const deviceTag = this.draggingObjectScope.deviceTag;
+            const property = this.droppingObjectScope?.droppingProperty
+            this.ChartSettingsService.setProperty(activeType, property, {
+                device,
+                deviceTag,
+            })
+        } else {
+            if (dropout) {
+                const deviceTag = this.draggingObjectScope.tag.prop;
+                const property = this.draggingObjectScope?.droppingFrom
+                this.ChartSettingsService.removeProperty(activeType, property, {
+                    device,
+                    deviceTag,
+                })
+            }
+        }
         this.abortDrop();
     }
 
     abortDrop() {
-        Object.assign(this.droppingObject.style, {
-            borderColor: ""
-        })
+        if (this.droppingObject) {
+            Object.assign(this.droppingObject.style, {
+                borderColor: ""
+            })
+        }
     }
 }

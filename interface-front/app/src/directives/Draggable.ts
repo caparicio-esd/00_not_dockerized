@@ -10,15 +10,16 @@ export default class Draggable implements IDirective {
         static $inject = ["$scope", "DragDropTransferService"]
         constructor($scope: any | IScope, DragDropTransferService: IServiceProviderClass) {
             $scope.ddService = DragDropTransferService;
-            console.log($scope);
-
         }
     }
 
-    link(scope: any | IScope, element: IAugmentedJQuery, attrs: IAttributes) {
+    link(scope: any | IScope, element: IAugmentedJQuery, attrs: IAttributes) {        
         const draggableDOM = element[0].querySelector('div')
         scope.position = { x: 0, y: 0 }
-        scope.deviceId = JSON.parse(attrs.device).id
+        scope.device = JSON.parse(attrs.device)
+        scope.dropped = attrs.dropped !== "false"
+        scope.droppingFrom = attrs.droppingFrom
+
         interact(draggableDOM as Interact.Target).draggable({
             autoScroll: true,
             listeners: {

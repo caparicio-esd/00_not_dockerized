@@ -15,7 +15,9 @@ export default class DroppableGroup implements IComponentOptions {
             <droppable property="{{$dg.label}}">
                 <div class="dropable_box">
                         <div class="dropable_box_content">
-                            <device-tag ng-repeat="tag in $dg.tags" name="tag" />
+                            <draggable ng-repeat="tag in $dg.tags" device="{{tag.device}}" dropped="true" dropping-from="{{$dg.label}}">
+                                <device-tag name="$dg.createName(tag)" />
+                            </draggable>
                         </div>
                 </div>
             </droppable>
@@ -25,12 +27,18 @@ export default class DroppableGroup implements IComponentOptions {
     bindToController = true;
     restrict = "E"
     controller: Injectable<IControllerConstructor> = class {
+        scope: IScope;
         static $inject = ["$scope"]
         constructor($scope: IScope) {
-
+            this.scope = {...$scope}
+        }
+        createName(tag) {
+            const betterName = tag.device.id.lastIndexOf(":");
+            const sliced = tag.device.id.slice(betterName+1);
+            return `${sliced}-${tag.prop}`
         }
         $onChanges(): void {
-
+            
         }
         $onInit(): void {
 

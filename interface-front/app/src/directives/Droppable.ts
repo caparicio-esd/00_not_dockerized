@@ -33,6 +33,13 @@ export default class Droppable implements IDirective {
                 scope.ddService.droppingObjectScope = null
             }
         })
+        interact(document.body as Interact.Target).dropzone({
+            ondrop: (ev) => {
+                scope.ddService.dropListener(true)
+                scope.ddService.droppingObject = null
+                scope.ddService.droppingObjectScope = null
+            }
+        })
     }
 
 

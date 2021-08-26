@@ -36,6 +36,8 @@ services:
         image: ging/zeppelin
         user: 'root'
         container_name: zeppelin
+        depends_on: 
+            - mongo
         ports: 
             - "8080:8080"
             - "9000:9000"

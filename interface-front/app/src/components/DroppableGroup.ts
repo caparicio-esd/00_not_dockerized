@@ -12,7 +12,7 @@ export default class DroppableGroup implements IComponentOptions {
             <div class="icon"><span class="fa fa-hashtag"></span></div>
             <div class="label">{{$dg.label}}</div>
             </div>
-            <droppable>
+            <droppable property="{{$dg.label}}">
                 <div class="dropable_box">
                         <div class="dropable_box_content">
                             <device-tag ng-repeat="tag in $dg.tags" name="tag" />
@@ -27,13 +27,13 @@ export default class DroppableGroup implements IComponentOptions {
     controller: Injectable<IControllerConstructor> = class {
         static $inject = ["$scope"]
         constructor($scope: IScope) {
-            
+
         }
         $onChanges(): void {
 
         }
         $onInit(): void {
-    
+
         }
         $doCheck(): void {
 

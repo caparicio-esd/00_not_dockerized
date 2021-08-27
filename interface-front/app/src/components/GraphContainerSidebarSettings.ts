@@ -2,9 +2,9 @@ import { IComponentOptions, IControllerConstructor, Injectable, IScope, IService
 
 
 export default class GraphContainerSidebarSettings implements IComponentOptions {
-    bindings = {
-
-    }
+    bindings = {}
+    controllerAs = '$ctrl'
+    transclude = true
     template = `
         <div class="graph_container_sidebar_settings">
             <div class="graph_main_container_header">
@@ -30,30 +30,13 @@ export default class GraphContainerSidebarSettings implements IComponentOptions 
             </div>
         </div> 
     `;
-    controllerAs = '$ctrl'
-    transclude = true
-    restrict = "E"
+
     controller: Injectable<IControllerConstructor> = class {
-        scope: any 
+        scope: any | IScope 
         static $inject = ["$scope", "ChartSettingsService"]
-        constructor($scope, ChartSettingsService: IServiceProviderClass) {
+        constructor($scope: IScope, ChartSettingsService: IServiceProviderClass) {
             this.scope = $scope
             this.scope.settings = ChartSettingsService                        
-        }
-        $onChanges(): void{
-                        
-        }
-        $onInit(): void {
-    
-        }
-        $doCheck(): void{
-
-        }
-        $onDestroy(): void {
-
-        }
-        $postLink(): void {
-
         }
     }
 }

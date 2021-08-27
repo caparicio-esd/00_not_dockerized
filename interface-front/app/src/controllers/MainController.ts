@@ -1,7 +1,7 @@
 import { IController, IScope } from "angular";
 import DataService from "../services/DataService";
 
-interface MainControllerScope extends ng.IScope {
+interface MainControllerScope extends IScope {
     data: any[]
     deviceTypes: string[]
     devices: any[]

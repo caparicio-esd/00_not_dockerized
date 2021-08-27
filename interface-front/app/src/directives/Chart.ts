@@ -153,6 +153,9 @@ export default class Chart implements IDirective {
 
     updateChart(values, $scope, $element) {
 
+        // TODO 
+        // hace que esto funcione
+        
         const chart = $scope.$chart;
         const data = $scope.$controller.chartData.map(d => ({ ...d.data[0] }));
         const lastData = data[data.length - 1];
@@ -160,7 +163,15 @@ export default class Chart implements IDirective {
         // opts
         const activeState = $scope.$chartSettings.state.findIndex(s => s.id == $scope.$chartSettings.activeState)
         const multiProp = $scope.$chartSettings.state[activeState].multiProp
-        const dataSetsInSetting = $scope.$chartSettings.state[activeState].props.find(prop => prop.label == multiProp).content
+        const dataSetsInSetting = $scope.$chartSettings.state[activeState].props.find(prop => prop.label == multiProp).content.map(c => c.device)
+
+        console.log({
+            activeState, 
+            multiProp, 
+            dataSetsInSetting
+        });
+        
+
 
         if ($scope.$chart.data.datasets.findIndex(ds => ds.label == lastData.id) < 0) {
             if (dataSetsInSetting.filter(dsetting => dsetting.device == lastData.id).length > 0) {
